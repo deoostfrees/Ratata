@@ -1,0 +1,23 @@
+:root {
+  --ratata-blue: #0000FF;
+  --ratata-gray: #444444;
+  --ratata-white: #FFFFFF;
+
+  /**
+   * Typo
+   */
+  --ratata-base-font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+  --ratata-base-font-size: calc((18 / 16) * 1rem);
+  --ratata-base-line-height: 1.67;
+
+  /**
+   * Body
+   */
+  --ratata-body-background-color: var(--ratata-white);
+  --ratata-body-color: var(--ratata-gray);
+
+  /**
+   * Links
+   */
+  --ratata-link-color: var(--ratata-blue);
+}

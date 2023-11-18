@@ -1,0 +1,43 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  text-size-adjust: none;
+}
+
+a,
+button {
+  touch-action: manipulation;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+img,
+picture {
+  display: block;
+}
+
+img {
+  block-size: auto;
+  max-inline-size: 100%;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  text-wrap: pretty;
+}

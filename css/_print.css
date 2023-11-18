@@ -1,0 +1,12 @@
+* {
+  color: var(--ratata-black) !important;
+}
+
+a {
+  text-decoration: none !important;
+
+
+  &::after {
+    content: " ("attr(href)")" !important;
+  }
+}

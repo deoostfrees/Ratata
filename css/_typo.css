@@ -1,0 +1,5 @@
+html {
+  font-family: var(--ratata-base-font-family);
+  font-size: var(--ratata-base-font-size);
+  line-height: var(--ratata-base-line-height);
+}

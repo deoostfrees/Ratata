@@ -1,0 +1,9 @@
+@import '_print.css' print;
+@import '_reset.css';
+@import '_variables.css';
+@import '_typo.css';
+
+body {
+  background-color: var(--ratata-body-background-color);
+  color: var(--ratata-body-color);
+}

@@ -1,6 +1,8 @@
 :root {
+  --ratata-black: #000000;
   --ratata-blue: #0000FF;
   --ratata-gray: #444444;
+  --ratata-yellow: #FFFF00;
   --ratata-white: #FFFFFF;
 
   /**
@@ -15,6 +17,12 @@
    */
   --ratata-body-background-color: var(--ratata-white);
   --ratata-body-color: var(--ratata-gray);
+
+  /**
+   * Focus
+   */
+  --ratata-focus-background-color: var(--ratata-yellow);
+  --ratata-focus-color: var(--ratata-gray);
 
   /**
    * Links

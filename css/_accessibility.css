@@ -1,0 +1,26 @@
+/**
+ * Hide content visually
+ */
+.visually-hidden:not(:focus) {
+  block-size: calc((1 / 16) * 1rem);
+  clip-path: inset(50%);
+  inline-size: calc((1 / 16) * 1rem);
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+}
+
+/**
+ * Skip to content link
+ */
+.skip-link {
+
+
+
+  &:focus {
+    inset-block-start: calc((24 / 16) * 1rem);
+    inset-inline-start: calc((24 / 16) * 1rem);
+    position: absolute;
+    z-index: 1337;
+  }
+}

@@ -1,3 +1,4 @@
+/* stylelint-disable declaration-no-important */
 * {
   color: var(--ratata-black) !important;
 }
@@ -7,6 +8,7 @@ a {
 
 
   &::after {
-    content: " ("attr(href)")" !important;
+    content: ' ("attr(href)")' !important;
   }
 }
+/* stylelint-enable declaration-no-important */

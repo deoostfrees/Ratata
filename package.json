@@ -4,7 +4,9 @@
   "description": "",
   "main": "css/ratata.css",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "testJs": "standard \"js/ratata.js\"",
+    "testCss": "stylelint \"css/*.css\"",
+    "test": "npm run testJs && npm run testCss"
   },
   "repository": {
     "type": "git",
@@ -14,5 +16,11 @@
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/deoostfrees/Ratata/issues"
+  },
+  "devDependencies": {
+    "standard": "^17.1.0",
+    "stylelint": "^15.11.0",
+    "stylelint-config-standard": "^34.0.0",
+    "stylelint-use-logical": "^2.1.0"
   }
 }

@@ -5,12 +5,42 @@
   --ratata-yellow: #FFFF00;
   --ratata-white: #FFFFFF;
 
+
   /**
    * Typo
    */
   --ratata-base-font-family: -apple-system, blinkmacsystemfont, 'Segoe UI', helvetica, arial, sans-serif;
   --ratata-base-font-size: calc((18 / 16) * 1rem);
-  --ratata-base-line-height: 1.67;
+  --ratata-base-font-weight: 400;
+  --ratata-base-line-height: calc((31 / 18));
+
+  /* b, strong */
+  --ratata-bold-font-weight: 700;
+
+  /* small */
+  --ratata-small-font-size: calc((16 / 18) * 1rem);
+  --ratata-small-line-height: calc((27 / 16));
+
+  /* Headings */
+  --ratata-headings-font-family: var(--ratata-base-font-family);
+  --ratata-headings-font-weight: 700;
+
+  /* h1 */
+  --ratata-h1-font-size: calc((47 / 18) * 1rem);
+  --ratata-h1-line-height: calc((73 / 47));
+
+  /* h2 */
+  --ratata-h2-font-size: calc((37 / 18) * 1rem);
+  --ratata-h2-line-height: calc((58 / 37));
+
+  /* h3 */
+  --ratata-h3-font-size: calc((29 / 18) * 1rem);
+  --ratata-h3-line-height: calc((47 / 29));
+
+  /* h4 */
+  --ratata-h4-font-size: calc((23 / 18) * 1rem);
+  --ratata-h4-line-height: calc((38 / 23));
+
 
   /**
    * Body
@@ -18,14 +48,19 @@
   --ratata-body-background-color: var(--ratata-white);
   --ratata-body-color: var(--ratata-gray);
 
+
   /**
    * Focus
    */
   --ratata-focus-background-color: var(--ratata-yellow);
   --ratata-focus-color: var(--ratata-gray);
 
+
   /**
    * Links
    */
   --ratata-link-color: var(--ratata-blue);
+  --ratata-link-decoration-line: underline;
+  --ratata-link-hover-color: var(--ratata-blue);
+  --ratata-link-hover-decoration-line: none;
 }

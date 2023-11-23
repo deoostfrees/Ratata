@@ -63,4 +63,34 @@
   --ratata-link-decoration-line: underline;
   --ratata-link-hover-color: var(--ratata-blue);
   --ratata-link-hover-decoration-line: none;
+
+
+  /**
+   * Buttons
+   */
+  --ratata-button-background-color: transparent;
+  --ratata-button-border-radius: 0;
+  --ratata-button-color: var(--ratata-gray);
+  --ratata-button-border-color: transparent;
+  --ratata-button-hover-background-color: transparent;
+  --ratata-button-hover-border-color: transparent;
+  --ratata-button-hover-color: var(--ratata-gray);
+
+  /* Primary */
+  --ratata-button-primary-background-color: var(--ratata-blue);
+  --ratata-button-primary-border-color: var(--ratata-blue);
+  --ratata-button-primary-border-radius: calc((4 / 18) * 1rem);
+  --ratata-button-primary-color: var(--ratata-white);
+  --ratata-button-primary-hover-background-color: color-mix(in srgb, var(--ratata-blue) 80%, var(--ratata-black));
+  --ratata-button-primary-hover-border-color: color-mix(in srgb, var(--ratata-blue) 80%, var(--ratata-black));
+  --ratata-button-primary-hover-color: var(--ratata-white);
+
+  /* Secondary */
+  --ratata-button-secondary-background-color: transparent;
+  --ratata-button-secondary-border-color: var(--ratata-blue);
+  --ratata-button-secondary-border-radius: calc((4 / 18) * 1rem);
+  --ratata-button-secondary-color: var(--ratata-blue);
+  --ratata-button-secondary-hover-background-color: var(--ratata-blue);
+  --ratata-button-secondary-hover-border-color: var(--ratata-blue);
+  --ratata-button-secondary-hover-color: var(--ratata-white);
 }

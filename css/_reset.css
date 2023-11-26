@@ -18,11 +18,13 @@ button {
   touch-action: manipulation;
 }
 
-input,
+address,
 button,
-textarea,
-select {
+input,
+select,
+textarea {
   font: inherit;
+  line-height: inherit;
 }
 
 img,

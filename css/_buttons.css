@@ -6,8 +6,6 @@
   border: calc((1 / 18) * 1rem) solid var(--ratata-button-border-color);
   color: var(--ratata-button-color);
   display: inline-flex;
-  font: inherit;
-  line-height: inherit;
   text-decoration: none;
 
 

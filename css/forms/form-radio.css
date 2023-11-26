@@ -1,0 +1,39 @@
+.form-group--radio {
+  align-items: baseline;
+  display: grid;
+  grid-template-columns: calc((24 / 18) * 1rem) auto;
+  gap: calc((8 / 18) * 1rem);
+}
+
+.form-radio {
+  appearance: none;
+  background-color: var(--ratata-radio-background-color);
+  block-size: calc((24 / 18) * 1rem);
+  border-radius: 50%;
+  border: calc((1 / 18) * 1rem) solid var(--ratata-radio-border-color);
+  color: var(--ratata-radio-color);
+  display: grid;
+  inline-size: calc((24 / 18) * 1rem);
+  place-content: center;
+  transform: translateY(calc((-2 / 18) * 1rem));
+
+
+  &::before {
+    background-color: CanvasText;
+    block-size: calc((8 / 18) * 1rem);
+    border-radius: 50%;
+    box-shadow: inset 1em 1em var(--ratata-radio-focus-background-color);
+    content: '';
+    inline-size: calc((8 / 18) * 1rem);
+    opacity: 0;
+  }
+
+  &:checked::before {
+    opacity: 1;
+  }
+
+  &[disabled],
+	&[aria-disabled=true] {
+    opacity: 0.4;
+  }
+}

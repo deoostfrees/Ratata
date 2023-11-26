@@ -1,0 +1,48 @@
+.form-group--check {
+  align-items: baseline;
+  display: grid;
+  grid-template-columns: calc((24 / 18) * 1rem) auto;
+  gap: calc((8 / 18) * 1rem);
+}
+
+.form-check {
+  appearance: none;
+  background-color: var(--ratata-check-background-color);
+  block-size: calc((24 / 18) * 1rem);
+  border-radius: var(--ratata-check-border-radius);
+  border: calc((1 / 18) * 1rem) solid var(--ratata-check-border-color);
+  color: var(--ratata-check-color);
+  display: grid;
+  inline-size: calc((24 / 18) * 1rem);
+  place-content: center;
+  transform: translateY(calc((1 / 18) * 1rem));
+
+
+  &::before {
+    background-color: CanvasText;
+    block-size: calc((16 / 18) * 1rem);
+    box-shadow: inset 1em 1em var(--ratata-check-focus-background-color);
+    content: '';
+    inline-size: calc((16 / 18) * 1rem);
+    mask-image: var(--ratata-check-icon);
+    mask-mode: auto;
+    mask-position: center;
+    mask-repeat: no-repeat;
+    mask-size: contain;
+    opacity: 0;
+  }
+
+  &:indeterminate::before,
+  [aria-checked='mixed']::before {
+    mask-image: var(--ratata-minus-icon);
+  }
+
+  &:checked::before {
+    opacity: 1;
+  }
+
+  &[disabled],
+	&[aria-disabled=true] {
+    opacity: 0.4;
+  }
+}

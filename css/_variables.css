@@ -79,7 +79,7 @@
   /* Primary */
   --ratata-button-primary-background-color: var(--ratata-blue);
   --ratata-button-primary-border-color: var(--ratata-blue);
-  --ratata-button-primary-border-radius: calc((4 / 18) * 1rem);
+  --ratata-button-primary-border-radius: 0;
   --ratata-button-primary-color: var(--ratata-white);
   --ratata-button-primary-hover-background-color: color-mix(in srgb, var(--ratata-blue) 80%, var(--ratata-black));
   --ratata-button-primary-hover-border-color: color-mix(in srgb, var(--ratata-blue) 80%, var(--ratata-black));
@@ -88,9 +88,43 @@
   /* Secondary */
   --ratata-button-secondary-background-color: transparent;
   --ratata-button-secondary-border-color: var(--ratata-blue);
-  --ratata-button-secondary-border-radius: calc((4 / 18) * 1rem);
+  --ratata-button-secondary-border-radius: 0;
   --ratata-button-secondary-color: var(--ratata-blue);
   --ratata-button-secondary-hover-background-color: var(--ratata-blue);
   --ratata-button-secondary-hover-border-color: var(--ratata-blue);
   --ratata-button-secondary-hover-color: var(--ratata-white);
+
+
+  /**
+   * Forms
+   */
+
+
+  /* Input */
+  --ratata-input-background-color: var(--ratata-white);
+  --ratata-input-border-color: var(--ratata-gray);
+  --ratata-input-border-radius: 0;
+  --ratata-input-color: var(--ratata-gray);
+  --ratata-input-focus-border-color: var(--ratata-blue);
+
+  /* Checkbox */
+  --ratata-check-background-color: var(--ratata-white);
+  --ratata-check-border-color: var(--ratata-gray);
+  --ratata-check-border-radius: 0;
+  --ratata-check-color: var(--ratata-gray);
+  --ratata-check-focus-background-color: var(--ratata-blue);
+
+  /* Radio */
+  --ratata-radio-background-color: var(--ratata-white);
+  --ratata-radio-border-color: var(--ratata-gray);
+  --ratata-radio-color: var(--ratata-gray);
+  --ratata-radio-focus-background-color: var(--ratata-blue);
+
+  /* Select */
+  --ratata-select-background-color: transparent;
+  --ratata-select-border-color: var(--ratata-gray);
+  --ratata-select-border-radius: 0;
+  --ratata-select-color: var(--ratata-gray);
+  --ratata-select-focus-border-color: var(--ratata-blue);
+  --ratata-select-focus-background-color: var(--ratata-blue);
 }

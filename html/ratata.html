@@ -13,7 +13,7 @@
   </head>
 
   <body>
-    <a href="#content" class="skip-link visually-hidden" accesskey="s">Skip to content.</a>
+    <a href="#content" class="skip-link visually-hidden btn btn--primary" accesskey="s">Skip to content.</a>
 
     <main id="content">
       <h1>Ratata</h1>
@@ -49,6 +49,62 @@
       <button type="button" class="btn btn--primary">Primary button</button>
 
       <button type="button" class="btn btn--secondary">Secondary button</button>
+
+      <form>
+        <label class="form-label" for="input">Input</label>
+        <input class="form-input" id="input" type="text" name="input">
+
+        <div class="form-group form-group--select">
+          <label class="form-label" for="select">Select</label>
+          <select class="form-select" id="select" name="select">
+            <option>1</option>
+            <option>2</option>
+          </select>
+        </div>
+
+        <label class="form-label" for="text">Textarea</label>
+        <textarea class="form-input" id="text" name="text"></textarea>
+
+        <fieldset>
+          <legend>Checkbox</legend>
+
+          <div class="form-group form-group--check">
+            <input class="form-check" id="checkbox1" type="checkbox" name="checkbox1">
+            <label class="form-label" for="checkbox1">Checkbox</label>
+          </div>
+
+          <div class="form-group form-group--check">
+            <input class="form-check" id="checkbox2" type="checkbox" name="checkbox2" checked>
+            <label class="form-label" for="checkbox2">Checkbox - checked</label>
+          </div>
+
+          <div class="form-group form-group--check">
+            <input class="form-check" id="checkbox3" type="checkbox" name="checkbox3" checked disabled>
+            <label class="form-label" for="checkbox3">Checkbox - checked, disabled</label>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>Radio</legend>
+
+          <div class="form-group form-group--radio">
+            <input class="form-radio" id="radio1" type="radio" name="radio">
+            <label class="form-label" for="radio1">Radio</label>
+          </div>
+
+          <div class="form-group form-group--radio">
+            <input class="form-radio" id="radio2" type="radio" name="radio" checked>
+            <label class="form-label" for="radio2">Radio - checked</label>
+          </div>
+
+          <div class="form-group form-group--radio">
+            <input class="form-radio" id="radio3" type="radio" name="radio" disabled>
+            <label class="form-label" for="radio3">Radio - disabled</label>
+          </div>
+        </fieldset>
+
+        <button type="submit" class="btn btn--primary">Send</button>
+      </form>
     </main>
   </body>
 </html>

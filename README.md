@@ -1,5 +1,7 @@
 # Ratata
 
+HTML, CSS, and JavaScript framework (WIP)
+
 ## Table of contents
 
 - [Quick start](#quick-start)

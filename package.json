@@ -1,7 +1,7 @@
 {
   "name": "ratata",
   "version": "0.0.0",
-  "description": "",
+  "description": "HTML, CSS, and JavaScript framework (WIP)",
   "main": "css/ratata.css",
   "scripts": {
     "testJs": "standard \"js/ratata.js\"",
@@ -12,6 +12,12 @@
     "type": "git",
     "url": "git://github.com/deoostfrees/ratata.git"
   },
+  "keywords": [
+    "html",
+    "css",
+    "javascript",
+    "framework"
+  ],
   "author": "Benjamin de Oostfrees",
   "license": "MIT",
   "bugs": {

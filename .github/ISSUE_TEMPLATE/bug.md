@@ -2,6 +2,6 @@
 name: Bug
 about: A problem with the framework.
 title: 'Bug: [Title]'
-labels: bug
+labels: 'type: bug'
 assignees: ''
 ---

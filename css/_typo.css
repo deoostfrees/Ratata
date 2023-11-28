@@ -1,13 +1,3 @@
-::selection {
-  background-color: var(--ratata-focus-background-color);
-  color: var(--ratata-focus-color);
-}
-
-::target-text {
-  background-color: var(--ratata-focus-background-color);
-  color: var(--ratata-focus-color);
-}
-
 html {
   font-family: var(--ratata-base-font-family);
   font-size: var(--ratata-base-font-size);

@@ -1,0 +1,13 @@
+:target {
+  scroll-margin-block-start: var(--scroll-margin-block-start);
+}
+
+::selection {
+  background-color: var(--ratata-focus-background-color);
+  color: var(--ratata-focus-color);
+}
+
+::target-text {
+  background-color: var(--ratata-focus-background-color);
+  color: var(--ratata-focus-color);
+}

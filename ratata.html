@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Ratata</title>
+
+    <meta name="description" content="HTML, CSS, and JavaScript framework (WIP)">
+    <meta name="robots" content="index, follow">
+
+    <link href="css/ratata.css" rel="stylesheet">
+
+    <style>
+      /**
+       * WIP!
+       * TODO: Clean up
+       */
+      :root {
+        --ratata-body-background-color: #fbefe1;
+        --ratata-body-color: var(--ratata-blue);
+
+        --padding-inline: calc((40 / 18) * 1rem);
+        --content-max-width: calc((612 / 18) * 1rem);
+        --breakout-max-width: calc((1200 / 18) * 1rem);
+
+        --breakout-size: calc(
+          (var(--breakout-max-width) - var(--content-max-width)) / 2
+        );
+      }
+
+      .page {
+        min-block-size: 100svh;
+        padding-block-start: calc((32 / 18) * 1rem);
+      }
+
+      .page__nav {
+        backdrop-filter: blur(20px);
+        background-color: color-mix(in srgb, var(--ratata-white) 40%, transparent);
+        border-radius: calc((16 / 18) * 1rem);
+        color: var(--ratata-blue);
+        display: flex;
+        flex-wrap: wrap;
+        gap: calc((16 / 18) * 1rem);
+        inline-size: fit-content;
+        inset-block-start: calc((32 / 18) * 1rem);
+        margin-inline-start: calc((-16 / 18) * 1rem);
+        padding-block: calc((4 / 18) * 1rem);
+        padding-inline: calc((16 / 18) * 1rem);
+        position: sticky;
+
+
+        & ul {
+          display: flex;
+          flex-wrap: wrap;
+          gap: calc((16 / 18) * 1rem);
+          list-style: none;
+        }
+      }
+
+      .page__main {
+        margin-block-start: calc((96 / 18) * 1rem);
+
+        & > * + * {
+          margin-block-start: calc((160 / 18) * 1rem);
+        }
+      }
+
+      .page__footer {
+        background-color: var(--ratata-blue);
+        color: var(--ratata-white);
+        margin-block-start: calc((160 / 18) * 1rem);
+        padding-block: calc((32 / 18) * 1rem);
+      }
+
+      .header {
+
+      }
+
+      .grid {
+        align-content: start;
+        display: grid;
+        grid-template-columns:
+          [full-start] minmax(var(--padding-inline), 1fr)
+          [breakout-start] minmax(0, var(--breakout-size))
+          [content-start] min(
+            100% - (var(--padding-inline) * 2),
+            var(--content-max-width)
+          )
+          [content-end]
+          minmax(0, var(--breakout-size)) [breakout-end]
+          minmax(var(--padding-inline), 1fr) [full-end];
+
+        & > :not(.grid__breakout, .grid__full),
+        .grid__full > :not(.grid__breakout, .grid__full) {
+          grid-column: content;
+        }
+      }
+
+      .grid__breakout {
+        grid-column: breakout;
+      }
+
+      .grid__full {
+        grid-column: full;
+
+        display: grid;
+        grid-template-columns: inherit;
+      }
+
+      .heading-permalink {
+        margin-inline-start: calc((16 / 18) * 1rem);
+      }
+    </style>
+  </head>
+
+  <body>
+    <a href="#content" class="skip-link visually-hidden btn btn--primary" accesskey="s">Skip to content.</a>
+
+    <div class="page grid">
+      <nav class="page__nav grid__breakout" aria-label="Main">
+        <ul>
+          <li><a href="/ratata.html">Ratata</a></li>
+          <li><a href="#why">Why?</a></li>
+        </ul>
+      </nav>
+
+      <main id="content" class="page__main">
+        <div class="header">
+          <h1>Ratata</h1>
+          <p>HTML, CSS, and JavaScript framework (WIP)</p>
+        </div>
+
+        <section>
+          <h2 id="why">Why<a class="heading-permalink" href="#why"><span aria-hidden="true">#</span><span class="visually-hidden">Anker</span></a></h2>
+          <p>Do I still need Sass? Do I need build tools? I asked myself that one morning and, of course, because I can.</p>
+        </section>
+      </main>
+
+      <footer class="page__footer grid__full grid">
+        <div>
+          Footer
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

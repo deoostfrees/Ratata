@@ -1,6 +1,6 @@
-@import url('forms/form-base.css');
-@import url('forms/form-label.css');
-@import url('forms/form-input.css');
-@import url('forms/form-select.css');
-@import url('forms/form-check.css');
-@import url('forms/form-radio.css');
+@import url('./forms/form-base.css');
+@import url('./forms/form-label.css');
+@import url('./forms/form-input.css');
+@import url('./forms/form-select.css');
+@import url('./forms/form-check.css');
+@import url('./forms/form-radio.css');

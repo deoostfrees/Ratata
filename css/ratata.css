@@ -7,8 +7,3 @@
 @import url('./_typo.css');
 @import url('./_buttons.css');
 @import url('./_forms.css');
-
-body {
-  background-color: var(--ratata-body-background-color);
-  color: var(--ratata-body-color);
-}

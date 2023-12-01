@@ -1,0 +1,111 @@
+/**
+  * WIP!
+  * TODO: Clean up
+  */
+:root {
+  --ratata-body-background-color: #fbefe1;
+  --ratata-body-color: var(--ratata-gray);
+
+  --padding-inline: calc((40 / 18) * 1rem);
+  --content-max-width: calc((612 / 18) * 1rem);
+  --breakout-max-width: calc((1200 / 18) * 1rem);
+
+  --breakout-size: calc(
+    (var(--breakout-max-width) - var(--content-max-width)) / 2
+  );
+}
+
+.page {
+  grid-template-rows: auto 1fr auto;
+  min-block-size: 100svh;
+  padding-block-start: calc((32 / 18) * 1rem);
+}
+
+.page__nav {
+  backdrop-filter: blur(20px);
+  background-color: color-mix(in srgb, var(--ratata-white) 40%, transparent);
+  border-radius: calc((16 / 18) * 1rem);
+  color: var(--ratata-blue);
+  display: flex;
+  flex-wrap: wrap;
+  gap: calc((16 / 18) * 1rem);
+  inline-size: fit-content;
+  inset-block-start: calc((32 / 18) * 1rem);
+  margin-inline-start: calc((-16 / 18) * 1rem);
+  padding-block: calc((4 / 18) * 1rem);
+  padding-inline: calc((16 / 18) * 1rem);
+  position: sticky;
+
+
+  & ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: calc((16 / 18) * 1rem);
+    list-style: none;
+  }
+}
+
+.page__main {
+  margin-block-start: calc((96 / 18) * 1rem);
+
+  & > * + * {
+    margin-block-start: calc((160 / 18) * 1rem);
+  }
+}
+
+.page__footer {
+  background-color: var(--ratata-blue);
+  color: var(--ratata-white);
+  margin-block-start: calc((160 / 18) * 1rem);
+  padding-block: calc((32 / 18) * 1rem);
+}
+
+.grid {
+  align-content: start;
+  display: grid;
+  grid-template-columns:
+    [full-start] minmax(var(--padding-inline), 1fr)
+    [breakout-start] minmax(0, var(--breakout-size))
+    [content-start] min(
+      100% - (var(--padding-inline) * 2),
+      var(--content-max-width)
+    )
+    [content-end]
+    minmax(0, var(--breakout-size)) [breakout-end]
+    minmax(var(--padding-inline), 1fr) [full-end];
+
+  & > :not(.grid__breakout, .grid__full),
+  .grid__full > :not(.grid__breakout, .grid__full) {
+    grid-column: content;
+  }
+}
+
+.grid__breakout {
+  grid-column: breakout;
+}
+
+.grid__full {
+  grid-column: full;
+}
+
+section {
+
+
+
+  & > * + * {
+    margin-block-start: calc((18 / 18) * 1rem);
+  }
+}
+
+header {
+
+
+
+  & + * {
+    margin-block-start: calc((48 / 18) * 1rem);
+  }
+}
+
+.anchor {
+  margin-inline-start: calc((16 / 18) * 1rem);
+}

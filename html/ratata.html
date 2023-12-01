@@ -6,105 +6,151 @@
 
     <title>Ratata</title>
 
-    <meta name="description" content="Currently just a test page.">
+    <meta name="description" content="HTML, CSS, and JavaScript framework (WIP)">
     <meta name="robots" content="index, follow">
 
     <link href="../css/ratata.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
   </head>
 
   <body>
     <a href="#content" class="skip-link visually-hidden btn btn--primary" accesskey="s">Skip to content.</a>
 
-    <main id="content">
-      <h1>Ratata</h1>
-      <p>Currently just a test page.</p>
+    <div class="page grid">
+      <nav class="page__nav grid__breakout" aria-label="Main">
+        <ul>
+          <li><a href="./ratata.html">Ratata</a></li>
+          <li><a href="#typo">Typo</a></li>
+          <li><a href="#buttons">Buttons</a></li>
+          <li><a href="#forms">Forms</a></li>
+        </ul>
+      </nav>
 
-      <h1>Headline 1</h1>
-      <h2>Headline 2</h2>
-      <h3>Headline 3</h3>
-      <h4>Headline 4</h4>
+      <main id="content" class="page__main">
+        <section>
+          <header>
+            <h1>Ratata</h1>
+            <p>HTML, CSS, and JavaScript framework (WIP)</p>
+          </header>
+        </section>
 
-      <p><a href="#">Link</a></p>
+        <section>
+          <header>
+            <h2 id="typo">Typo<a class="anchor" href="#typo" aria-labelledby="typo"><span aria-hidden="true">#</span></a></h2>
+          </header>
 
-      <blockquote>
-        <p>This is a blockquote.</p>
-      </blockquote>
+          <h1>Heading level 1</h1>
+          <h2>Heading level 2</h2>
+          <h3>Heading level 3</h3>
+          <h4>Heading level 4</h4>
 
-      <p><small>This is small text.</small></p>
+          <p><a href="#">Link</a></p>
 
-      <p><del>This is deleted text.</del></p>
+          <blockquote>
+            <p>This is a blockquote.</p>
+          </blockquote>
 
-      <p><ins>This is inserted text.</ins></p>
+          <p><small>This is small text.</small></p>
 
-      <p><s>This is no longer correct text.</s></p>
+          <p><del>This is deleted text.</del></p>
 
-      <p><mark>This is highlighted text.</mark></p>
+          <p><ins>This is inserted text.</ins></p>
 
-      <p>This text contains <sub>subscript</sub> text.</p>
+          <p><s>This is no longer correct text.</s></p>
 
-      <p>This text contains <sup>superscript</sup> text.</p>
+          <p><mark>This is highlighted text.</mark></p>
 
-      <button type="button" class="btn">Default button</button>
+          <p>This text contains <sub>subscript</sub> text.</p>
 
-      <button type="button" class="btn btn--primary">Primary button</button>
+          <p>This text contains <sup>superscript</sup> text.</p>
+        </section>
 
-      <button type="button" class="btn btn--secondary">Secondary button</button>
+        <section>
+          <header>
+            <h2 id="buttons">Buttons<a class="anchor" href="#buttons" aria-labelledby="buttons"><span aria-hidden="true">#</span></a></h2>
+          </header>
 
-      <form>
-        <label class="form-label" for="input">Input</label>
-        <input class="form-input" id="input" type="text" name="input">
+          <p>
+            <button type="button" class="btn">Default button</button>
+          </p>
 
-        <div class="form-group form-group--select">
-          <label class="form-label" for="select">Select</label>
-          <select class="form-select" id="select" name="select">
-            <option>1</option>
-            <option>2</option>
-          </select>
+          <p>
+            <button type="button" class="btn btn--primary">Primary button</button>
+          </p>
+
+          <p>
+            <button type="button" class="btn btn--secondary">Secondary button</button>
+          </p>
+        </section>
+
+        <section>
+          <header>
+            <h2 id="forms">Forms<a class="anchor" href="#forms" aria-labelledby="forms"><span aria-hidden="true">#</span></a></h2>
+          </header>
+
+          <form>
+            <label class="form-label" for="input">Input</label>
+            <input class="form-input" id="input" type="text" name="input">
+
+            <div class="form-group form-group--select">
+              <label class="form-label" for="select">Select</label>
+              <select class="form-select" id="select" name="select">
+                <option>1</option>
+                <option>2</option>
+              </select>
+            </div>
+
+            <label class="form-label" for="text">Textarea</label>
+            <textarea class="form-input" id="text" name="text"></textarea>
+
+            <fieldset>
+              <legend>Checkbox</legend>
+
+              <div class="form-group form-group--check">
+                <input class="form-check" id="checkbox1" type="checkbox" name="checkbox1">
+                <label class="form-label" for="checkbox1">Checkbox</label>
+              </div>
+
+              <div class="form-group form-group--check">
+                <input class="form-check" id="checkbox2" type="checkbox" name="checkbox2" checked>
+                <label class="form-label" for="checkbox2">Checkbox - checked</label>
+              </div>
+
+              <div class="form-group form-group--check">
+                <input class="form-check" id="checkbox3" type="checkbox" name="checkbox3" checked disabled>
+                <label class="form-label" for="checkbox3">Checkbox - checked, disabled</label>
+              </div>
+            </fieldset>
+
+            <fieldset>
+              <legend>Radio</legend>
+
+              <div class="form-group form-group--radio">
+                <input class="form-radio" id="radio1" type="radio" name="radio">
+                <label class="form-label" for="radio1">Radio</label>
+              </div>
+
+              <div class="form-group form-group--radio">
+                <input class="form-radio" id="radio2" type="radio" name="radio" checked>
+                <label class="form-label" for="radio2">Radio - checked</label>
+              </div>
+
+              <div class="form-group form-group--radio">
+                <input class="form-radio" id="radio3" type="radio" name="radio" disabled>
+                <label class="form-label" for="radio3">Radio - disabled</label>
+              </div>
+            </fieldset>
+
+            <button type="submit" class="btn btn--primary">Send</button>
+          </form>
+        </section>
+      </main>
+
+      <footer class="page__footer grid__full grid">
+        <div>
+          Footer
         </div>
-
-        <label class="form-label" for="text">Textarea</label>
-        <textarea class="form-input" id="text" name="text"></textarea>
-
-        <fieldset>
-          <legend>Checkbox</legend>
-
-          <div class="form-group form-group--check">
-            <input class="form-check" id="checkbox1" type="checkbox" name="checkbox1">
-            <label class="form-label" for="checkbox1">Checkbox</label>
-          </div>
-
-          <div class="form-group form-group--check">
-            <input class="form-check" id="checkbox2" type="checkbox" name="checkbox2" checked>
-            <label class="form-label" for="checkbox2">Checkbox - checked</label>
-          </div>
-
-          <div class="form-group form-group--check">
-            <input class="form-check" id="checkbox3" type="checkbox" name="checkbox3" checked disabled>
-            <label class="form-label" for="checkbox3">Checkbox - checked, disabled</label>
-          </div>
-        </fieldset>
-
-        <fieldset>
-          <legend>Radio</legend>
-
-          <div class="form-group form-group--radio">
-            <input class="form-radio" id="radio1" type="radio" name="radio">
-            <label class="form-label" for="radio1">Radio</label>
-          </div>
-
-          <div class="form-group form-group--radio">
-            <input class="form-radio" id="radio2" type="radio" name="radio" checked>
-            <label class="form-label" for="radio2">Radio - checked</label>
-          </div>
-
-          <div class="form-group form-group--radio">
-            <input class="form-radio" id="radio3" type="radio" name="radio" disabled>
-            <label class="form-label" for="radio3">Radio - disabled</label>
-          </div>
-        </fieldset>
-
-        <button type="submit" class="btn btn--primary">Send</button>
-      </form>
-    </main>
+      </footer>
+    </div>
   </body>
 </html>

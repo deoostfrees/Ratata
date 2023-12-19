@@ -7,11 +7,11 @@
 
 .form-check {
   appearance: none;
-  background-color: var(--ratata-check-background-color);
+  background-color: var(--check-background-color);
   block-size: calc((24 / 18) * 1rem);
-  border-radius: var(--ratata-check-border-radius);
-  border: calc((1 / 18) * 1rem) solid var(--ratata-check-border-color);
-  color: var(--ratata-check-color);
+  border-radius: var(--check-border-radius);
+  border: calc((1 / 18) * 1rem) solid var(--check-border-color);
+  color: var(--check-color);
   display: grid;
   inline-size: calc((24 / 18) * 1rem);
   place-content: center;
@@ -21,10 +21,10 @@
   &::before {
     background-color: CanvasText;
     block-size: calc((16 / 18) * 1rem);
-    box-shadow: inset 1em 1em var(--ratata-check-focus-background-color);
+    box-shadow: inset 1em 1em var(--check-focus-background-color);
     content: '';
     inline-size: calc((16 / 18) * 1rem);
-    mask-image: var(--ratata-check-icon);
+    mask-image: var(--check-icon);
     mask-mode: auto;
     mask-position: center;
     mask-repeat: no-repeat;
@@ -34,7 +34,7 @@
 
   &:indeterminate::before,
   [aria-checked='mixed']::before {
-    mask-image: var(--ratata-minus-icon);
+    mask-image: var(--minus-icon);
   }
 
   &:checked::before {

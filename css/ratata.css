@@ -1,9 +1,26 @@
+@import url('./_print.css') print;
+@import url('./_reset.css');
 @import url('./_icons.css');
 @import url('./_variables.css');
-@import url('./_base.css');
-@import url('./_print.css') print;
 @import url('./_accessibility.css');
-@import url('./_reset.css');
-@import url('./_typo.css');
-@import url('./_buttons.css');
-@import url('./_forms.css');
+
+/**
+ * Layout
+ *
+ */
+@import url('./themes/default.css');
+
+/**
+ * Layout
+ *
+ */
+@import url('./layout/_document.css');
+
+/**
+ * Content
+ *
+ */
+@import url('./content/_base.css');
+@import url('./content/_typography.css');
+@import url('./content/_buttons.css');
+@import url('./content/_forms.css');

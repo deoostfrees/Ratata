@@ -1,0 +1,15 @@
+.form-select {
+  appearance: none;
+  background-color: var(--select-background-color);
+  border-radius: var(--select-border-radius);
+  border: calc((1 / 18) * 1rem) solid var(--select-border-color);
+  color: var(--select-color);
+  inline-size: 100%;
+  padding-block: calc((4 / 18) * 1rem);
+  padding-inline: calc((8 / 18) * 1rem);
+
+
+  &:focus-visible {
+    border-color: var(--select-focus-border-color);
+  }
+}

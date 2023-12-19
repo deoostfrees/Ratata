@@ -1,0 +1,87 @@
+:root {
+  /**
+   * Body
+   */
+  --body-background-color: var(--white);
+  --body-color: var(--gray);
+
+
+  /**
+   * Focus
+   */
+  --focus-background-color: var(--yellow);
+  --focus-color: var(--gray);
+
+
+  /**
+   * Links
+   */
+  --link-color: var(--blue);
+  --link-decoration-line: underline;
+  --link-hover-color: var(--blue);
+  --link-hover-decoration-line: none;
+
+
+  /**
+   * Buttons
+   */
+  --button-background-color: transparent;
+  --button-border-radius: 0;
+  --button-color: var(--gray);
+  --button-border-color: transparent;
+  --button-hover-background-color: transparent;
+  --button-hover-border-color: transparent;
+  --button-hover-color: var(--gray);
+
+  /* Primary */
+  --button-primary-background-color: var(--blue);
+  --button-primary-border-color: var(--blue);
+  --button-primary-border-radius: 0;
+  --button-primary-color: var(--white);
+  --button-primary-hover-background-color: color-mix(in srgb, var(--blue) 80%, var(--black));
+  --button-primary-hover-border-color: color-mix(in srgb, var(--blue) 80%, var(--black));
+  --button-primary-hover-color: var(--white);
+
+  /* Secondary */
+  --button-secondary-background-color: transparent;
+  --button-secondary-border-color: var(--blue);
+  --button-secondary-border-radius: 0;
+  --button-secondary-color: var(--blue);
+  --button-secondary-hover-background-color: var(--blue);
+  --button-secondary-hover-border-color: var(--blue);
+  --button-secondary-hover-color: var(--white);
+
+
+  /**
+   * Forms
+   */
+
+
+  /* Input */
+  --input-background-color: var(--white);
+  --input-border-color: var(--gray);
+  --input-border-radius: 0;
+  --input-color: var(--gray);
+  --input-focus-border-color: var(--blue);
+
+  /* Checkbox */
+  --check-background-color: var(--white);
+  --check-border-color: var(--gray);
+  --check-border-radius: 0;
+  --check-color: var(--gray);
+  --check-focus-background-color: var(--blue);
+
+  /* Radio */
+  --radio-background-color: var(--white);
+  --radio-border-color: var(--gray);
+  --radio-color: var(--gray);
+  --radio-focus-background-color: var(--blue);
+
+  /* Select */
+  --select-background-color: transparent;
+  --select-border-color: var(--gray);
+  --select-border-radius: 0;
+  --select-color: var(--gray);
+  --select-focus-border-color: var(--blue);
+  --select-focus-background-color: var(--blue);
+}

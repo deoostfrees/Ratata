@@ -1,0 +1,24 @@
+:target {
+  scroll-margin-block-start: var(--scroll-margin-block-start);
+}
+
+::selection {
+  background-color: var(--focus-background-color);
+  color: var(--focus-color);
+}
+
+::target-text {
+  background-color: var(--focus-background-color);
+  color: var(--focus-color);
+}
+
+html {
+  @media screen and (prefers-reduced-motion: no-preference) {
+    scroll-behavior: smooth;
+  }
+}
+
+body {
+  background-color: var(--body-background-color);
+  color: var(--body-color);
+}

@@ -3,9 +3,6 @@
   * TODO: Clean up
   */
 :root {
-  --ratata-body-background-color: #fbefe1;
-  --ratata-body-color: var(--ratata-gray);
-
   --padding-inline: calc((40 / 18) * 1rem);
   --content-max-width: calc((612 / 18) * 1rem);
   --breakout-max-width: calc((1200 / 18) * 1rem);
@@ -23,9 +20,9 @@
 
 .page__nav {
   backdrop-filter: blur(20px);
-  background-color: color-mix(in srgb, var(--ratata-white) 40%, transparent);
+  background-color: color-mix(in srgb, var(--white) 40%, transparent);
   border-radius: calc((16 / 18) * 1rem);
-  color: var(--ratata-blue);
+  color: var(--blue);
   display: flex;
   flex-wrap: wrap;
   gap: calc((16 / 18) * 1rem);
@@ -54,8 +51,8 @@
 }
 
 .page__footer {
-  background-color: var(--ratata-blue);
-  color: var(--ratata-white);
+  background-color: var(--blue);
+  color: var(--white);
   margin-block-start: calc((160 / 18) * 1rem);
   padding-block: calc((32 / 18) * 1rem);
 }

@@ -1,11 +1,4 @@
 :root {
-  --ratata-black: #000000;
-  --ratata-blue: #0000FF;
-  --ratata-gray: #444444;
-  --ratata-yellow: #FFFF00;
-  --ratata-white: #FFFFFF;
-
-
   /**
    * Spacing
    */
@@ -14,122 +7,35 @@
   /**
    * Typo
    */
-  --ratata-base-font-family: -apple-system, blinkmacsystemfont, 'Segoe UI', helvetica, arial, sans-serif;
-  --ratata-base-font-size: calc((18 / 16) * 1rem);
-  --ratata-base-font-weight: 400;
-  --ratata-base-line-height: calc((31 / 18));
+  --base-font-family: -apple-system, blinkmacsystemfont, 'Segoe UI', helvetica, arial, sans-serif;
+  --base-font-size: calc((18 / 16) * 1rem);
+  --base-font-weight: 400;
+  --base-line-height: calc((31 / 18));
 
   /* b, strong */
-  --ratata-bold-font-weight: 700;
+  --bold-font-weight: 700;
 
   /* small */
-  --ratata-small-font-size: calc((16 / 18) * 1rem);
-  --ratata-small-line-height: calc((27 / 16));
+  --small-font-size: calc((16 / 18) * 1rem);
+  --small-line-height: calc((27 / 16));
 
   /* Headings */
-  --ratata-headings-font-family: var(--ratata-base-font-family);
-  --ratata-headings-font-weight: 700;
+  --headings-font-family: var(--base-font-family);
+  --headings-font-weight: 700;
 
   /* h1 */
-  --ratata-h1-font-size: calc((47 / 18) * 1rem);
-  --ratata-h1-line-height: calc((73 / 47));
+  --h1-font-size: calc((47 / 18) * 1rem);
+  --h1-line-height: calc((73 / 47));
 
   /* h2 */
-  --ratata-h2-font-size: calc((37 / 18) * 1rem);
-  --ratata-h2-line-height: calc((58 / 37));
+  --h2-font-size: calc((37 / 18) * 1rem);
+  --h2-line-height: calc((58 / 37));
 
   /* h3 */
-  --ratata-h3-font-size: calc((29 / 18) * 1rem);
-  --ratata-h3-line-height: calc((47 / 29));
+  --h3-font-size: calc((29 / 18) * 1rem);
+  --h3-line-height: calc((47 / 29));
 
   /* h4 */
-  --ratata-h4-font-size: calc((23 / 18) * 1rem);
-  --ratata-h4-line-height: calc((38 / 23));
-
-
-  /**
-   * Body
-   */
-  --ratata-body-background-color: var(--ratata-white);
-  --ratata-body-color: var(--ratata-gray);
-
-
-  /**
-   * Focus
-   */
-  --ratata-focus-background-color: var(--ratata-yellow);
-  --ratata-focus-color: var(--ratata-gray);
-
-
-  /**
-   * Links
-   */
-  --ratata-link-color: var(--ratata-blue);
-  --ratata-link-decoration-line: underline;
-  --ratata-link-hover-color: var(--ratata-blue);
-  --ratata-link-hover-decoration-line: none;
-
-
-  /**
-   * Buttons
-   */
-  --ratata-button-background-color: transparent;
-  --ratata-button-border-radius: 0;
-  --ratata-button-color: var(--ratata-gray);
-  --ratata-button-border-color: transparent;
-  --ratata-button-hover-background-color: transparent;
-  --ratata-button-hover-border-color: transparent;
-  --ratata-button-hover-color: var(--ratata-gray);
-
-  /* Primary */
-  --ratata-button-primary-background-color: var(--ratata-blue);
-  --ratata-button-primary-border-color: var(--ratata-blue);
-  --ratata-button-primary-border-radius: 0;
-  --ratata-button-primary-color: var(--ratata-white);
-  --ratata-button-primary-hover-background-color: color-mix(in srgb, var(--ratata-blue) 80%, var(--ratata-black));
-  --ratata-button-primary-hover-border-color: color-mix(in srgb, var(--ratata-blue) 80%, var(--ratata-black));
-  --ratata-button-primary-hover-color: var(--ratata-white);
-
-  /* Secondary */
-  --ratata-button-secondary-background-color: transparent;
-  --ratata-button-secondary-border-color: var(--ratata-blue);
-  --ratata-button-secondary-border-radius: 0;
-  --ratata-button-secondary-color: var(--ratata-blue);
-  --ratata-button-secondary-hover-background-color: var(--ratata-blue);
-  --ratata-button-secondary-hover-border-color: var(--ratata-blue);
-  --ratata-button-secondary-hover-color: var(--ratata-white);
-
-
-  /**
-   * Forms
-   */
-
-
-  /* Input */
-  --ratata-input-background-color: var(--ratata-white);
-  --ratata-input-border-color: var(--ratata-gray);
-  --ratata-input-border-radius: 0;
-  --ratata-input-color: var(--ratata-gray);
-  --ratata-input-focus-border-color: var(--ratata-blue);
-
-  /* Checkbox */
-  --ratata-check-background-color: var(--ratata-white);
-  --ratata-check-border-color: var(--ratata-gray);
-  --ratata-check-border-radius: 0;
-  --ratata-check-color: var(--ratata-gray);
-  --ratata-check-focus-background-color: var(--ratata-blue);
-
-  /* Radio */
-  --ratata-radio-background-color: var(--ratata-white);
-  --ratata-radio-border-color: var(--ratata-gray);
-  --ratata-radio-color: var(--ratata-gray);
-  --ratata-radio-focus-background-color: var(--ratata-blue);
-
-  /* Select */
-  --ratata-select-background-color: transparent;
-  --ratata-select-border-color: var(--ratata-gray);
-  --ratata-select-border-radius: 0;
-  --ratata-select-color: var(--ratata-gray);
-  --ratata-select-focus-border-color: var(--ratata-blue);
-  --ratata-select-focus-background-color: var(--ratata-blue);
+  --h4-font-size: calc((23 / 18) * 1rem);
+  --h4-line-height: calc((38 / 23));
 }

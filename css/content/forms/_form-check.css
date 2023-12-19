@@ -1,11 +1,11 @@
 .form-group--check {
   align-items: baseline;
   display: grid;
-  grid-template-columns: calc((24 / 18) * 1rem) auto;
   gap: calc((8 / 18) * 1rem);
+  grid-template-columns: calc((24 / 18) * 1rem) auto;
 }
 
-.form-check {
+input[type='checkbox'] {
   appearance: none;
   background-color: var(--check-background-color);
   block-size: calc((24 / 18) * 1rem);

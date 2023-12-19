@@ -78,7 +78,7 @@
   --radio-focus-background-color: var(--blue);
 
   /* Select */
-  --select-background-color: transparent;
+  --select-background-color: var(--white);
   --select-border-color: var(--gray);
   --select-border-radius: 0;
   --select-color: var(--gray);

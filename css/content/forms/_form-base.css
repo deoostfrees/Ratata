@@ -1,14 +1,17 @@
-.form-group {
-  display: grid;
-  grid-template-columns: auto;
-  gap: calc((4 / 18) * 1rem);
-}
-
 fieldset {
   border: none;
 }
 
 legend {
+  display: block;
+
+
+  & + * {
+    margin-block-start: calc((4 / 18) * 1rem);
+  }
+}
+
+label {
   display: block;
 
 

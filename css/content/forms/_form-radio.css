@@ -1,11 +1,11 @@
 .form-group--radio {
   align-items: baseline;
   display: grid;
-  grid-template-columns: calc((24 / 18) * 1rem) auto;
   gap: calc((8 / 18) * 1rem);
+  grid-template-columns: calc((24 / 18) * 1rem) auto;
 }
 
-.form-radio {
+input[type='radio'] {
   appearance: none;
   background-color: var(--radio-background-color);
   block-size: calc((24 / 18) * 1rem);

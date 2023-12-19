@@ -21,6 +21,10 @@ textarea {
   line-height: inherit;
 }
 
+::placeholder {
+  opacity: 1;
+}
+
 img,
 picture {
   display: block;

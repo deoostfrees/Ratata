@@ -7,7 +7,7 @@
     "testJs": "standard \"js/ratata.js\"",
     "testCss": "stylelint \"css/*.css\"",
     "test": "npm run testJs && npm run testCss",
-    "autoprefixer": "npx postcss css/*.css --use autoprefixer --replace --no-map"
+    "autoprefixer": "npx postcss css/* --use autoprefixer --replace --no-map"
   },
   "repository": {
     "type": "git",

@@ -1,5 +1,7 @@
 select {
-  appearance: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
   background-color: var(--select-background-color);
   border-radius: var(--select-border-radius);
   border: calc((1 / 18) * 1rem) solid var(--select-border-color);

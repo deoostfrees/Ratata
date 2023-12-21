@@ -2,6 +2,11 @@
   scroll-margin-block-start: var(--scroll-margin-block-start);
 }
 
+::-moz-selection {
+  background-color: var(--focus-background-color);
+  color: var(--focus-color);
+}
+
 ::selection {
   background-color: var(--focus-background-color);
   color: var(--focus-color);

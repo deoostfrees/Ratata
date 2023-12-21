@@ -44,14 +44,17 @@ h4,
 a {
   color: var(--link-color);
   text-decoration-line: var(--link-decoration-line);
-  text-decoration-skip-ink: auto;
-  text-decoration-skip: edges;
+  -webkit-text-decoration-skip: ink;
+          text-decoration-skip-ink: auto;
+  -webkit-text-decoration-skip: edges;
+          text-decoration-skip: edges;
 
 
   &:hover,
   &:focus-visible {
     color: var(--link-hover-color);
-    text-decoration: var(--link-hover-decoration-line);
+    -webkit-text-decoration: var(--link-hover-decoration-line);
+            text-decoration: var(--link-hover-decoration-line);
   }
 }
 
@@ -83,7 +86,9 @@ sub,
 sup {
   font-size: var(--small-font-size);
   position: relative;
-  user-select: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
   vertical-align: unset;
 }
 
@@ -97,7 +102,10 @@ sup {
 
 mark {
   background-color: var(--focus-background-color);
+  -webkit-box-decoration-break: clone;
+          box-decoration-break: clone;
   color: var(--focus-color);
+  padding-inline: calc((2 / 18) * 1rem);
 }
 
 blockquote {

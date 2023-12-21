@@ -3,6 +3,7 @@
   display: grid;
   gap: calc((8 / 18) * 1rem);
   grid-template-columns: calc((24 / 18) * 1rem) auto;
+  justify-items: start;
 }
 
 input[type='radio'] {

@@ -3,6 +3,7 @@
   display: grid;
   gap: calc((8 / 18) * 1rem);
   grid-template-columns: calc((24 / 18) * 1rem) auto;
+  justify-items: start;
 }
 
 input[type='checkbox'] {
@@ -24,7 +25,7 @@ input[type='checkbox'] {
     box-shadow: inset 1em 1em var(--check-focus-background-color);
     content: '';
     inline-size: calc((16 / 18) * 1rem);
-    mask-image: var(--check-icon);
+    mask-image: url('./../../../icons/check.svg');
     mask-mode: auto;
     mask-position: center;
     mask-repeat: no-repeat;
@@ -34,7 +35,7 @@ input[type='checkbox'] {
 
   &:indeterminate::before,
   [aria-checked='mixed']::before {
-    mask-image: var(--minus-icon);
+    mask-image: url('./../../../icons/minus.svg');
   }
 
   &:checked::before {

@@ -24,3 +24,9 @@
 @import url('./content/_typography.css');
 @import url('./content/_buttons.css');
 @import url('./content/_forms.css');
+
+/**
+ * Components
+ *
+ */
+@import url('./components/_alerts.css');

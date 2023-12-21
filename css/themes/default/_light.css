@@ -3,14 +3,14 @@
    * Body
    */
   --body-background-color: var(--white);
-  --body-color: var(--gray);
+  --body-color: var(--black);
 
 
   /**
    * Focus
    */
   --focus-background-color: var(--yellow);
-  --focus-color: var(--gray);
+  --focus-color: var(--black);
 
 
   /**
@@ -27,11 +27,11 @@
    */
   --button-background-color: transparent;
   --button-border-radius: 0;
-  --button-color: var(--gray);
+  --button-color: var(--black);
   --button-border-color: transparent;
   --button-hover-background-color: transparent;
   --button-hover-border-color: transparent;
-  --button-hover-color: var(--gray);
+  --button-hover-color: var(--black);
 
   /* Primary */
   --button-primary-background-color: var(--blue);
@@ -56,32 +56,56 @@
    * Forms
    */
 
-
   /* Input */
   --input-background-color: var(--white);
-  --input-border-color: var(--gray);
+  --input-border-color: var(--black);
   --input-border-radius: 0;
-  --input-color: var(--gray);
+  --input-color: var(--black);
   --input-focus-border-color: var(--blue);
 
   /* Checkbox */
   --check-background-color: var(--white);
-  --check-border-color: var(--gray);
+  --check-border-color: var(--black);
   --check-border-radius: 0;
-  --check-color: var(--gray);
+  --check-color: var(--black);
   --check-focus-background-color: var(--blue);
 
   /* Radio */
   --radio-background-color: var(--white);
-  --radio-border-color: var(--gray);
-  --radio-color: var(--gray);
+  --radio-border-color: var(--black);
+  --radio-color: var(--black);
   --radio-focus-background-color: var(--blue);
 
   /* Select */
   --select-background-color: var(--white);
-  --select-border-color: var(--gray);
+  --select-border-color: var(--black);
   --select-border-radius: 0;
-  --select-color: var(--gray);
+  --select-color: var(--black);
   --select-focus-border-color: var(--blue);
   --select-focus-background-color: var(--blue);
+
+  /**
+   * Alerts
+   *
+   */
+
+  /* Info */
+  --alert-info-background-color: color-mix(in srgb, var(--blue) 10%, var(--white));
+  --alert-info-border-color: color-mix(in srgb, var(--blue) 20%, var(--white));
+  --alert-info-color: color-mix(in srgb, var(--blue) 50%, var(--black));
+
+  /* Success */
+  --alert-success-background-color: color-mix(in srgb, var(--green) 10%, var(--white));
+  --alert-success-border-color: color-mix(in srgb, var(--green) 20%, var(--white));
+  --alert-success-color: color-mix(in srgb, var(--green) 50%, var(--black));
+
+  /* Warning */
+  --alert-warning-background-color: color-mix(in srgb, var(--orange) 10%, var(--white));
+  --alert-warning-border-color: color-mix(in srgb, var(--orange) 20%, var(--white));
+  --alert-warning-color: color-mix(in srgb, var(--orange) 50%, var(--black));
+
+  /* Danger */
+  --alert-danger-background-color: color-mix(in srgb, var(--red) 10%, var(--white));
+  --alert-danger-border-color: color-mix(in srgb, var(--red) 20%, var(--white));
+  --alert-danger-color: color-mix(in srgb, var(--red) 50%, var(--black));
 }

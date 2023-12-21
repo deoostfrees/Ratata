@@ -10,7 +10,7 @@
    * Focus
    */
   --focus-background-color: var(--yellow);
-  --focus-color: var(--gray);
+  --focus-color: var(--black);
 
 
   /**
@@ -59,29 +59,29 @@
 
   /* Input */
   --input-background-color: var(--white);
-  --input-border-color: var(--gray);
+  --input-border-color: var(--black);
   --input-border-radius: 0;
-  --input-color: var(--gray);
+  --input-color: var(--black);
   --input-focus-border-color: var(--blue);
 
   /* Checkbox */
   --check-background-color: var(--white);
-  --check-border-color: var(--gray);
+  --check-border-color: var(--black);
   --check-border-radius: 0;
-  --check-color: var(--gray);
+  --check-color: var(--black);
   --check-focus-background-color: var(--blue);
 
   /* Radio */
   --radio-background-color: var(--white);
-  --radio-border-color: var(--gray);
-  --radio-color: var(--gray);
+  --radio-border-color: var(--black);
+  --radio-color: var(--black);
   --radio-focus-background-color: var(--blue);
 
   /* Select */
   --select-background-color: var(--white);
-  --select-border-color: var(--gray);
+  --select-border-color: var(--black);
   --select-border-radius: 0;
-  --select-color: var(--gray);
+  --select-color: var(--black);
   --select-focus-border-color: var(--blue);
   --select-focus-background-color: var(--blue);
 }

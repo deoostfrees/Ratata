@@ -1,0 +1,28 @@
+.alert {
+  border: calc((1 / 18) * 1rem) solid transparent;
+  padding: calc((18 / 18) * 1rem);
+}
+
+.alert--info {
+  background-color: var(--alert-info-background-color);
+  border-color: var(--alert-info-border-color);
+  color: var(--alert-info-color);
+}
+
+.alert--success {
+  background-color: var(--alert-success-background-color);
+  border-color: var(--alert-success-border-color);
+  color: var(--alert-success-color);
+}
+
+.alert--danger {
+  background-color: var(--alert-danger-background-color);
+  border-color: var(--alert-danger-border-color);
+  color: var(--alert-danger-color);
+}
+
+.alert--warning {
+  background-color: var(--alert-warning-background-color);
+  border-color: var(--alert-warning-border-color);
+  color: var(--alert-warning-color);
+}

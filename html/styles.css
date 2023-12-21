@@ -10,27 +10,31 @@
   --breakout-size: calc(
     (var(--breakout-max-width) - var(--content-max-width)) / 2
   );
+
+  --border-color: color-mix(in srgb, var(--black) 30%, var(--white));
+
+  @media screen and (prefers-color-scheme: dark) {
+    --border-color: color-mix(in srgb, var(--white) 30%, var(--black));
+  }
 }
 
 .page {
   grid-template-rows: auto 1fr auto;
   min-block-size: 100svh;
-  padding-block-start: calc((32 / 18) * 1rem);
 }
 
 .page__nav {
-  backdrop-filter: blur(20px);
-  background-color: color-mix(in srgb, var(--white) 40%, transparent);
-  border-radius: calc((16 / 18) * 1rem);
-  color: var(--blue);
+  background-color: var(--body-background-color);
+  border-block-end: calc((1 / 18) * 1rem) solid var(--border-color);
+  border-inline-end: calc((1 / 18) * 1rem) solid var(--border-color);
+  color: var(--body-color);
   display: flex;
   flex-wrap: wrap;
   gap: calc((16 / 18) * 1rem);
   inline-size: fit-content;
-  inset-block-start: calc((32 / 18) * 1rem);
-  margin-inline-start: calc((-16 / 18) * 1rem);
-  padding-block: calc((4 / 18) * 1rem);
-  padding-inline: calc((16 / 18) * 1rem);
+  inset-block-start: 0;
+  padding-block: calc((12 / 18) * 1rem);
+  padding-inline: calc((12 / 18) * 1rem);
   position: sticky;
   z-index: 1;
 
@@ -52,8 +56,7 @@
 }
 
 .page__footer {
-  background-color: var(--blue);
-  color: var(--white);
+  border-block-start: calc((1 / 18) * 1rem) solid var(--border-color);
   margin-block-start: calc((160 / 18) * 1rem);
   padding-block: calc((32 / 18) * 1rem);
 }

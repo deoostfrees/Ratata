@@ -24,7 +24,7 @@ input[type='checkbox'] {
   &::before {
     background-color: CanvasText;
     block-size: calc((16 / 18) * 1rem);
-    box-shadow: inset 1em 1em var(--check-focus-background-color);
+    box-shadow: inset 1em 1em var(--check-color);
     content: '';
     inline-size: calc((16 / 18) * 1rem);
     -webkit-mask-image: url('./../../../icons/check.svg');

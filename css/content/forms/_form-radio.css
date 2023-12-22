@@ -25,7 +25,7 @@ input[type='radio'] {
     background-color: CanvasText;
     block-size: calc((8 / 18) * 1rem);
     border-radius: 50%;
-    box-shadow: inset 1em 1em var(--radio-focus-background-color);
+    box-shadow: inset 1em 1em var(--radio-color);
     content: '';
     inline-size: calc((8 / 18) * 1rem);
     opacity: 0;

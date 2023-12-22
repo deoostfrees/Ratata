@@ -35,8 +35,11 @@
   inset-block-start: 0;
   padding-block: calc((12 / 18) * 1rem);
   padding-inline: var(--padding-inline);
-  position: sticky;
-  z-index: 1;
+
+  @media screen and (min-height: 37.5em) {
+    position: sticky;
+    z-index: 1;
+  }
 
 
   & ul {

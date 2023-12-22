@@ -19,3 +19,15 @@ label {
     margin-block-start: calc((4 / 18) * 1rem);
   }
 }
+
+input,
+textarea {
+
+
+
+  &:user-invalid {
+    background-color: var(--input-invalid-background-color);
+    border-color: var(--input-invalid-border-color);
+    color: var(--input-invalid-color);
+  }
+}

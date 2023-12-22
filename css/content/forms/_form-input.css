@@ -1,4 +1,5 @@
-.form-input {
+input:not([type='checkbox'], [type='radio']),
+textarea {
   background-color: var(--input-background-color);
   border-radius: var(--input-border-radius);
   border: calc((1 / 18) * 1rem) solid var(--input-border-color);
@@ -6,9 +7,4 @@
   inline-size: 100%;
   padding-block: calc((4 / 18) * 1rem);
   padding-inline: calc((8 / 18) * 1rem);
-
-
-  &:focus-visible {
-    border-color: var(--input-focus-border-color);
-  }
 }

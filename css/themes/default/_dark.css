@@ -59,29 +59,24 @@
 
   /* Input */
   --input-background-color: var(--white);
-  --input-border-color: var(--black);
+  --input-border-color: color-mix(in srgb, var(--white) 30%, var(--black));
   --input-border-radius: 0;
   --input-color: var(--black);
-  --input-focus-border-color: var(--blue);
 
   /* Checkbox */
   --check-background-color: var(--white);
-  --check-border-color: var(--black);
+  --check-border-color: color-mix(in srgb, var(--white) 30%, var(--black));
   --check-border-radius: 0;
   --check-color: var(--black);
-  --check-focus-background-color: var(--blue);
 
   /* Radio */
   --radio-background-color: var(--white);
-  --radio-border-color: var(--black);
+  --radio-border-color: color-mix(in srgb, var(--white) 30%, var(--black));
   --radio-color: var(--black);
-  --radio-focus-background-color: var(--blue);
 
   /* Select */
   --select-background-color: var(--white);
-  --select-border-color: var(--black);
+  --select-border-color: color-mix(in srgb, var(--white) 30%, var(--black));
   --select-border-radius: 0;
   --select-color: var(--black);
-  --select-focus-border-color: var(--blue);
-  --select-focus-background-color: var(--blue);
 }

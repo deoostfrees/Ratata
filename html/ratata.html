@@ -38,7 +38,7 @@
 
         <section>
           <header>
-            <h2 id="typo">Typo<a class="anchor" href="#typo" aria-labelledby="typo"><span aria-hidden="true">#</span></a></h2>
+            <h2 id="typo">Typography<a class="anchor" href="#typo" aria-labelledby="typo"><span aria-hidden="true">#</span></a></h2>
           </header>
 
           <h1>Heading level 1</h1>
@@ -104,8 +104,15 @@
 
             <label for="select">Select</label>
             <select id="select" name="select">
-              <option>1</option>
-              <option>2</option>
+              <option value="">Select a feature</option>
+              <hr>
+              <optgroup label="Content">
+                <option value="buttons">Buttons</option>
+                <option value="typography">Typography</option>
+              </optgroup>
+              <optgroup label="Components">
+                <option value="alerts">Alerts</option>
+              </optgroup>
             </select>
 
             <label for="text">Textarea</label>
@@ -159,19 +166,19 @@
           </header>
 
           <div class="alert alert--info" role="alert">
-            Info alert
+            <p>Info alert. <a href="#">More info about the info alert</a>.</p>
           </div>
 
           <div class="alert alert--success" role="alert">
-            Success alert
+            <p>Success alert. <a href="#">More info about the success alert</a>.</p>
           </div>
 
           <div class="alert alert--warning" role="alert">
-            Warning alert
+            <p>Warning alert. <a href="#">More info about the warning alert</a>.</p>
           </div>
 
           <div class="alert alert--danger" role="alert">
-            Danger alert
+            <p>Danger alert. <a href="#">More info about the danger alert</a>.</p>
           </div>
         </section>
       </main>

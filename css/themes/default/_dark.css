@@ -30,7 +30,6 @@
    * Buttons
    */
   --button-background-color: transparent;
-  --button-border-radius: 0;
   --button-color: var(--white);
   --button-border-color: transparent;
   --button-hover-background-color: transparent;
@@ -40,7 +39,6 @@
   /* Primary */
   --button-primary-background-color: var(--white);
   --button-primary-border-color: var(--white);
-  --button-primary-border-radius: 0;
   --button-primary-color: var(--black);
   --button-primary-hover-background-color: color-mix(in srgb, var(--white) 80%, var(--black));
   --button-primary-hover-border-color: color-mix(in srgb, var(--white) 80%, var(--black));
@@ -49,7 +47,6 @@
   /* Secondary */
   --button-secondary-background-color: transparent;
   --button-secondary-border-color: var(--white);
-  --button-secondary-border-radius: 0;
   --button-secondary-color: var(--white);
   --button-secondary-hover-background-color: var(--white);
   --button-secondary-hover-border-color: var(--white);
@@ -63,13 +60,11 @@
   /* Input */
   --input-background-color: var(--white);
   --input-border-color: color-mix(in srgb, var(--white) 30%, var(--black));
-  --input-border-radius: 0;
   --input-color: var(--black);
 
   /* Checkbox */
   --check-background-color: var(--white);
   --check-border-color: color-mix(in srgb, var(--white) 30%, var(--black));
-  --check-border-radius: 0;
   --check-color: var(--black);
 
   /* Radio */
@@ -80,6 +75,5 @@
   /* Select */
   --select-background-color: var(--white);
   --select-border-color: color-mix(in srgb, var(--white) 30%, var(--black));
-  --select-border-radius: 0;
   --select-color: var(--black);
 }

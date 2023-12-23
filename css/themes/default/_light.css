@@ -90,6 +90,10 @@
    * Alerts
    *
    */
+  --alert-border-radius: 0;
+  --alert-border-width: calc((1 / 18) * 1rem);
+  --alert-padding-x: calc((18 / 18) * 1rem);
+  --alert-padding-y: calc((18 / 18) * 1rem);
 
   /* Info */
   --alert-info-background-color: color-mix(in srgb, var(--blue) 10%, var(--white));

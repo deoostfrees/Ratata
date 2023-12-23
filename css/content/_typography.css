@@ -44,8 +44,6 @@ h4,
 a {
   color: var(--link-color);
   text-decoration-line: var(--link-decoration-line);
-  -webkit-text-decoration-skip: ink;
-          text-decoration-skip-ink: auto;
   -webkit-text-decoration-skip: edges;
           text-decoration-skip: edges;
 

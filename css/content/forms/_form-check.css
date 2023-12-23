@@ -50,7 +50,7 @@ input[type='checkbox'] {
   }
 
   &[disabled],
-	&[aria-disabled=true] {
+	&[aria-disabled='true'] {
     opacity: 0.4;
   }
 }

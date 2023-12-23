@@ -21,6 +21,10 @@
   --link-hover-color: var(--blue);
   --link-hover-decoration-line: none;
 
+  /**
+   * hr
+   */
+  --hr-border-color: color-mix(in srgb, var(--black) 30%, var(--white));
 
   /**
    * Buttons

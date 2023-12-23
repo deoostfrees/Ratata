@@ -27,3 +27,7 @@ body {
   background-color: var(--body-background-color);
   color: var(--body-color);
 }
+
+hr {
+  border-block-start: calc((1 / 18) * 1rem) solid var(--hr-border-color);
+}

@@ -21,6 +21,10 @@
   --link-hover-color: var(--white);
   --link-hover-decoration-line: none;
 
+  /**
+   * hr
+   */
+  --hr-border-color: color-mix(in srgb, var(--white) 30%, var(--black));
 
   /**
    * Buttons
@@ -55,7 +59,6 @@
   /**
    * Forms
    */
-
 
   /* Input */
   --input-background-color: var(--white);

@@ -5,7 +5,7 @@
   "main": "css/ratata.css",
   "scripts": {
     "testJs": "standard \"js/ratata.js\"",
-    "testCss": "stylelint \"css/*.css\"",
+    "testCss": "stylelint css/*",
     "test": "npm run testJs && npm run testCss",
     "autoprefixer": "npx postcss css/* --use autoprefixer --replace --no-map"
   },

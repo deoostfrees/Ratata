@@ -1,7 +1,7 @@
 {
   "name": "ratata",
   "version": "0.0.0",
-  "description": "HTML, CSS, and JavaScript framework (WIP)",
+  "description": "HTML, CSS and JavaScript Boilerplate with HTML, CSS and JavaScript.",
   "main": "css/ratata.css",
   "scripts": {
     "testJs": "standard \"js/ratata.js\"",

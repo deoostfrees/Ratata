@@ -1,6 +1,6 @@
 ---
 name: Enhancement
-about: Suggest an idea for this framework.
+about: Propose an idea for this boilerplate.
 title: 'Enhancement: [Title]'
 labels: 'type: enhancement'
 assignees: ''

@@ -1,6 +1,6 @@
-# Ratata
+# Ratata (WIP)
 
-HTML, CSS, and JavaScript framework (WIP)
+HTML, CSS and JavaScript Boilerplate with HTML, CSS and JavaScript.
 
 ## Table of contents
 

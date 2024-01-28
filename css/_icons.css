@@ -1,4 +1,6 @@
 :root {
   --check-icon: url('./../icons/check.svg');
+  --chevron-down-icon: url('./../icons/chevron-down.svg');
+  --error-icon: url('./../icons/error.svg');
   --minus-icon: url('./../icons/minus.svg');
 }

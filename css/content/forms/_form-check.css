@@ -7,9 +7,7 @@
 }
 
 input[type='checkbox'] {
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
+  appearance: none;
   background-color: var(--check-background-color);
   block-size: calc((24 / 18) * 1rem);
   border-radius: var(--check-border-radius);
@@ -27,22 +25,17 @@ input[type='checkbox'] {
     box-shadow: inset 1em 1em var(--check-color);
     content: '';
     inline-size: calc((16 / 18) * 1rem);
-    -webkit-mask-image: url('./../../../icons/check.svg');
-            mask-image: url('./../../../icons/check.svg');
+    mask-image: url('./../../../icons/check.svg');
     mask-mode: auto;
-    -webkit-mask-position: center;
-            mask-position: center;
-    -webkit-mask-repeat: no-repeat;
-            mask-repeat: no-repeat;
-    -webkit-mask-size: contain;
-            mask-size: contain;
+    mask-position: center;
+    mask-repeat: no-repeat;
+    mask-size: contain;
     opacity: 0;
   }
 
   &:indeterminate::before,
   [aria-checked='mixed']::before {
-    -webkit-mask-image: url('./../../../icons/minus.svg');
-            mask-image: url('./../../../icons/minus.svg');
+    mask-image: url('./../../../icons/minus.svg');
   }
 
   &:checked::before {

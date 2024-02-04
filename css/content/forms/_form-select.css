@@ -1,7 +1,5 @@
 select {
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
+  appearance: none;
   background-color: var(--select-background-color);
   background-image: url('./../../../icons/chevron-down.svg');
   background-position: calc(100% - ((8 / 18) * 1rem)) center;

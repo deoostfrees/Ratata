@@ -7,9 +7,7 @@
 }
 
 input[type='radio'] {
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
+  appearance: none;
   background-color: var(--radio-background-color);
   block-size: calc((24 / 18) * 1rem);
   border-radius: 50%;

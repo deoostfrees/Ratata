@@ -4,9 +4,7 @@
 }
 
 html {
-  -webkit-text-size-adjust: none;
-     -moz-text-size-adjust: none;
-          text-size-adjust: none;
+  text-size-adjust: none;
 }
 
 a,
@@ -25,10 +23,6 @@ select,
 textarea {
   font: inherit;
   line-height: inherit;
-}
-
-::-moz-placeholder {
-  opacity: 1;
 }
 
 ::placeholder {

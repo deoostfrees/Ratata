@@ -1,6 +1,11 @@
 /* stylelint-disable declaration-no-important */
-* {
+*,
+*::before,
+*::after {
+  background-color: var(--white) !important;
+  box-shadow: none !important;
   color: var(--black) !important;
+  text-shadow: none !important;
 }
 
 a {

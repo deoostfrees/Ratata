@@ -1,11 +1,19 @@
 # Ratata (WIP)
 
-HTML, CSS and JavaScript Boilerplate with HTML, CSS and JavaScript.
+HTML, CSS and JavaScript Boilerplate using just HTML, CSS and JavaScript.
 
 ## Table of contents
 
+- [Features](#features)
 - [Quick start](#quick-start)
 - [Browser Support](#browser-support)
+
+## Features
+
+- CSS container queries
+- CSS custom properties
+- CSS logical properties
+- JavaScript modules
 
 ## Quick start
 

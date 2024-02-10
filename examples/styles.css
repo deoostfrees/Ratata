@@ -92,12 +92,13 @@
   grid-column: full;
 }
 
-section {
+section,
+form {
 
 
 
   & > * + * {
-    margin-block-start: calc((18 / 18) * 1rem);
+    margin-block-start: 1lh;
   }
 }
 

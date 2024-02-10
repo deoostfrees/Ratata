@@ -86,9 +86,19 @@
   --select-border-radius: 0;
   --select-color: var(--black);
 
+
+  /**
+   * Accordion
+   */
+  --accordion-button-background-color: transparent;
+  --accordion-button-color: var(--black);
+  --accordion-button-border-color: color-mix(in srgb, var(--black) 30%, var(--white));
+  --accordion-content-background-color: transparent;
+  --accordion-content-color: var(--black);
+
+
   /**
    * Alerts
-   *
    */
   --alert-border-radius: 0;
   --alert-border-width: calc((1 / 18) * 1rem);

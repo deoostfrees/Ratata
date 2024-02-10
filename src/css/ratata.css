@@ -29,4 +29,5 @@
  * Components
  *
  */
+@import url('./components/_accordion.css');
 @import url('./components/_alerts.css');

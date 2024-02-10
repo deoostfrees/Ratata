@@ -76,4 +76,14 @@
   --select-background-color: var(--white);
   --select-border-color: color-mix(in srgb, var(--white) 30%, var(--black));
   --select-color: var(--black);
+
+
+  /**
+   * Accordion
+   */
+  --accordion-button-background-color: transparent;
+  --accordion-button-color: var(--white);
+  --accordion-button-border-color: color-mix(in srgb, var(--white) 30%, var(--black));
+  --accordion-content-background-color: transparent;
+  --accordion-content-color: var(--white);
 }

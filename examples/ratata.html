@@ -24,7 +24,7 @@
           <li><a href="#hr">hr</a></li>
           <li><a href="#buttons">Buttons</a></li>
           <li><a href="#forms">Forms</a></li>
-          <li><a href="#accordion">Accordion</li>
+          <li><a href="#accordion">Accordion</a></li>
           <li><a href="#alerts">Alerts</a></li>
         </ul>
       </nav>
@@ -100,24 +100,30 @@
           </header>
 
           <form>
-            <label for="input">Input</label>
-            <input class="form-input" id="input" type="text" name="input" required>
+            <div class="form-group">
+              <label for="input">Input</label>
+              <input class="form-input" id="input" type="text" name="input" required>
+            </div>
 
-            <label for="select">Select</label>
-            <select id="select" name="select">
-              <option value="">Select a feature</option>
-              <hr>
-              <optgroup label="Content">
-                <option value="buttons">Buttons</option>
-                <option value="typography">Typography</option>
-              </optgroup>
-              <optgroup label="Components">
-                <option value="alerts">Alerts</option>
-              </optgroup>
-            </select>
+            <div class="form-group">
+              <label for="select">Select</label>
+              <select id="select" name="select">
+                <option value="">Select a feature</option>
+                <hr>
+                <optgroup label="Content">
+                  <option value="buttons">Buttons</option>
+                  <option value="typography">Typography</option>
+                </optgroup>
+                <optgroup label="Components">
+                  <option value="alerts">Alerts</option>
+                </optgroup>
+              </select>
+            </div>
 
-            <label for="text">Textarea</label>
-            <textarea class="form-input" id="text" name="text" required></textarea>
+            <div class="form-group">
+              <label for="text">Textarea</label>
+              <textarea class="form-input" id="text" name="text" required></textarea>
+            </div>
 
             <fieldset>
               <legend>Checkbox</legend>
@@ -167,9 +173,41 @@
           </header>
 
           <div class="accordion">
-            // TODO
-          </div>
+            <div class="accordion__title">
+              <button type="button" id="accordion-title-1" class="btn" aria-expanded="false" aria-controls="accordion-content-1">
+                <span>Title</span>
 
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="arcs" aria-hidden="true">
+                  <line x1="12" y1="5" x2="12" y2="19"></line>
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                </svg>
+              </button>
+            </div>
+
+            <div id="accordion-content-1" class="accordion__content" role="region" aria-labelledby="accordion-title-1">
+              <div>
+                Content
+              </div>
+            </div>
+          </div>
+          <div class="accordion">
+            <div class="accordion__title">
+              <button type="button" id="accordion-title-2" class="btn" aria-expanded="false" aria-controls="accordion-content-2">
+                <span>Accordion title</span>
+
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="arcs" aria-hidden="true">
+                  <line x1="12" y1="5" x2="12" y2="19"></line>
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                </svg>
+              </button>
+            </div>
+
+            <div id="accordion-content-2" class="accordion__content" role="region" aria-labelledby="accordion-title-2">
+              <div>
+                Accordion content
+              </div>
+            </div>
+          </div>
         </section>
 
         <section>

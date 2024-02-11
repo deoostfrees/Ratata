@@ -84,6 +84,10 @@
   --accordion-button-background-color: transparent;
   --accordion-button-color: var(--white);
   --accordion-button-border-color: color-mix(in srgb, var(--white) 30%, var(--black));
+  --accordion-button-padding-x: 0;
+  --accordion-button-padding-y: 0 calc((4 / 18) * 1rem);
   --accordion-content-background-color: transparent;
   --accordion-content-color: var(--white);
+  --accordion-content-padding-x: calc((18 / 18) * 1rem) 0;
+  --accordion-content-padding-y: 0;
 }

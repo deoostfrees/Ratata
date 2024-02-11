@@ -76,6 +76,7 @@ export default function accordion () {
       }
     })
 
+    // Mark accordion as active to prevent re-initialization
     accordion.classList.add('accordion--active')
   })
 }

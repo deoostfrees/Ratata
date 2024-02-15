@@ -1,10 +1,10 @@
 export default function accordion () {
+  // Select all accordion container that are not already marked as active
   const ACCORDIONS = document.querySelectorAll('.accordion:not(.accordion--active)')
 
   /**
    * Open accordion
    *
-   * @param {HTMLElement} accordionItem
    * @param {HTMLElement} accordionItemTrigger
    */
   const openAccordion = (accordionItemTrigger) => {
@@ -15,7 +15,6 @@ export default function accordion () {
   /**
    * Close accordion
    *
-   * @param {HTMLElement} accordionItem
    * @param {HTMLElement} accordionItemTrigger
    */
   const closeAccordion = (accordionItemTrigger) => {
@@ -23,60 +22,68 @@ export default function accordion () {
     accordionItemTrigger.setAttribute('aria-expanded', 'false')
   }
 
-  ACCORDIONS.forEach((accordion) => {
-    const ACCORDION_TRIGGER = Array.from(accordion.querySelectorAll('.accordion__item-trigger'))
+  /**
+   * Event handler for the click event
+   *
+   * @param {Event} event - The click event object
+   */
+  const clickHandler = (event) => {
+    const { target } = event
 
-    accordion.addEventListener('click', (event) => {
-      const { target } = event
+    if (target.classList.contains('accordion__item-trigger')) {
+      if (target.getAttribute('aria-expanded') === 'false') {
+        openAccordion(target)
+      } else {
+        closeAccordion(target)
+      }
 
-      if (target.classList.contains('accordion__item-trigger')) {
-        if (target.getAttribute('aria-expanded') === 'false') {
-          openAccordion(target)
-        } else {
-          closeAccordion(target)
-        }
+      event.preventDefault()
+    }
+  }
+
+  /**
+   * Event handler for the keydown event
+   *
+   * @param {Event} event - The keydown event object
+   */
+  const keydownHandler = (event) => {
+    const { target } = event
+
+    // When focus is on an accordion header
+    if (target.classList.contains('accordion__item-trigger')) {
+      const ACCORDION_TRIGGER = Array.from(target.closest('.accordion').querySelectorAll('.accordion__item-trigger'))
+      const ACCORDION_TRIGGER_LENGTH = ACCORDION_TRIGGER.length
+      const CURRENT_INDEX = ACCORDION_TRIGGER.indexOf(target)
+      let newIndex = CURRENT_INDEX
+
+      // Moves focus to the previous/ next accordion header
+      if (event.key === 'ArrowUp' || event.key === 'ArrowDown' || (event.ctrlKey && (event.key === 'PageUp' || event.key === 'PageDown'))) {
+        const DIRECTION = event.key === 'ArrowDown' || event.key === 'PageDown' ? 1 : -1
+
+        newIndex = (CURRENT_INDEX + ACCORDION_TRIGGER_LENGTH + DIRECTION) % ACCORDION_TRIGGER_LENGTH
 
         event.preventDefault()
+        // Go to first accordion when the HOME key is pressed
+      } else if (event.key === 'Home') {
+        newIndex = 0
+        event.preventDefault()
+        // Go to last accordion when the END key is pressed
+      } else if (event.key === 'End') {
+        newIndex = ACCORDION_TRIGGER_LENGTH - 1
+        event.preventDefault()
       }
-    })
 
-    accordion.addEventListener('keydown', (event) => {
-      const { target } = event
-      const key = event.which.toString()
-
-      // When focus is on an accordion header
-      if (target.classList.contains('accordion__item-trigger')) {
-        // Moves focus to the previous/ next accordion header
-        // Up arrow/ Down arrow || Control + Page Up/ Page Down
-        if (key.match(/38|40/) || (event.ctrlKey && key.match(/33|34/))) {
-          const CURRENT_INDEX = ACCORDION_TRIGGER.indexOf(target)
-          const DIRECTION = (key.match(/34|40/)) ? 1 : -1
-          const { length } = ACCORDION_TRIGGER
-          const NEW_INDEX = (CURRENT_INDEX + length + DIRECTION) % length
-
-          ACCORDION_TRIGGER[NEW_INDEX].focus()
-
-          event.preventDefault()
-        } else if (key.match(/35|36/)) {
-          switch (key) {
-            // Go to first accordion when the HOME key is pressed
-            case '36':
-              ACCORDION_TRIGGER[0].focus()
-              break
-            // Go to last accordion when the END key is pressed
-            case '35':
-              ACCORDION_TRIGGER[ACCORDION_TRIGGER.length - 1].focus()
-              break
-            default:
-              // Do nothing
-          }
-
-          event.preventDefault()
-        }
+      if (newIndex !== CURRENT_INDEX) {
+        ACCORDION_TRIGGER[newIndex].focus()
       }
-    })
+    }
+  }
 
-    // Mark accordion as active to prevent re-initialization
+  ACCORDIONS.forEach((accordion) => {
+    accordion.addEventListener('click', clickHandler)
+    accordion.addEventListener('keydown', keydownHandler)
+
+    // Mark accordion container as active to prevent re-initialization
     accordion.classList.add('accordion--active')
   })
 }

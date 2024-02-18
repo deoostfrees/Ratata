@@ -101,8 +101,8 @@
 
           <form>
             <div class="form-group">
-              <label for="input">Input</label>
-              <input class="form-input" id="input" type="text" name="input" required>
+              <label for="input">Input <span aria-hidden="true">(required)</span></label>
+              <input class="form-input" id="input" type="text" name="input" aria-required="true" required>
             </div>
 
             <div class="form-group">
@@ -121,8 +121,8 @@
             </div>
 
             <div class="form-group">
-              <label for="text">Textarea</label>
-              <textarea class="form-input" id="text" name="text" required></textarea>
+              <label for="text">Textarea <span aria-hidden="true">(required)</span></label>
+              <textarea class="form-input" id="text" name="text" aria-required="true" required></textarea>
             </div>
 
             <fieldset>
@@ -134,8 +134,8 @@
               </div>
 
               <div class="form-group form-group--check">
-                <input id="checkbox2" type="checkbox" name="checkbox2" checked required>
-                <label for="checkbox2">Checkbox - checked</label>
+                <input id="checkbox2" type="checkbox" name="checkbox2" aria-required="true" checked required>
+                <label for="checkbox2">Checkbox - checked <span aria-hidden="true">(required)</span></label>
               </div>
 
               <div class="form-group form-group--check">
@@ -145,20 +145,20 @@
             </fieldset>
 
             <fieldset>
-              <legend>Radio</legend>
+              <legend>Radio <span aria-hidden="true">(required)</span></legend>
 
               <div class="form-group form-group--radio">
-                <input id="radio1" type="radio" name="radio" required>
+                <input id="radio1" type="radio" name="radio" aria-required="true" required>
                 <label for="radio1">Radio</label>
               </div>
 
               <div class="form-group form-group--radio">
-                <input id="radio2" type="radio" name="radio" checked>
+                <input id="radio2" type="radio" name="radio" aria-required="true" required checked>
                 <label for="radio2">Radio - checked</label>
               </div>
 
               <div class="form-group form-group--radio">
-                <input id="radio3" type="radio" name="radio" disabled>
+                <input id="radio3" type="radio" name="radio" aria-required="true" required disabled>
                 <label for="radio3">Radio - disabled</label>
               </div>
             </fieldset>

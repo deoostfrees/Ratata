@@ -3,6 +3,12 @@
   padding: 0;
 }
 
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 html {
   text-size-adjust: none;
 }

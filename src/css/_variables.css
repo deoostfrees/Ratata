@@ -3,6 +3,7 @@
    * Spacing
    */
   --scroll-padding-top: calc((100 / 18) * 1rem);
+  --scroll-padding-bottom: 0;
 
   /**
    * Typography

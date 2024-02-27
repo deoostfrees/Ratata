@@ -4,10 +4,10 @@
   --link-hover-color: currentcolor;
   --link-hover-decoration-line: none;
 
-  border-radius: var(--alert-border-radius);
-  border: var(--alert-border-width) solid transparent;
-  padding-block: var(--alert-padding-y);
-  padding-inline: var(--alert-padding-x);
+  border-radius: 0;
+  border: calc((1 / 18) * 1rem) solid transparent;
+  padding-block: calc((18 / 18) * 1rem);
+  padding-inline: calc((18 / 18) * 1rem);
 }
 
 .alert--info {

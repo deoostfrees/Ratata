@@ -30,7 +30,6 @@
    * Buttons
    */
   --button-background-color: transparent;
-  --button-border-radius: 0;
   --button-color: var(--black);
   --button-border-color: transparent;
   --button-hover-background-color: transparent;
@@ -40,7 +39,6 @@
   /* Primary */
   --button-primary-background-color: var(--blue);
   --button-primary-border-color: var(--blue);
-  --button-primary-border-radius: 0;
   --button-primary-color: var(--white);
   --button-primary-hover-background-color: color-mix(in srgb, var(--blue) 80%, var(--black));
   --button-primary-hover-border-color: color-mix(in srgb, var(--blue) 80%, var(--black));
@@ -49,7 +47,6 @@
   /* Secondary */
   --button-secondary-background-color: transparent;
   --button-secondary-border-color: var(--blue);
-  --button-secondary-border-radius: 0;
   --button-secondary-color: var(--blue);
   --button-secondary-hover-background-color: var(--blue);
   --button-secondary-hover-border-color: var(--blue);
@@ -63,7 +60,6 @@
   /* Input */
   --input-background-color: var(--white);
   --input-border-color: color-mix(in srgb, var(--black) 30%, var(--white));
-  --input-border-radius: 0;
   --input-color: var(--black);
   --input-invalid-background-color: color-mix(in srgb, var(--red) 4%, var(--white));
   --input-invalid-border-color: color-mix(in srgb, var(--red) 30%, var(--white));
@@ -72,7 +68,6 @@
   /* Checkbox */
   --check-background-color: var(--white);
   --check-border-color: color-mix(in srgb, var(--black) 30%, var(--white));
-  --check-border-radius: 0;
   --check-color: var(--blue);
 
   /* Radio */
@@ -83,7 +78,6 @@
   /* Select */
   --select-background-color: var(--white);
   --select-border-color: color-mix(in srgb, var(--black) 30%, var(--white));
-  --select-border-radius: 0;
   --select-color: var(--black);
 
 
@@ -93,21 +87,13 @@
   --accordion-button-background-color: transparent;
   --accordion-button-color: var(--black);
   --accordion-button-border-color: color-mix(in srgb, var(--black) 30%, var(--white));
-  --accordion-button-padding-x: 0;
-  --accordion-button-padding-y: 0 calc((4 / 18) * 1rem);
   --accordion-content-background-color: transparent;
   --accordion-content-color: var(--black);
-  --accordion-content-padding-x: calc((18 / 18) * 1rem) 0;
-  --accordion-content-padding-y: 0;
 
 
   /**
    * Alerts
    */
-  --alert-border-radius: 0;
-  --alert-border-width: calc((1 / 18) * 1rem);
-  --alert-padding-x: calc((18 / 18) * 1rem);
-  --alert-padding-y: calc((18 / 18) * 1rem);
 
   /* Info */
   --alert-info-background-color: color-mix(in srgb, var(--blue) 10%, var(--white));

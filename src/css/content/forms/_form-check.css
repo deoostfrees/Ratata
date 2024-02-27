@@ -10,7 +10,7 @@ input[type='checkbox'] {
   appearance: none;
   background-color: var(--check-background-color);
   block-size: calc((24 / 18) * 1rem);
-  border-radius: var(--check-border-radius);
+  border-radius: 0;
   border: calc((1 / 18) * 1rem) solid var(--check-border-color);
   color: var(--check-color);
   display: grid;

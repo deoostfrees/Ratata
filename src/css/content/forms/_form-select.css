@@ -4,7 +4,7 @@ select {
   background-image: url('./../../../icons/chevron-down.svg');
   background-position: calc(100% - ((8 / 18) * 1rem)) center;
   background-repeat: no-repeat;
-  border-radius: var(--select-border-radius);
+  border-radius: 0;
   border: calc((1 / 18) * 1rem) solid var(--select-border-color);
   color: var(--select-color);
   inline-size: 100%;

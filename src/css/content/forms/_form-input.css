@@ -1,7 +1,7 @@
 input:not([type='checkbox'], [type='radio']),
 textarea {
   background-color: var(--input-background-color);
-  border-radius: var(--input-border-radius);
+  border-radius: 0;
   border: calc((1 / 18) * 1rem) solid var(--input-border-color);
   color: var(--input-color);
   inline-size: 100%;

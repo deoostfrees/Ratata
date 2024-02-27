@@ -4,23 +4,22 @@ HTML, CSS and JavaScript Boilerplate using just HTML, CSS and JavaScript.
 
 ## Table of contents
 
-- [Features](#features)
+- [Main focus](#main-focus)
 - [Quick start](#quick-start)
-- [Browser Support](#browser-support)
+- [Browser support](#browser-support)
 
-## Features
+## Main Focus
 
-- CSS container queries
-- CSS custom properties
-- CSS logical properties
-- JavaScript modules
+- Web Standards
+- Accessibility
+- Performance
 
 ## Quick start
 
-- [Download the latest release](https://github.com/deoostfrees/Ratata/releases)
-- Clone the repo: `git clone https://github.com/deoostfrees/Ratata.git`
-- Install with [npm](https://www.npmjs.com): `npm install ratata`
+- [Download the latest release](https://github.com/deoostfrees/Ratata/releases).
+- Clone the repo: `git clone https://github.com/deoostfrees/Ratata.git`.
+- Install with [npm](https://www.npmjs.com): `npm install ratata`.
 
-## Browser Support
+## Browser support
 
 Ratata supports the latest, stable releases of all major browsers.

@@ -6,8 +6,7 @@
   "scripts": {
     "testJs": "standard src/js/*",
     "testCss": "stylelint src/css/*",
-    "test": "npm run testJs && npm run testCss",
-    "autoprefixer": "npx postcss src/css/* --use autoprefixer --no-map --base src/css --dir dist/css/"
+    "test": "npm run testJs && npm run testCss"
   },
   "repository": {
     "type": "git",
@@ -25,16 +24,8 @@
     "url": "https://github.com/deoostfrees/Ratata/issues"
   },
   "devDependencies": {
-    "autoprefixer": "^10.4.17",
-    "postcss": "^8.4.35",
-    "postcss-cli": "^11.0.0",
     "standard": "^17.1.0",
     "stylelint": "^16.2.1",
     "stylelint-config-standard": "^36.0.0"
-  },
-  "browserslist": [
-    "last 2 versions",
-    "> 1%",
-    "not dead"
-  ]
+  }
 }

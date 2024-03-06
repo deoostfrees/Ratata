@@ -15,6 +15,7 @@
  *
  */
 @import url('./layout/_document.css');
+@import url('./layout/_container.css');
 
 /**
  * Content
@@ -30,4 +31,5 @@
  *
  */
 @import url('./components/_accordion.css');
-@import url('./components/_alerts.css');
+@import url('./components/_alert.css');
+@import url('./components/_card.css');

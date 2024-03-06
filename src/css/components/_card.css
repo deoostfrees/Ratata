@@ -1,0 +1,56 @@
+.card {
+  --link-color: var(--card-link-color);
+  --link-decoration-line: var(--card-link-decoration-line);
+  --link-hover-color: var(--card-link-hover-color);
+  --link-hover-decoration-line: var(--card-link-hover-decoration-line);
+
+  background-color: var(--card-background-color);
+  border-radius: calc((8 / 18) * 1rem);
+  border: calc((1 / 18) * 1rem) solid var(--card-border-color);
+  color: var(--card-color);
+  overflow: hidden;
+  position: relative;
+}
+
+.card__image {
+  aspect-ratio: 16/9;
+  background-color: var(--card-image-background-color);
+  color: var(--card-image-color);
+}
+
+.card__body {
+  background-color: var(--card-body-background-color);
+  color: var(--card-body-color);
+  padding: calc((16 / 18) * 1rem);
+
+
+  & a {
+
+
+
+    &::after {
+      content: '';
+      inset: 0;
+      position: absolute;
+    }
+  }
+
+  & > * + * {
+    margin-block-start: 1lh;
+  }
+}
+
+/**
+ * Card modifierer
+ */
+.card--icon {
+
+
+
+  & .card__image {
+    aspect-ratio: unset;
+    display: grid;
+    padding: calc((16 / 18) * 1rem);
+    place-content: center;
+  }
+}

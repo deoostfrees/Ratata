@@ -92,7 +92,7 @@
 
 
   /**
-   * Alerts
+   * Alert
    */
 
   /* Info */
@@ -114,4 +114,19 @@
   --alert-danger-background-color: color-mix(in srgb, var(--red) 10%, var(--white));
   --alert-danger-border-color: color-mix(in srgb, var(--red) 20%, var(--white));
   --alert-danger-color: color-mix(in srgb, var(--red) 50%, var(--black));
+
+  /**
+   * Card
+   */
+  --card-background-color: var(--white);
+  --card-border-color: var(--blue);
+  --card-color: var(--black);
+  --card-image-background-color: var(--blue);
+  --card-image-color: var(--white);
+  --card-body-background-color: var(--white);
+  --card-body-color: var(--black);
+  --card-link-color: var(--blue);
+  --card-link-decoration-line: underline;
+  --card-link-hover-color: var(--blue);
+  --card-link-hover-decoration-line: none;
 }

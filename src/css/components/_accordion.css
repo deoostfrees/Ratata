@@ -1,9 +1,10 @@
 .accordion__item {
-
+  border-block-end: calc((1 / 18) * 1rem) solid var(--accordion-button-border-color);
+  padding-block-end: calc((4 / 18) * 1rem);
 
 
   & + & {
-    margin-block-start: 1lh;
+    margin-block-start: calc((4 / 18) * 1rem);
   }
 }
 
@@ -14,16 +15,13 @@
   & .btn {
     align-items: center;
     background-color: var(--accordion-button-background-color);
-    border-block-end: calc((1 / 18) * 1rem) solid var(--accordion-button-border-color);
-    border-block-start: 0;
-    border-inline: 0;
+    border: 0;
     color: var(--accordion-button-color);
     column-gap: calc((8 / 18) * 1rem);
     display: flex;
     inline-size: 100%;
     justify-content: space-between;
-    padding-block: 0 calc((4 / 18) * 1rem);
-    padding-inline: 0;
+    padding: 0;
     text-align: start;
 
     & > * {

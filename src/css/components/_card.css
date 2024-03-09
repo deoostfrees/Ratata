@@ -39,6 +39,7 @@
 .card__body {
   background-color: var(--card-body-background-color);
   color: var(--card-body-color);
+  flex: 1;
   padding: calc((16 / 18) * 1rem);
 
 

@@ -2,9 +2,9 @@
 *,
 *::before,
 *::after {
-  background-color: var(--white) !important;
+  background-color: white !important;
   box-shadow: none !important;
-  color: var(--black) !important;
+  color: black !important;
   text-shadow: none !important;
 }
 

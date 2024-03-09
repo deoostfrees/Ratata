@@ -2,55 +2,55 @@
   /**
    * Body
    */
-  --body-background-color: var(--black);
-  --body-color: var(--white);
+  --body-background-color: var(--color-neutral-900);
+  --body-color: var(--color-neutral-100);
 
 
   /**
    * Focus
    */
   --focus-background-color: var(--yellow);
-  --focus-color: var(--black);
+  --focus-color: var(--color-neutral-900);
 
 
   /**
    * Links
    */
-  --link-color: var(--white);
+  --link-color: var(--color-neutral-100);
   --link-decoration-line: underline;
-  --link-hover-color: var(--white);
+  --link-hover-color: var(--color-neutral-100);
   --link-hover-decoration-line: none;
 
   /**
    * hr
    */
-  --hr-border-color: color-mix(in srgb, var(--white) 30%, var(--black));
+  --hr-border-color: var(--color-neutral-500);
 
   /**
    * Buttons
    */
   --button-background-color: transparent;
-  --button-color: var(--white);
+  --button-color: var(--color-neutral-100);
   --button-border-color: transparent;
   --button-hover-background-color: transparent;
   --button-hover-border-color: transparent;
-  --button-hover-color: var(--white);
+  --button-hover-color: var(--color-neutral-100);
 
   /* Primary */
-  --button-primary-background-color: var(--white);
-  --button-primary-border-color: var(--white);
-  --button-primary-color: var(--black);
-  --button-primary-hover-background-color: color-mix(in srgb, var(--white) 80%, var(--black));
-  --button-primary-hover-border-color: color-mix(in srgb, var(--white) 80%, var(--black));
-  --button-primary-hover-color: var(--black);
+  --button-primary-background-color: var(--color-neutral-100);
+  --button-primary-border-color: var(--color-neutral-100);
+  --button-primary-color: var(--color-neutral-900);
+  --button-primary-hover-background-color: color-mix(in srgb, var(--color-neutral-100) 80%, black);
+  --button-primary-hover-border-color: color-mix(in srgb, var(--color-neutral-100) 80%, black);
+  --button-primary-hover-color: var(--color-neutral-900);
 
   /* Secondary */
   --button-secondary-background-color: transparent;
-  --button-secondary-border-color: var(--white);
-  --button-secondary-color: var(--white);
-  --button-secondary-hover-background-color: var(--white);
-  --button-secondary-hover-border-color: var(--white);
-  --button-secondary-hover-color: var(--black);
+  --button-secondary-border-color: var(--color-neutral-100);
+  --button-secondary-color: var(--color-neutral-100);
+  --button-secondary-hover-background-color: var(--color-neutral-100);
+  --button-secondary-hover-border-color: var(--color-neutral-100);
+  --button-secondary-hover-color: var(--color-neutral-900);
 
 
   /**
@@ -58,36 +58,47 @@
    */
 
   /* Input */
-  --input-background-color: var(--white);
-  --input-border-color: color-mix(in srgb, var(--white) 30%, var(--black));
-  --input-color: var(--black);
+  --input-background-color: var(--color-neutral-100);
+  --input-border-color: var(--color-neutral-500);
+  --input-color: var(--color-neutral-900);
 
   /* Checkbox */
-  --check-background-color: var(--white);
-  --check-border-color: color-mix(in srgb, var(--white) 30%, var(--black));
-  --check-color: var(--black);
+  --check-background-color: var(--color-neutral-100);
+  --check-border-color: var(--color-neutral-500);
+  --check-color: var(--color-neutral-900);
 
   /* Radio */
-  --radio-background-color: var(--white);
-  --radio-border-color: color-mix(in srgb, var(--white) 30%, var(--black));
-  --radio-color: var(--black);
+  --radio-background-color: var(--color-neutral-100);
+  --radio-border-color: var(--color-neutral-500);
+  --radio-color: var(--color-neutral-900);
 
   /* Select */
-  --select-background-color: var(--white);
-  --select-border-color: color-mix(in srgb, var(--white) 30%, var(--black));
-  --select-color: var(--black);
+  --select-background-color: var(--color-neutral-100);
+  --select-border-color: var(--color-neutral-500);
+  --select-color: var(--color-neutral-900);
 
 
   /**
    * Accordion
    */
   --accordion-button-background-color: transparent;
-  --accordion-button-color: var(--white);
-  --accordion-button-border-color: color-mix(in srgb, var(--white) 30%, var(--black));
-  --accordion-button-padding-x: 0;
-  --accordion-button-padding-y: 0 calc((4 / 18) * 1rem);
+  --accordion-button-color: var(--color-neutral-100);
+  --accordion-button-border-color: var(--color-neutral-500);
   --accordion-content-background-color: transparent;
-  --accordion-content-color: var(--white);
-  --accordion-content-padding-x: calc((18 / 18) * 1rem) 0;
-  --accordion-content-padding-y: 0;
+  --accordion-content-color: var(--color-neutral-100);
+
+  /**
+   * Card
+   */
+  --card-background-color: transparent;
+  --card-border-color: var(--color-neutral-800);
+  --card-color: var(--color-neutral-900);
+  --card-image-background-color: var(--color-neutral-800);
+  --card-image-color: var(--color-neutral-100);
+  --card-body-background-color: var(--color-neutral-100);
+  --card-body-color: var(--color-neutral-900);
+  --card-link-color: var(--color-neutral-900);
+  --card-link-decoration-line: underline;
+  --card-link-hover-color: var(--color-neutral-900);
+  --card-link-hover-decoration-line: none;
 }

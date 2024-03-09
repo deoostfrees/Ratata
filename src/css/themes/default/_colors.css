@@ -1,10 +1,79 @@
 :root {
   --black: #000000;
   --blue: #0000FF;
-  --gray: #808080;
   --green: #008000;
   --orange: #FFA500;
   --red: #FF0000;
   --white: #FFFFFF;
   --yellow: #FFFF00;
+
+  /**
+   * Brand colors
+   */
+  --primary-color: #0000FF;
+
+  /**
+   * Neutral colors
+   */
+  --color-neutral-900: #292827; /* base color */
+  --color-neutral-800: #545352;
+  --color-neutral-700: #696968;
+  --color-neutral-600: #7F7E7D;
+  --color-neutral-500: #949493;
+  --color-neutral-400: #A9A9A9;
+  --color-neutral-300: #BFBFBE;
+  --color-neutral-200: #D4D4D4;
+  --color-neutral-100: #EAEAE9;
+
+  /**
+   * Blue colors
+   */
+  --color-blue-900: color-mix(in srgb, var(--color-blue-500), black 90%);
+  --color-blue-800: color-mix(in srgb, var(--color-blue-500), black 80%);
+  --color-blue-700: color-mix(in srgb, var(--color-blue-500), black 70%);
+  --color-blue-600: color-mix(in srgb, var(--color-blue-500), black 60%);
+  --color-blue-500: var(--blue); /* base color */
+  --color-blue-400: color-mix(in srgb, var(--color-blue-500), white 60%);
+  --color-blue-300: color-mix(in srgb, var(--color-blue-500), white 70%);
+  --color-blue-200: color-mix(in srgb, var(--color-blue-500), white 80%);
+  --color-blue-100: color-mix(in srgb, var(--color-blue-500), white 90%);
+
+  /**
+   * Green colors
+   */
+  --color-green-900: color-mix(in srgb, var(--color-green-500), black 90%);
+  --color-green-800: color-mix(in srgb, var(--color-green-500), black 80%);
+  --color-green-700: color-mix(in srgb, var(--color-green-500), black 70%);
+  --color-green-600: color-mix(in srgb, var(--color-green-500), black 60%);
+  --color-green-500: var(--green); /* base color */
+  --color-green-400: color-mix(in srgb, var(--color-green-500), white 60%);
+  --color-green-300: color-mix(in srgb, var(--color-green-500), white 70%);
+  --color-green-200: color-mix(in srgb, var(--color-green-500), white 80%);
+  --color-green-100: color-mix(in srgb, var(--color-green-500), white 90%);
+
+  /**
+   * Orange colors
+   */
+  --color-orange-900: color-mix(in srgb, var(--color-orange-500), black 90%);
+  --color-orange-800: color-mix(in srgb, var(--color-orange-500), black 80%);
+  --color-orange-700: color-mix(in srgb, var(--color-orange-500), black 70%);
+  --color-orange-600: color-mix(in srgb, var(--color-orange-500), black 60%);
+  --color-orange-500: var(--orange); /* base color */
+  --color-orange-400: color-mix(in srgb, var(--color-orange-500), white 60%);
+  --color-orange-300: color-mix(in srgb, var(--color-orange-500), white 70%);
+  --color-orange-200: color-mix(in srgb, var(--color-orange-500), white 80%);
+  --color-orange-100: color-mix(in srgb, var(--color-orange-500), white 90%);
+
+  /**
+   * Red colors
+   */
+  --color-red-900: color-mix(in srgb, var(--color-red-500), black 90%);
+  --color-red-800: color-mix(in srgb, var(--color-red-500), black 80%);
+  --color-red-700: color-mix(in srgb, var(--color-red-500), black 70%);
+  --color-red-600: color-mix(in srgb, var(--color-red-500), black 60%);
+  --color-red-500: var(--red); /* base color */
+  --color-red-400: color-mix(in srgb, var(--color-red-500), white 60%);
+  --color-red-300: color-mix(in srgb, var(--color-red-500), white 70%);
+  --color-red-200: color-mix(in srgb, var(--color-red-500), white 80%);
+  --color-red-100: color-mix(in srgb, var(--color-red-500), white 90%);
 }

@@ -10,12 +10,6 @@
   --breakout-size: calc(
     (var(--breakout-max-width) - var(--content-max-width)) / 2
   );
-
-  --border-color: color-mix(in srgb, var(--black) 30%, var(--white));
-
-  @media screen and (prefers-color-scheme: dark) {
-    --border-color: color-mix(in srgb, var(--white) 30%, var(--black));
-  }
 }
 
 .page {
@@ -25,8 +19,8 @@
 
 .page__nav {
   background-color: var(--body-background-color);
-  border-block-end: calc((1 / 18) * 1rem) solid var(--border-color);
-  border-inline-end: calc((1 / 18) * 1rem) solid var(--border-color);
+  border-block-end: calc((1 / 18) * 1rem) solid var(--color-neutral-500);
+  border-inline-end: calc((1 / 18) * 1rem) solid var(--color-neutral-500);
   color: var(--body-color);
   display: flex;
   flex-wrap: wrap;
@@ -59,7 +53,7 @@
 }
 
 .page__footer {
-  border-block-start: calc((1 / 18) * 1rem) solid var(--border-color);
+  border-block-start: calc((1 / 18) * 1rem) solid var(--color-neutral-500);
   margin-block-start: calc((160 / 18) * 1rem);
   padding-block: calc((32 / 18) * 1rem);
 }

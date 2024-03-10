@@ -1,0 +1,33 @@
+table {
+  border-collapse: collapse;
+  inline-size: 100%;
+}
+
+thead {
+
+
+
+  & tr {
+    border-block-end: calc((1 / 18) * 1rem) solid var(--color-neutral-500);
+  }
+}
+
+th {
+  font-weight: 700;
+  padding: calc((8 / 18) * 1rem);
+  text-align: start;
+}
+
+tbody {
+
+
+
+  & tr {
+    border-block-end: calc((1 / 18) * 1rem) solid var(--color-neutral-100);
+  }
+}
+
+td {
+  padding: calc((8 / 18) * 1rem);
+  text-align: start;
+}

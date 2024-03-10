@@ -8,7 +8,7 @@ HTML, CSS and JavaScript Boilerplate using just HTML, CSS and JavaScript.
 - [Quick start](#quick-start)
 - [Browser support](#browser-support)
 
-## Main Focus
+## Main focus
 
 - Web Standards
 - Accessibility

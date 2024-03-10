@@ -27,6 +27,12 @@
   --hr-border-color: var(--color-neutral-500);
 
   /**
+   * Table
+   */
+  --table-thead-tr-border-color: var(--color-neutral-500);
+  --table-tbody-tr-border-color: var(--color-neutral-100);
+
+  /**
    * Buttons
    */
   --button-background-color: transparent;

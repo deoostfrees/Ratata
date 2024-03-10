@@ -8,12 +8,12 @@ thead {
 
 
   & tr {
-    border-block-end: calc((1 / 18) * 1rem) solid var(--color-neutral-500);
+    border-block-end: calc((1 / 18) * 1rem) solid var(--table-thead-tr-border-color);
   }
 }
 
 th {
-  font-weight: 700;
+  font-weight: var(--bold-font-weight);
   padding: calc((8 / 18) * 1rem);
   text-align: start;
 }
@@ -23,7 +23,7 @@ tbody {
 
 
   & tr {
-    border-block-end: calc((1 / 18) * 1rem) solid var(--color-neutral-100);
+    border-block-end: calc((1 / 18) * 1rem) solid var(--table-tbody-tr-border-color);
   }
 }
 

@@ -82,8 +82,6 @@
 }
 
 .card--left {
-
-
   @container card (min-width: 500px) {
     flex-direction: row;
 

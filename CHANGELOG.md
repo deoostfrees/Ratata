@@ -1,5 +1,11 @@
 # Changelog
 
+## [0.2.1] - 2024-03-11
+
+### Fixed
+
+- Add missing changes to the changelog
+
 ## [0.2.0] - 2024-03-10
 
 ### Changed

@@ -2,6 +2,10 @@
 
 ## [0.2.0] - 2024-03-10
 
+### Changed
+
+- **Breaking** CSS custom properties for colors
+
 ### Added
 
 - Container layout

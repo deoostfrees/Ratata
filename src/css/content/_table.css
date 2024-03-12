@@ -43,3 +43,9 @@ td {
   padding: calc((8 / 18) * 1rem);
   text-align: start;
 }
+
+caption {
+  caption-side: bottom;
+  margin-block-start: calc((8 / 18) * 1rem);
+  text-align: start;
+}

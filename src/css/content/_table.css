@@ -1,14 +1,18 @@
 table {
-  border-collapse: collapse;
+  border-collapse: separate;
+  border-spacing: 0;
   inline-size: 100%;
 }
 
 thead {
+  position: sticky;
+  inset-block-start: var(--scroll-padding-top);
 
 
-
-  & tr {
-    border-block-end: calc((1 / 18) * 1rem) solid var(--table-thead-tr-border-color);
+  & th {
+    background-color: var(--table-thead-th-background-color);
+    border-block-end: calc((1 / 18) * 1rem) solid var(--table-thead-th-border-color);
+    color: var(--table-thead-th-color);
   }
 }
 
@@ -22,8 +26,16 @@ tbody {
 
 
 
-  & tr {
-    border-block-end: calc((1 / 18) * 1rem) solid var(--table-tbody-tr-border-color);
+  & th {
+    background-color: var(--table-tbody-th-background-color);
+    border-block-end: calc((1 / 18) * 1rem) solid var(--table-tbody-th-border-color);
+    color: var(--table-tbody-th-color);
+  }
+
+  & td {
+    background-color: var(--table-tbody-td-background-color);
+    border-block-end: calc((1 / 18) * 1rem) solid var(--table-tbody-td-border-color);
+    color: var(--table-tbody-td-color);
   }
 }
 

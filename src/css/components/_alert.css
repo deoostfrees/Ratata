@@ -10,7 +10,7 @@
 }
 
 /**
- * Alert modifier
+ * Alert types
  */
 .alert--info {
   background-color: var(--alert-info-background-color);

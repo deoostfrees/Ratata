@@ -2,9 +2,19 @@
   margin-inline: auto;
   max-inline-size: var(--container-max-width);
   padding-inline: var(--container-padding-inline);
+
+
+  /* No padding for .container in .container */
+  &:not(.container--full) & {
+    padding-inline: 0;
+  }
 }
 
 .container--full {
   max-inline-size: none;
   padding-inline: 0;
+}
+
+.container--small {
+  max-inline-size: var(--container-small-max-width);
 }

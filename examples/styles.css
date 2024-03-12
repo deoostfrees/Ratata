@@ -1,11 +1,3 @@
-/**
-  * WIP!
-  * TODO: Clean up
-  */
-:root {
-  --container-max-width: calc((692 / 18) * 1rem);
-}
-
 .page {
   grid-template-rows: auto 1fr auto;
   min-block-size: 100svh;

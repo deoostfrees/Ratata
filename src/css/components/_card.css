@@ -19,9 +19,6 @@
   position: relative;
 }
 
-/**
- * Card elements
- */
 .card__image {
   background-color: var(--card-image-background-color);
   color: var(--card-image-color);
@@ -60,7 +57,7 @@
 }
 
 /**
- * Card modifier
+ * Cards with a centered icon instead of an image
  */
 .card--icon {
 
@@ -81,6 +78,9 @@
   }
 }
 
+/**
+ * Horizontally aligned card from a certain element width
+ */
 .card--left {
   @container card (min-width: 500px) {
     flex-direction: row;

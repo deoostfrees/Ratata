@@ -50,7 +50,7 @@ form {
 
 
   & > * + * {
-    margin-block-start: 1lh;
+    margin-block-start: calc((31 / 18) * 1rem);
   }
 }
 

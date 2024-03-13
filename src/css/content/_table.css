@@ -5,14 +5,16 @@ table {
 }
 
 thead {
-  position: sticky;
-  inset-block-start: var(--scroll-padding-top);
 
+
+
+  & tr {
+    background-color: var(--table-thead-tr-background-color);
+    color: var(--table-thead-tr-color);
+  }
 
   & th {
-    background-color: var(--table-thead-th-background-color);
     border-block-end: calc((1 / 18) * 1rem) solid var(--table-thead-th-border-color);
-    color: var(--table-thead-th-color);
   }
 }
 
@@ -26,16 +28,17 @@ tbody {
 
 
 
+  & tr {
+    background-color: var(--table-tbody-tr-background-color);
+    color: var(--table-tbody-tr-color);
+  }
+
   & th {
-    background-color: var(--table-tbody-th-background-color);
     border-block-end: calc((1 / 18) * 1rem) solid var(--table-tbody-th-border-color);
-    color: var(--table-tbody-th-color);
   }
 
   & td {
-    background-color: var(--table-tbody-td-background-color);
     border-block-end: calc((1 / 18) * 1rem) solid var(--table-tbody-td-border-color);
-    color: var(--table-tbody-td-color);
   }
 }
 
@@ -46,6 +49,20 @@ td {
 
 caption {
   caption-side: bottom;
+  font-size: calc((16 / 18) * 1rem);
   margin-block-start: calc((8 / 18) * 1rem);
   text-align: start;
+}
+
+/**
+ * Table with a zebra stripe style
+ */
+.table--striped {
+
+
+
+  & tbody tr:nth-child(odd) {
+    background-color: var(--table-tbody-tr-odd-background-color);
+    color: var(--table-tbody-tr-odd-color);
+  }
 }

@@ -29,15 +29,17 @@
   /**
    * Table
    */
-  --table-thead-th-background-color: var(--color-neutral-900);
-  --table-thead-th-border-color: var(--color-neutral-500);
-  --table-thead-th-color: var(--color-neutral-100);
-  --table-tbody-th-background-color: var(--color-neutral-900);
+  --table-thead-tr-background-color: var(--color-neutral-900);
+  --table-thead-tr-color: var(--color-neutral-100);
+  --table-thead-th-border-color: var(--color-neutral-100);
+
+  /* tbody */
+  --table-tbody-tr-background-color: var(--color-neutral-900);
+  --table-tbody-tr-color: var(--color-neutral-100);
+  --table-tbody-tr-odd-background-color: var(--color-neutral-800);
+  --table-tbody-tr-odd-color: var(--color-neutral-100);
   --table-tbody-th-border-color: var(--color-neutral-800);
-  --table-tbody-th-color: var(--color-neutral-100);
-  --table-tbody-td-background-color: var(--color-neutral-900);
   --table-tbody-td-border-color: var(--color-neutral-800);
-  --table-tbody-td-color: var(--color-neutral-100);
 
   /**
    * Buttons

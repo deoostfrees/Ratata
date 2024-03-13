@@ -41,6 +41,14 @@
   --table-tbody-th-border-color: var(--color-neutral-800);
   --table-tbody-td-border-color: var(--color-neutral-800);
 
+
+  /**
+   * Code
+   */
+  --code-background-color: var(--color-neutral-800);
+  --code-color: var(--color-neutral-100);
+
+
   /**
    * Buttons
    */

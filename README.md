@@ -1,8 +1,6 @@
 # Ratata (WIP)
 
-HTML, CSS and JavaScript Boilerplate using just HTML, CSS and JavaScript.
-
-[Check it out on CodePen](https://codepen.io/deoostfrees/pen/XWGWbEy).
+HTML, CSS and JavaScript Boilerplate using just HTML, CSS and JavaScript. [Check it out on CodePen](https://codepen.io/deoostfrees/pen/XWGWbEy).
 
 ## Table of contents
 

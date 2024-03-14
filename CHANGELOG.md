@@ -1,5 +1,18 @@
 # Changelog
 
+## [0.3.0] - 2024-03-14
+
+### Changed
+
+- **Breaking** CSS custom properties for table
+
+### Added
+
+- Narrow container width
+- Table style variant
+- Code styles
+- File input styles
+
 ## [0.2.1] - 2024-03-11
 
 ### Fixed

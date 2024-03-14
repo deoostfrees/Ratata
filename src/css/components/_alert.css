@@ -5,8 +5,8 @@
   --link-hover-decoration-line: none;
 
   border: calc((1 / 18) * 1rem) solid transparent;
-  padding-block: calc((18 / 18) * 1rem);
-  padding-inline: calc((18 / 18) * 1rem);
+  padding-block: calc((16 / 18) * 1rem);
+  padding-inline: calc((16 / 18) * 1rem);
 }
 
 /**

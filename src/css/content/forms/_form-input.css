@@ -12,20 +12,12 @@ textarea {
 /* File input */
 ::file-selector-button {
   appearance: none;
-  background-color: var(--button-primary-background-color);
+  background-color: var(--button-file-input-background-color);
   border-radius: 0;
-  border: calc((1 / 18) * 1rem) solid var(--button-primary-border-color);
-  color: var(--button-primary-color);
+  border: calc((1 / 18) * 1rem) solid var(--button-file-input-border-color);
+  color: var(--button-file-input-color);
   display: inline-flex;
   padding-block: calc((4 / 18) * 1rem);
   padding-inline: calc((8 / 18) * 1rem);
   text-decoration: none;
-
-
-  &:hover,
-  &:focus-visible {
-    background-color: var(--button-primary-hover-background-color);
-    border-color: var(--button-primary-hover-border-color);
-    color: var(--button-primary-hover-color);
-  }
 }

@@ -101,6 +101,11 @@
   --select-border-color: var(--color-neutral-500);
   --select-color: var(--color-neutral-900);
 
+  /* File input */
+  --button-file-input-background-color: var(--primary-color);
+  --button-file-input-border-color: var(--primary-color);
+  --button-file-input-color: var(--white);
+
 
   /**
    * Accordion

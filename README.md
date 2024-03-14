@@ -7,7 +7,7 @@ HTML, CSS and JavaScript Boilerplate using just HTML, CSS and JavaScript.
 ## Table of contents
 
 - [Main focus](#main-focus)
-- [Quick start](#quick-start)
+- [Getting started](#getting-started)
 - [Browser support](#browser-support)
 
 ## Main focus
@@ -16,11 +16,13 @@ HTML, CSS and JavaScript Boilerplate using just HTML, CSS and JavaScript.
 - Accessibility
 - Performance
 
-## Quick start
+## Getting started
+
+### Installation
 
 - [Download the latest release](https://github.com/deoostfrees/Ratata/releases).
-- Clone the repo: `git clone https://github.com/deoostfrees/Ratata.git`.
-- Install with [npm](https://www.npmjs.com): `npm install ratata`.
+- Clone Ratata from GitHub: `git clone https://github.com/deoostfrees/Ratata.git`.
+- Install Ratata from GitHub using [npm](https://www.npmjs.com): `npm install ratata`.
 
 ## Browser support
 

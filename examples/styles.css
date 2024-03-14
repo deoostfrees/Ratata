@@ -10,9 +10,9 @@
   color: var(--body-color);
   display: flex;
   flex-wrap: wrap;
-  gap: calc((16 / 18) * 1rem);
   inline-size: fit-content;
   inset-block-start: 0;
+  margin-inline-end: var(--container-padding-inline);
   padding-block: calc((12 / 18) * 1rem);
   padding-inline: var(--container-padding-inline);
 
@@ -23,10 +23,11 @@
 
 
   & ul {
+    column-gap: calc((16 / 18) * 1rem);
     display: flex;
     flex-wrap: wrap;
-    gap: calc((16 / 18) * 1rem);
     list-style: none;
+    row-gap: calc((8 / 18) * 1rem);
   }
 }
 

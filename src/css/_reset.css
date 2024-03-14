@@ -26,7 +26,8 @@ address,
 button,
 input,
 select,
-textarea {
+textarea,
+::file-selector-button {
   font: inherit;
   line-height: inherit;
 }

@@ -32,6 +32,7 @@
  * Components
  *
  */
+@import url('./components/_breadcrumb.css');
 @import url('./components/_accordion.css');
 @import url('./components/_alert.css');
 @import url('./components/_card.css');

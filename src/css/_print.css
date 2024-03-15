@@ -13,7 +13,7 @@ a {
 
 
   &::after {
-    content: ' ("attr(href)")' !important;
+    content: ' ('attr(href)')' !important;
   }
 }
 /* stylelint-enable declaration-no-important */

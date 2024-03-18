@@ -2,14 +2,12 @@
   display: flex;
   flex-wrap: wrap;
   font-size: calc((16 / 18) * 1rem);
+
   /* Remove list style without affecting semantics. */
   list-style-type: '';
 }
 
 .breadcrumb__item {
-
-
-
   /* Style the visual separators between links with CSS to prevent screen readers from announcing them. */
   &:not(:last-child)::after {
     block-size: calc((14 / 18) * 1rem);

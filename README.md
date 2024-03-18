@@ -4,17 +4,18 @@ HTML, CSS and JavaScript Boilerplate using just HTML, CSS and JavaScript. [Check
 
 ## Table of contents
 
-- [Main focus](#main-focus)
-- [Getting started](#getting-started)
-- [Browser support](#browser-support)
+- [Main Focus](#main-focus)
+- [Getting Started](#getting-started)
+- [Credits, Attribution and Inspiration](#credits-attribution-and-inspriration)
+- [Browser Support](#browser-support)
 
-## Main focus
+## Main Focus
 
 - Web Standards
 - Accessibility
 - Performance
 
-## Getting started
+## Getting Started
 
 ### Installation
 
@@ -22,6 +23,12 @@ HTML, CSS and JavaScript Boilerplate using just HTML, CSS and JavaScript. [Check
 - Clone Ratata from GitHub: `git clone https://github.com/deoostfrees/Ratata.git`.
 - Install Ratata from GitHub using [npm](https://www.npmjs.com): `npm install ratata`.
 
-## Browser support
+## Credits, Attribution and Inspiration
+
+- [Stephanie Eckles](https://thinkdobecreate.com)' [Pure CSS Custom Checkbox Style](https://moderncss.dev/pure-css-custom-checkbox-style/)
+- [Stephanie Eckles](https://thinkdobecreate.com)' [Pure CSS Custom Styled Radio Buttons](https://moderncss.dev/pure-css-custom-styled-radio-buttons/)
+- [Manuel Matuzović](https://matuzo.at)'s [Removing list styles without affecting semantics](https://matuzo.at/blog/2023/removing-list-styles-without-affecting-semantics)
+
+## Browser Support
 
 Ratata supports the latest, stable releases of all major browsers.

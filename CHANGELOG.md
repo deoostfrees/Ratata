@@ -1,5 +1,19 @@
 # Changelog
 
+## [0.4.0] - 2024-03-20
+
+### Changed
+
+- File input button color
+
+### Added
+
+- Breadcrumb
+
+### Fixed
+
+- Fix the print stylesheet to display the URL after links
+
 ## [0.3.0] - 2024-03-14
 
 ### Changed

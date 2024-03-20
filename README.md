@@ -6,7 +6,7 @@ HTML, CSS and JavaScript Boilerplate using just HTML, CSS and JavaScript. [Check
 
 - [Main Focus](#main-focus)
 - [Getting Started](#getting-started)
-- [Credits, Attribution and Inspiration](#credits-attribution-and-inspriration)
+- [Credits, Attribution and Inspiration](#credits-attribution-and-inspiration)
 - [Browser Support](#browser-support)
 
 ## Main Focus
@@ -28,6 +28,7 @@ HTML, CSS and JavaScript Boilerplate using just HTML, CSS and JavaScript. [Check
 - [Stephanie Eckles](https://thinkdobecreate.com)' [Pure CSS Custom Checkbox Style](https://moderncss.dev/pure-css-custom-checkbox-style/)
 - [Stephanie Eckles](https://thinkdobecreate.com)' [Pure CSS Custom Styled Radio Buttons](https://moderncss.dev/pure-css-custom-styled-radio-buttons/)
 - [Manuel Matuzović](https://matuzo.at)'s [Removing list styles without affecting semantics](https://matuzo.at/blog/2023/removing-list-styles-without-affecting-semantics)
+- [David Bushell](https://dbushell.com)'s [CSS Button Styles You Might Not Know](https://dbushell.com/2024/03/10/css-button-styles-you-might-not-know/)
 
 ## Browser Support
 

@@ -110,6 +110,22 @@
 
 
   /**
+   * Theme switcher
+   *
+   */
+
+  /* Dark */
+  --theme-switcher-dark-background-color: var(--color-neutral-900);
+  --theme-switcher-dark-border-color: var(--color-neutral-900);
+  --theme-switcher-dark-color: var(--white);
+
+  /* Light */
+  --theme-switcher-light-background-color: var(--white);
+  --theme-switcher-light-border-color: var(--color-neutral-900);
+  --theme-switcher-light-color: var(--color-neutral-900);
+
+
+  /**
    * Accordion
    */
   --accordion-button-background-color: transparent;

@@ -109,6 +109,22 @@
 
 
   /**
+   * Theme switcher
+   *
+   */
+
+  /* Dark */
+  --theme-switcher-dark-background-color: var(--color-neutral-900);
+  --theme-switcher-dark-border-color: var(--white);
+  --theme-switcher-dark-color: var(--white);
+
+  /* Light */
+  --theme-switcher-light-background-color: var(--white);
+  --theme-switcher-light-border-color: var(--white);
+  --theme-switcher-light-color: var(--color-neutral-900);
+
+
+  /**
    * Accordion
    */
   --accordion-button-background-color: transparent;
@@ -116,6 +132,31 @@
   --accordion-button-border-color: var(--color-neutral-500);
   --accordion-content-background-color: transparent;
   --accordion-content-color: var(--color-neutral-100);
+
+
+  /**
+   * Alert
+   */
+
+  /* Info */
+  --alert-info-background-color: var(--color-blue-100);
+  --alert-info-border-color: var(--color-blue-200);
+  --alert-info-color: var(--color-blue-600);
+
+  /* Success */
+  --alert-success-background-color: var(--color-green-100);
+  --alert-success-border-color: var(--color-green-200);
+  --alert-success-color: var(--color-green-600);
+
+  /* Warning */
+  --alert-warning-background-color: var(--color-orange-100);
+  --alert-warning-border-color: var(--color-orange-200);
+  --alert-warning-color: var(--color-orange-600);
+
+  /* Danger */
+  --alert-danger-background-color: var(--color-red-100);
+  --alert-danger-border-color: var(--color-red-200);
+  --alert-danger-color: var(--color-red-600);
 
   /**
    * Card

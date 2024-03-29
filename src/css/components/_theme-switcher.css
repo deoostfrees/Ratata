@@ -9,14 +9,14 @@
   }
 
   & [data-theme='dark'] {
-    background-color: var(--black);
-    border-color: var(--black);
-    color: var(--white);
+    background-color: var(--theme-switcher-dark-background-color);
+    border-color: var(--theme-switcher-dark-border-color);
+    color: var(--theme-switcher-dark-color);
   }
 
   & [data-theme='light'] {
-    background-color: var(--white);
-    border-color: var(--black);
-    color: var(--black);
+    background-color: var(--theme-switcher-light-background-color);
+    border-color: var(--theme-switcher-light-border-color);
+    color: var(--theme-switcher-light-color);
   }
 }

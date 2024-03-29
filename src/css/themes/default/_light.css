@@ -1,4 +1,6 @@
-:root {
+:root:not([data-theme='dark']) {
+  color-scheme: light;
+
   /**
    * Body
    */

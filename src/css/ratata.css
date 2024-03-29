@@ -8,7 +8,7 @@
  * Theme
  *
  */
-@import url('./themes/default.css');
+@import url('./themes/_default.css');
 
 /**
  * Layout
@@ -32,6 +32,7 @@
  * Components
  *
  */
+@import url('./components/_theme-switcher.css');
 @import url('./components/_breadcrumb.css');
 @import url('./components/_accordion.css');
 @import url('./components/_alert.css');

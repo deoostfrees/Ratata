@@ -27,5 +27,11 @@
     "standard": "^17.1.0",
     "stylelint": "^16.3.1",
     "stylelint-config-standard": "^36.0.0"
+  },
+  "standard": {
+    "globals": [
+      "localStorage",
+      "Audio"
+    ]
   }
 }

@@ -1,0 +1,22 @@
+.theme-switcher {
+  display: flex;
+  column-gap: calc((16 / 18) * 1rem);
+
+
+  & [data-theme] {
+    inline-size: calc((24 / 18) * 1rem);
+    block-size: calc((24 / 18) * 1rem);
+  }
+
+  & [data-theme='dark'] {
+    background-color: var(--black);
+    border-color: var(--black);
+    color: var(--white);
+  }
+
+  & [data-theme='light'] {
+    background-color: var(--white);
+    border-color: var(--black);
+    color: var(--black);
+  }
+}

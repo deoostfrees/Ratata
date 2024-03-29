@@ -10,6 +10,7 @@
   color: var(--body-color);
   display: flex;
   flex-wrap: wrap;
+  gap: calc((16 / 18) * 1rem);
   inline-size: fit-content;
   inset-block-start: 0;
   margin-inline-end: var(--container-padding-inline);

@@ -50,13 +50,14 @@ export default function themeSwitch () {
   const prefersColorCheck = () => {
     if (localStorage.getItem('color-mode')) {
       currentTheme = localStorage.getItem('color-mode')
+
+      setTheme(currentTheme)
     } else if (COLOR_QUERY.matches) {
       currentTheme = 'dark'
     } else {
       currentTheme = 'light'
     }
 
-    setTheme(currentTheme)
     setActiveButton(currentTheme)
   }
 

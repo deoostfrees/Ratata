@@ -100,27 +100,3 @@ mark {
   color: var(--focus-color);
   padding-inline: calc((2 / 18) * 1rem);
 }
-
-blockquote {
-
-
-
-  & p {
-    font-style: italic;
-    quotes: '\201C' '\201D';
-    text-indent: -0.5rem;
-
-    @supports (hanging-punctuation: first) {
-      text-indent: 0;
-      hanging-punctuation: first;
-    }
-
-    &::before {
-      content: open-quote;
-    }
-
-    &::after {
-      content: close-quote;
-    }
-  }
-}

@@ -27,6 +27,10 @@
   --small-font-size: calc((16 / 18) * 1rem);
   --small-line-height: calc((27 / 16));
 
+  /* Blockquote */
+  --blockquote-font-size: calc((23 / 18) * 1rem);
+  --blockquote-line-height: calc((38 / 23));
+
   /* Headings */
   --headings-font-family: var(--base-font-family);
   --headings-font-weight: 700;

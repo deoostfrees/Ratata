@@ -1,0 +1,51 @@
+/**
+ * Inline quotation
+ *
+ */
+q {
+
+
+
+  &::before {
+    content: open-quote;
+  }
+
+  &::after {
+    content: close-quote;
+  }
+}
+
+/**
+ * Block quotation
+ *
+ */
+blockquote {
+
+
+
+  & p {
+    font-size: var(--blockquote-font-size);
+    font-style: italic;
+    line-height: var(--blockquote-line-height);
+    margin-inline-start: 1rem;
+    text-indent: -0.5rem;
+
+    @supports (hanging-punctuation: first) {
+      text-indent: 0;
+      hanging-punctuation: first;
+    }
+
+
+    &::before {
+      content: open-quote;
+    }
+
+    &::after {
+      content: close-quote;
+    }
+  }
+
+  & footer {
+    margin-block-start: 1rlh;
+  }
+}

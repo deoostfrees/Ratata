@@ -9,11 +9,13 @@
 
   /**
    * Brand colors
+   *
    */
   --primary-color: #0000FF;
 
   /**
    * Neutral colors
+   *
    */
   --color-neutral-900: #292827; /* base color */
   --color-neutral-800: #545352;
@@ -27,6 +29,7 @@
 
   /**
    * Blue colors
+   *
    */
   --color-blue-900: color-mix(in srgb, var(--color-blue-500), black 90%);
   --color-blue-800: color-mix(in srgb, var(--color-blue-500), black 80%);
@@ -40,6 +43,7 @@
 
   /**
    * Green colors
+   *
    */
   --color-green-900: color-mix(in srgb, var(--color-green-500), black 90%);
   --color-green-800: color-mix(in srgb, var(--color-green-500), black 80%);
@@ -53,6 +57,7 @@
 
   /**
    * Orange colors
+   *
    */
   --color-orange-900: color-mix(in srgb, var(--color-orange-500), black 90%);
   --color-orange-800: color-mix(in srgb, var(--color-orange-500), black 80%);
@@ -66,6 +71,7 @@
 
   /**
    * Red colors
+   *
    */
   --color-red-900: color-mix(in srgb, var(--color-red-500), black 90%);
   --color-red-800: color-mix(in srgb, var(--color-red-500), black 80%);

@@ -3,6 +3,7 @@
 
   /**
    * Body
+   *
    */
   --body-background-color: var(--color-neutral-900);
   --body-color: var(--color-neutral-100);
@@ -10,6 +11,7 @@
 
   /**
    * Focus
+   *
    */
   --focus-background-color: var(--yellow);
   --focus-color: var(--color-neutral-900);
@@ -17,6 +19,7 @@
 
   /**
    * Links
+   *
    */
   --link-color: var(--color-neutral-100);
   --link-decoration-line: underline;
@@ -25,11 +28,13 @@
 
   /**
    * hr
+   *
    */
   --hr-border-color: var(--color-neutral-500);
 
   /**
    * Table
+   *
    */
   --table-thead-tr-background-color: var(--color-neutral-900);
   --table-thead-tr-color: var(--color-neutral-100);
@@ -46,6 +51,7 @@
 
   /**
    * Code
+   *
    */
   --code-background-color: var(--color-neutral-800);
   --code-color: var(--color-neutral-100);
@@ -53,6 +59,7 @@
 
   /**
    * Buttons
+   *
    */
   --button-background-color: transparent;
   --button-color: var(--color-neutral-100);
@@ -80,6 +87,7 @@
 
   /**
    * Forms
+   *
    */
 
   /* Input */
@@ -126,6 +134,7 @@
 
   /**
    * Accordion
+   *
    */
   --accordion-button-background-color: transparent;
   --accordion-button-color: var(--color-neutral-100);
@@ -136,6 +145,7 @@
 
   /**
    * Alert
+   *
    */
 
   /* Info */
@@ -160,6 +170,7 @@
 
   /**
    * Card
+   *
    */
   --card-background-color: transparent;
   --card-border-color: var(--color-neutral-800);

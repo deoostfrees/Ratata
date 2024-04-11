@@ -1,5 +1,6 @@
 /**
  * Hide content visually
+ *
  */
 .visually-hidden:not(:focus) {
   block-size: calc((1 / 16) * 1rem);
@@ -12,6 +13,7 @@
 
 /**
  * Skip to content link
+ *
  */
 .skip-link {
 

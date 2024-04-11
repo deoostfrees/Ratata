@@ -49,3 +49,7 @@ blockquote {
     margin-block-start: 1rlh;
   }
 }
+
+cite {
+  font-style: italic;
+}

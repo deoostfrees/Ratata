@@ -1,12 +1,14 @@
 :root {
   /**
    * Spacing
+   *
    */
   --scroll-padding-top: calc((100 / 18) * 1rem);
   --scroll-padding-bottom: 0;
 
   /**
    * Layout
+   *
    */
   --container-max-width: calc((1248 / 18) * 1rem);
   --container-small-max-width: calc((660 / 18) * 1rem);
@@ -14,6 +16,7 @@
 
   /**
    * Typography
+   *
    */
   --base-font-family: -apple-system, blinkmacsystemfont, 'Segoe UI', helvetica, arial, sans-serif;
   --base-font-size: calc((18 / 16) * 1rem);

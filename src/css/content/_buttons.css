@@ -17,6 +17,10 @@
   }
 }
 
+/**
+ * Primary Button
+ *
+ */
 .btn--primary {
   background-color: var(--button-primary-background-color);
   border-color: var(--button-primary-border-color);
@@ -32,6 +36,10 @@
   }
 }
 
+/**
+ * Secondary button
+ *
+ */
 .btn--secondary {
   background-color: var(--button-secondary-background-color);
   border-color: var(--button-secondary-border-color);

@@ -1,8 +1,3 @@
-*:has(> .card) {
-  container-type: inline-size;
-  container-name: card;
-}
-
 .card {
   --link-color: var(--card-link-color);
   --link-decoration-line: var(--card-link-decoration-line);
@@ -58,6 +53,7 @@
 
 /**
  * Cards with a centered icon instead of an image
+ *
  */
 .card--icon {
 
@@ -80,9 +76,15 @@
 
 /**
  * Horizontally aligned card from a certain element width
+ *
  */
+*:has(> .card--left) {
+  container-type: inline-size;
+  container-name: card-left;
+}
+
 .card--left {
-  @container card (min-width: 500px) {
+  @container card-left (min-width: 500px) {
     flex-direction: row;
 
     & .card__image {

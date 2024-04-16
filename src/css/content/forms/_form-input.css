@@ -9,6 +9,10 @@ textarea {
   padding-inline: calc((8 / 18) * 1rem);
 }
 
+textarea {
+  resize: block;
+}
+
 /* File input */
 ::file-selector-button {
   appearance: none;

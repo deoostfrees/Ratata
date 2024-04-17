@@ -1,27 +1,21 @@
-# Ratata (WIP)
+# Ratata
 
-HTML, CSS and JavaScript Boilerplate using just HTML, CSS and JavaScript. [Check it out on CodePen](https://codepen.io/deoostfrees/pen/XWGWbEy).
+Ratata is a HTML, CSS and JavaScript Boilerplate using just HTML, CSS and JavaScript. A starter kit for your web project.
+
+It's main focus is on web standards, accessibility and performance. [Check it out on CodePen](https://codepen.io/deoostfrees/pen/XWGWbEy).
 
 ## Table of contents
 
-- [Main Focus](#main-focus)
 - [Getting Started](#getting-started)
 - [Credits, Attribution and Inspiration](#credits-attribution-and-inspiration)
 - [Browser Support](#browser-support)
-
-## Main Focus
-
-- Web Standards
-- Accessibility
-- Performance
 
 ## Getting Started
 
 ### Installation
 
-- [Download the latest release](https://github.com/deoostfrees/Ratata/releases).
-- Clone Ratata from GitHub: `git clone https://github.com/deoostfrees/Ratata.git`.
-- Install Ratata from GitHub using [npm](https://www.npmjs.com): `npm install ratata`.
+- [Download the latest release](https://github.com/deoostfrees/Ratata/releases). You may need to copy and paste the contents of the unzipped `Ratata-0.x.x/src` folder into your project directory.
+- Install Ratata from GitHub using [npm](https://www.npmjs.com): `npm install ratata`. You may need to copy and paste the contents of the `node_modules/ratata/src` folder into your project directory.
 
 ## Credits, Attribution and Inspiration
 

@@ -83,7 +83,10 @@
   --color-red-200: color-mix(in srgb, var(--color-red-500), white 80%);
   --color-red-100: color-mix(in srgb, var(--color-red-500), white 90%);
 
-
+  /**
+   * Themes
+   *
+   */
   &[data-theme='light'] {
     color-scheme: light;
   }

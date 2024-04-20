@@ -1,10 +1,10 @@
 /**
- * Theme switch
+ * Toggle theme
  */
 if (document.querySelector('.btn--theme-switch') !== null) {
-  import('./libs/_theme-switch.js')
-    .then(({ default: themeSwitch }) => {
-      themeSwitch()
+  import('./libs/_toggle-theme.js')
+    .then(({ default: toggleTheme }) => {
+      toggleTheme()
     })
 }
 

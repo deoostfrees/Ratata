@@ -1,9 +1,9 @@
-export default function themeSwitch () {
+export default function toggleTheme () {
   const DOCUMENT_EL = document.documentElement
   const BROWSER_WINDOW = window
   const THEME_TOGGLE = document.querySelectorAll('.btn--theme-switch')
 
-  let currentTheme = 'system'
+  let currentTheme = ''
 
   /**
    * Set active button
@@ -20,14 +20,14 @@ export default function themeSwitch () {
   }
 
   /**
-   * Set color mode
+   * Set theme
    *
    * @param {string} theme - Theme
    */
   const setTheme = (theme) => {
     DOCUMENT_EL.setAttribute('data-theme', theme)
 
-    localStorage.setItem('color-mode', theme)
+    localStorage.setItem('theme', theme)
   }
 
   THEME_TOGGLE.forEach((themeToggle) => {
@@ -48,8 +48,8 @@ export default function themeSwitch () {
   const COLOR_QUERY = BROWSER_WINDOW.matchMedia('(prefers-color-scheme: dark)')
 
   const prefersColorCheck = () => {
-    if (localStorage.getItem('color-mode')) {
-      currentTheme = localStorage.getItem('color-mode')
+    if (localStorage.getItem('theme')) {
+      currentTheme = localStorage.getItem('theme')
 
       setTheme(currentTheme)
     } else if (COLOR_QUERY.matches) {
@@ -72,7 +72,7 @@ export default function themeSwitch () {
    *
    */
   BROWSER_WINDOW.addEventListener('storage', (event) => {
-    if (event.key === 'color-mode') {
+    if (event.key === 'theme') {
       setTheme(event.newValue, true)
     }
   })

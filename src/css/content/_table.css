@@ -53,17 +53,3 @@ caption {
   margin-block-start: calc((8 / 18) * 1rem);
   text-align: start;
 }
-
-/**
- * Table with a zebra stripe style
- *
- */
-.table--striped {
-
-
-
-  & tbody tr:nth-child(odd) {
-    background-color: var(--table-tbody-tr-odd-background-color);
-    color: var(--table-tbody-tr-odd-color);
-  }
-}

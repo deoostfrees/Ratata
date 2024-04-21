@@ -1,4 +1,4 @@
-:root:not([data-theme='dark']) {
+:root:not([data-color-scheme='dark']) {
   color-scheme: light;
 
   /**

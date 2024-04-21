@@ -8,14 +8,12 @@
   --body-background-color: var(--color-neutral-900);
   --body-color: var(--color-neutral-100);
 
-
   /**
    * Focus
    *
    */
   --focus-background-color: var(--yellow);
   --focus-color: var(--color-neutral-900);
-
 
   /**
    * Links
@@ -46,14 +44,12 @@
   --table-tbody-th-border-color: var(--color-neutral-800);
   --table-tbody-td-border-color: var(--color-neutral-800);
 
-
   /**
    * Code
    *
    */
   --code-background-color: var(--color-neutral-800);
   --code-color: var(--color-neutral-100);
-
 
   /**
    * Buttons
@@ -82,7 +78,6 @@
   --button-secondary-hover-border-color: var(--color-neutral-100);
   --button-secondary-hover-color: var(--color-neutral-900);
 
-
   /**
    * Forms
    *
@@ -92,6 +87,9 @@
   --input-background-color: var(--color-neutral-100);
   --input-border-color: var(--color-neutral-500);
   --input-color: var(--color-neutral-900);
+  --input-invalid-background-color: var(--color-red-100);
+  --input-invalid-border-color: var(--color-red-200);
+  --input-invalid-color: var(--color-red-600);
 
   /* Checkbox */
   --check-background-color: var(--color-neutral-100);
@@ -113,7 +111,6 @@
   --button-file-input-border-color: var(--color-neutral-900);
   --button-file-input-color: var(--color-neutral-100);
 
-
   /**
    * Theme switcher
    *
@@ -124,7 +121,6 @@
   --theme-switcher-active-background-color: var(--color-neutral-900);
   --theme-switcher-active-color: var(--color-neutral-100);
 
-
   /**
    * Accordion
    *
@@ -134,7 +130,6 @@
   --accordion-button-border-color: var(--color-neutral-500);
   --accordion-content-background-color: transparent;
   --accordion-content-color: var(--color-neutral-100);
-
 
   /**
    * Alert

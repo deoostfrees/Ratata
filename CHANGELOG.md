@@ -1,5 +1,23 @@
 # Changelog
 
+## [0.5.0] - 2024-04-21
+
+### Changed
+
+- Inline/ block quotation
+
+### Added
+
+- Theme switcher
+
+### Removed
+
+In this release, some additional styles have been removed to keep the boilerplate small.
+
+- **Breaking** Zepra striped table style
+- **Breaking** Vertically aligned card
+- **Breaking** Card with an icon
+
 ## [0.4.0] - 2024-03-20
 
 ### Changed

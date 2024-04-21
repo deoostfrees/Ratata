@@ -8,14 +8,12 @@
   --body-background-color: var(--white);
   --body-color: var(--color-neutral-900);
 
-
   /**
    * Focus
    *
    */
   --focus-background-color: var(--yellow);
   --focus-color: var(--color-neutral-900);
-
 
   /**
    * Links
@@ -80,7 +78,6 @@
   --button-secondary-hover-border-color: var(--primary-color);
   --button-secondary-hover-color: var(--white);
 
-
   /**
    * Forms
    *
@@ -114,7 +111,6 @@
   --button-file-input-border-color: var(--primary-color);
   --button-file-input-color: var(--white);
 
-
   /**
    * Theme switcher
    *
@@ -125,7 +121,6 @@
   --theme-switcher-active-background-color: var(--white);
   --theme-switcher-active-color: var(--primary-color);
 
-
   /**
    * Accordion
    *
@@ -135,7 +130,6 @@
   --accordion-button-border-color: var(--color-neutral-500);
   --accordion-content-background-color: transparent;
   --accordion-content-color: var(--color-neutral-900);
-
 
   /**
    * Alert

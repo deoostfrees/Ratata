@@ -120,16 +120,11 @@
    * Theme switcher
    *
    */
-
-  /* Dark */
-  --theme-switcher-dark-background-color: var(--color-neutral-900);
-  --theme-switcher-dark-border-color: var(--white);
-  --theme-switcher-dark-color: var(--white);
-
-  /* Light */
-  --theme-switcher-light-background-color: var(--white);
-  --theme-switcher-light-border-color: var(--white);
-  --theme-switcher-light-color: var(--color-neutral-900);
+  --theme-switcher-background-color: var(--color-neutral-100);
+  --theme-switcher-border-color: transparent;
+  --theme-switcher-color: var(--color-neutral-900);
+  --theme-switcher-active-background-color: var(--color-neutral-900);
+  --theme-switcher-active-color: var(--color-neutral-100);
 
 
   /**

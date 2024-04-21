@@ -1,22 +1,28 @@
 .theme-switcher {
+  --button-background-color: transparent;
+  --button-color: currentcolor;
+  --button-border-color: transparent;
+  --button-hover-background-color: transparent;
+  --button-hover-border-color: transparent;
+  --button-hover-color: currentcolor;
+
+  background-color: var(--theme-switcher-background-color);
+  border-color: var(--theme-switcher-border-color);
+  border-radius: calc((360 / 18) * 1rem);
+  color: var(--theme-switcher-color);
+  column-gap: calc((4 / 18) * 1rem);
   display: flex;
-  column-gap: calc((16 / 18) * 1rem);
+  inline-size: fit-content;
+  padding: calc((4 / 18) * 1rem);
 
 
   & [data-theme] {
-    inline-size: calc((24 / 18) * 1rem);
-    block-size: calc((24 / 18) * 1rem);
+    border-radius: 100%;
+    padding: calc((4 / 18) * 1rem);
   }
 
-  & [data-theme='dark'] {
-    background-color: var(--theme-switcher-dark-background-color);
-    border-color: var(--theme-switcher-dark-border-color);
-    color: var(--theme-switcher-dark-color);
-  }
-
-  & [data-theme='light'] {
-    background-color: var(--theme-switcher-light-background-color);
-    border-color: var(--theme-switcher-light-border-color);
-    color: var(--theme-switcher-light-color);
+  & [aria-pressed='true'] {
+    background-color: var(--theme-switcher-active-background-color);
+    color: var(--theme-switcher-active-color);
   }
 }

@@ -3,7 +3,7 @@ export default function toggleTheme () {
   const BROWSER_WINDOW = window
   const THEME_TOGGLE = document.querySelectorAll('.btn--theme-switch')
 
-  let currentTheme = ''
+  let currentTheme = 'system'
 
   /**
    * Set active button

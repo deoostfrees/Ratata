@@ -19,7 +19,7 @@
   color: var(--card-image-color);
 
 
-  &:not(:is(.card--icon)) img {
+  & img {
     aspect-ratio: 16 / 9;
     block-size: 100%;
     inline-size: 100%;
@@ -48,47 +48,5 @@
 
   & > * + * {
     margin-block-start: 1lh;
-  }
-}
-
-/**
- * Cards with a centered icon instead of an image
- *
- */
-.card--icon {
-
-
-
-  & .card__image {
-    display: grid;
-    padding-block: calc((24 / 18) * 1rem);
-    padding-inline: calc((16 / 18) * 1rem);
-    place-content: center;
-
-
-    & img,
-    & svg {
-      max-block-size: calc((42 / 18) * 1rem);
-      max-inline-size: calc((42 / 18) * 1rem);
-    }
-  }
-}
-
-/**
- * Horizontally aligned card from a certain element width
- *
- */
-*:has(> .card--left) {
-  container-type: inline-size;
-  container-name: card-left;
-}
-
-.card--left {
-  @container card-left (min-width: 500px) {
-    flex-direction: row;
-
-    & .card__image {
-      inline-size: 33.333%;
-    }
   }
 }

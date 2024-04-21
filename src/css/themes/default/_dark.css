@@ -43,8 +43,6 @@
   /* tbody */
   --table-tbody-tr-background-color: var(--color-neutral-900);
   --table-tbody-tr-color: var(--color-neutral-100);
-  --table-tbody-tr-odd-background-color: var(--color-neutral-800);
-  --table-tbody-tr-odd-color: var(--color-neutral-100);
   --table-tbody-th-border-color: var(--color-neutral-800);
   --table-tbody-td-border-color: var(--color-neutral-800);
 

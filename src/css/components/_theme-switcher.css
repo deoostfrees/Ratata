@@ -16,7 +16,7 @@
   padding: calc((4 / 18) * 1rem);
 
 
-  & [data-theme] {
+  & [data-color-scheme] {
     border-radius: 100%;
     padding: calc((4 / 18) * 1rem);
   }

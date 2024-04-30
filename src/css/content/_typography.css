@@ -44,7 +44,7 @@ h4,
 a {
   color: var(--link-color);
   text-decoration-line: var(--link-decoration-line);
-  text-decoration-skip: edges;
+  text-decoration-skip-ink: auto;
 
 
   &:hover,

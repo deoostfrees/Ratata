@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.6.0] - 2024-05-
+
+### Added
+
+- Button with icon style
+- Share button
+
 ## [0.5.0] - 2024-04-21
 
 ### Changed

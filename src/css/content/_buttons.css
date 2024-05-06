@@ -66,6 +66,5 @@
 .btn--icon {
   align-items: center;
   column-gap: calc((8 / 18) * 1rem);
-  display: flex;
-  inline-size: fit-content;
+  display: inline-flex;
 }

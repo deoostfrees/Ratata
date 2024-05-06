@@ -26,6 +26,8 @@
   border-color: var(--button-primary-border-color);
   border-radius: 0;
   color: var(--button-primary-color);
+  padding-block: calc((4 / 18) * 1rem);
+  padding-inline: calc((12 / 18) * 1rem);
 
 
   &:hover,
@@ -45,6 +47,8 @@
   border-color: var(--button-secondary-border-color);
   border-radius: 0;
   color: var(--button-secondary-color);
+  padding-block: calc((4 / 18) * 1rem);
+  padding-inline: calc((12 / 18) * 1rem);
 
 
   &:hover,
@@ -55,8 +59,13 @@
   }
 }
 
-.btn--primary,
-.btn--secondary {
-  padding-block: calc((4 / 18) * 1rem);
-  padding-inline: calc((8 / 18) * 1rem);
+/**
+ * Button width icon
+ *
+ */
+.btn--icon {
+  align-items: center;
+  column-gap: calc((8 / 18) * 1rem);
+  display: flex;
+  inline-size: fit-content;
 }

@@ -12,7 +12,7 @@ export default function share () {
     })
   } else {
     SHARE_EL.forEach((shareEl) => {
-      shareEl.parentNode.setAttribute('aria-disabled', 'true')
+      shareEl.setAttribute('aria-disabled', 'true')
     })
   }
 }

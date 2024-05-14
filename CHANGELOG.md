@@ -1,11 +1,15 @@
 # Changelog
 
-## [0.6.0] - 2024-05-
+## [0.6.0] - 2024-05-14
 
 ### Added
 
 - Button with icon style
 - Share button
+
+### Changed
+
+- **Breaking** Use `details` and `summary` instead of JavaScript for accordions
 
 ## [0.5.0] - 2024-04-21
 

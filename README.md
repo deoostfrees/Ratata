@@ -86,6 +86,7 @@ A default color scheme for light and dark mode can be found in `src/themes/`.
 - [Stephanie Eckles](https://thinkdobecreate.com)' [Pure CSS Custom Styled Radio Buttons](https://moderncss.dev/pure-css-custom-styled-radio-buttons/)
 - [Manuel Matuzović](https://matuzo.at)'s [Removing list styles without affecting semantics](https://matuzo.at/blog/2023/removing-list-styles-without-affecting-semantics)
 - [David Bushell](https://dbushell.com)'s [CSS Button Styles You Might Not Know](https://dbushell.com/2024/03/10/css-button-styles-you-might-not-know/)
+- [Adrian Roselli](https://adrianroselli.com)'s [Progressively Enhanced HTML Accordion](https://adrianroselli.com/2023/08/progressively-enhanced-html-accordion.html)
 
 ## Browser Support
 

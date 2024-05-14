@@ -1,5 +1,7 @@
 # Ratata
 
+More web standards, less bullshit.
+
 Ratata is a HTML, CSS and JavaScript Boilerplate using just HTML, CSS and JavaScript. It's main focus is on web standards, accessibility and performance. [Check it out on CodePen](https://codepen.io/deoostfrees/pen/XWGWbEy).
 
 ## Table of contents

@@ -10,17 +10,6 @@ if (document.querySelector('.btn--color-scheme-switch') !== null) {
 }
 
 /**
- * Accordion
- *
- */
-if (document.querySelector('.accordion') !== null) {
-  import('./libs/_accordion.js')
-    .then(({ default: accordion }) => {
-      accordion()
-    })
-}
-
-/**
  * Share button
  *
  */

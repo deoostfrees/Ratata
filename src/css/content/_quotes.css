@@ -27,7 +27,6 @@ blockquote {
     font-size: var(--blockquote-font-size);
     font-style: italic;
     line-height: var(--blockquote-line-height);
-    margin-inline-start: 1rem;
     text-indent: -0.5rem;
 
     @supports (hanging-punctuation: first) {

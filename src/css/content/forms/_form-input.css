@@ -11,6 +11,10 @@ textarea {
 
 textarea {
   resize: block;
+
+  &:not([rows]) {
+    min-block-size: calc((200 / 18) * 1rem);
+  }
 }
 
 /* File input */

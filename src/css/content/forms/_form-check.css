@@ -6,6 +6,10 @@
   justify-items: start;
 }
 
+/**
+ * Input type checkbox
+ *
+ */
 input[type='checkbox'] {
   appearance: none;
   background-color: var(--check-background-color);
@@ -17,7 +21,6 @@ input[type='checkbox'] {
   inline-size: calc((24 / 18) * 1rem);
   place-content: center;
   transform: translateY(calc((1 / 18) * 1rem));
-
 
   &::before {
     background-color: CanvasText;
@@ -34,7 +37,7 @@ input[type='checkbox'] {
   }
 
   &:indeterminate::before,
-  [aria-checked='mixed']::before {
+  &[aria-checked='mixed']::before {
     mask-image: url('./../../../icons/minus.svg');
   }
 

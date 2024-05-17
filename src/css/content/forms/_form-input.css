@@ -1,4 +1,8 @@
-input:not([type='checkbox'], [type='radio']),
+/**
+ * Input/ Textarea
+ *
+ */
+input:not([type='checkbox'], [type='radio'], [type='submit'], [type='reset'], [type='range']),
 textarea {
   background-color: var(--input-background-color);
   border-radius: 0;
@@ -9,15 +13,10 @@ textarea {
   padding-inline: calc((8 / 18) * 1rem);
 }
 
-textarea {
-  resize: block;
-
-  &:not([rows]) {
-    min-block-size: calc((200 / 18) * 1rem);
-  }
-}
-
-/* File input */
+/**
+ * File input
+ *
+ */
 ::file-selector-button {
   appearance: none;
   background-color: var(--button-file-input-background-color);

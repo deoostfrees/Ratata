@@ -1,7 +1,8 @@
 @import url('./forms/_form-input.css');
-@import url('./forms/_form-select.css');
 @import url('./forms/_form-check.css');
 @import url('./forms/_form-radio.css');
+@import url('./forms/_form-select.css');
+@import url('./forms/_form-textarea.css');
 
 fieldset {
   border: none;
@@ -27,7 +28,6 @@ label {
 
 input,
 textarea {
-
 
 
   &:user-invalid {

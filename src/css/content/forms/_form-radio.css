@@ -6,6 +6,10 @@
   justify-items: start;
 }
 
+/**
+ * Input type radio
+ *
+ */
 input[type='radio'] {
   appearance: none;
   background-color: var(--radio-background-color);
@@ -17,7 +21,6 @@ input[type='radio'] {
   inline-size: calc((24 / 18) * 1rem);
   place-content: center;
   transform: translateY(calc((-2 / 18) * 1rem));
-
 
   &::before {
     background-color: CanvasText;

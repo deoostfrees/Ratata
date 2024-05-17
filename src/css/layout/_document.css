@@ -5,7 +5,6 @@
 .skip-link {
 
 
-
   &:focus {
     inset-block-start: calc((24 / 16) * 1rem);
     inset-inline-start: calc((24 / 16) * 1rem);

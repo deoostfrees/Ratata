@@ -1,3 +1,7 @@
+/**
+ * Inline code
+ *
+ */
 code {
   background-color: var(--code-background-color);
   box-decoration-break: clone;
@@ -7,6 +11,10 @@ code {
   padding-inline: calc((8 / 18) * 1rem);
 }
 
+/**
+ * Preformatted text
+ *
+ */
 pre {
   background-color: var(--code-background-color);
   color: var(--code-color);

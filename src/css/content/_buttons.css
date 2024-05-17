@@ -8,7 +8,6 @@
   display: inline-flex;
   text-decoration: none;
 
-
   &:hover,
   &:focus-visible {
     background-color: var(--button-hover-background-color);
@@ -29,7 +28,6 @@
   padding-block: calc((4 / 18) * 1rem);
   padding-inline: calc((12 / 18) * 1rem);
 
-
   &:hover,
   &:focus-visible {
     background-color: var(--button-primary-hover-background-color);
@@ -49,7 +47,6 @@
   color: var(--button-secondary-color);
   padding-block: calc((4 / 18) * 1rem);
   padding-inline: calc((12 / 18) * 1rem);
-
 
   &:hover,
   &:focus-visible {

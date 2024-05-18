@@ -14,6 +14,10 @@
   --container-small-max-width: calc((660 / 18) * 1rem);
   --container-padding-inline: calc((24 / 18) * 1rem);
 
+  /* Grid */
+  --grid-gutter-vertical: calc((24 / 18) * 1rem);
+  --grid-gutter-horizontal: calc((24 / 18) * 1rem);
+
   /**
    * Typography
    *

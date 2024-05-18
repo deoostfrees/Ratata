@@ -1,0 +1,150 @@
+/*
+ * Prepare Gibki (grid system) integration: https://github.com/deoostfrees/Gibki
+ * Waiting for CSS Functions & Mixins: https://github.com/w3c/csswg-drafts/issues/9350
+ *
+ */
+.flex {
+  align-items: stretch;
+  column-gap: var(--grid-gutter-horizontal);
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  row-gap: var(--grid-gutter-vertical);
+}
+
+/**
+ * Gutters
+ *
+ */
+.flex--no-gutters {
+  --grid-gutter-horizontal: 0rem;
+  --grid-gutter-vertical: 0rem;
+}
+
+.flex--no-horizontal-gutters {
+  --grid-gutter-horizontal: 0rem;
+}
+
+.flex--no-vertical-gutters {
+  --grid-gutter-vertical: 0rem;
+}
+
+/**
+ * Directions
+ *
+ */
+.flex--row {
+  flex-direction: row;
+}
+
+.flex--row-reverse {
+  flex-direction: row-reverse;
+}
+
+.flex--column {
+  flex-direction: column;
+}
+
+.flex--column-reverse {
+  flex-direction: column-reverse;
+}
+
+/**
+ * Wrapping
+ *
+ */
+.flex--wrap {
+  flex-wrap: wrap;
+}
+
+.flex--wrap-reverse {
+  flex-wrap: wrap-reverse;
+}
+
+.flex--nowrap {
+  flex-wrap: nowrap;
+}
+
+/**
+ * Horizontal alignment
+ *
+ */
+.flex--left {
+  justify-content: flex-start;
+}
+
+.flex--center {
+  justify-content: center;
+}
+
+.flex--right {
+  justify-content: flex-end;
+}
+
+.flex--space-between {
+  justify-content: space-between;
+}
+
+.flex--space-around {
+  justify-content: space-around;
+}
+
+/**
+ * Vertical alignment
+ *
+ */
+.flex--stretch {
+  align-items: stretch;
+
+  .flex > & {
+    align-self: stretch;
+  }
+}
+
+.flex--top {
+  align-items: flex-start;
+
+  .flex > & {
+    align-self: flex-start;
+  }
+}
+
+.flex--bottom {
+  align-items: flex-end;
+
+  .flex > & {
+    align-self: flex-end;
+  }
+}
+
+.flex--middle {
+  align-items: center;
+
+  .flex > & {
+    align-self: center;
+  }
+}
+
+.flex--baseline {
+  align-items: baseline;
+
+  .flex > & {
+    align-self: baseline;
+  }
+}
+
+/* flex__* */
+[class*='flex__'] {
+  inline-size: 100%;
+}
+
+.flex__auto {
+  flex: 1;
+}
+
+/**
+ * TODO:
+ * Add the rest of Gibki when CSS Functions & Mixins are available (https://github.com/w3c/csswg-drafts/issues/9350)
+ *
+ */

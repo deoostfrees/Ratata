@@ -16,6 +16,7 @@
  */
 @import url('./layout/_document.css');
 @import url('./layout/_container.css');
+@import url('./layout/_grid.css');
 
 /**
  * Content

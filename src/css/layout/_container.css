@@ -1,20 +1,18 @@
 .container {
+  inline-size: min(100% - var(--container-padding-inline) * 2, var(--container-max-width));
   margin-inline: auto;
-  max-inline-size: var(--container-max-width);
-  padding-inline: var(--container-padding-inline);
 
 
   /* No padding for .container in .container */
   &:not(.container--full) & {
-    padding-inline: 0;
+    inline-size: min(100%, (--container-max-width));
   }
 }
 
 .container--full {
-  max-inline-size: none;
-  padding-inline: 0;
+  inline-size: 100%;
 }
 
 .container--small {
-  max-inline-size: var(--container-small-max-width);
+  inline-size: min(100% - var(--container-padding-inline) * 2, var(--container-small-max-width));
 }

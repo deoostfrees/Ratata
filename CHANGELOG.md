@@ -1,5 +1,19 @@
 # Changelog
 
+## [Unreleased]
+
+- Grid system
+
+## [0.7.0] - 2024-05
+
+### Added
+
+- List styles
+
+### Changed
+
+- Use CSS `min` instead of `padding` on the `.container` class
+
 ## [0.6.0] - 2024-05-14
 
 ### Added

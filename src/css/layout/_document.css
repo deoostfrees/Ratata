@@ -6,8 +6,8 @@
 
 
   &:focus {
-    inset-block-start: calc((24 / 16) * 1rem);
-    inset-inline-start: calc((24 / 16) * 1rem);
+    inset-block-start: calc((24 / 18) * 1rem);
+    inset-inline-start: calc((24 / 18) * 1rem);
     position: absolute;
     z-index: 1337;
   }

@@ -3,9 +3,9 @@
  *
  */
 .visually-hidden:not(:focus) {
-  block-size: calc((1 / 16) * 1rem);
+  block-size: calc((1 / 18) * 1rem);
   clip-path: inset(50%);
-  inline-size: calc((1 / 16) * 1rem);
+  inline-size: calc((1 / 18) * 1rem);
   overflow: hidden;
   position: absolute;
   white-space: nowrap;

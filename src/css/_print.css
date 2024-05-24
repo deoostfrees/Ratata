@@ -1,18 +1,16 @@
-/* stylelint-disable declaration-no-important */
 *,
 *::before,
 *::after {
-  background-color: white !important;
-  box-shadow: none !important;
-  color: black !important;
-  text-shadow: none !important;
+  background-color: white;
+  box-shadow: none;
+  color: black;
+  text-shadow: none;
 }
 
 a {
-  text-decoration: none !important;
+  text-decoration: none;
 
   &::after {
-    content: ' ('attr(href)')' !important;
+    content: ' ('attr(href)')';
   }
 }
-/* stylelint-enable declaration-no-important */

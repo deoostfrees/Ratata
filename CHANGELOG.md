@@ -8,6 +8,7 @@
 
 ### Added
 
+- CSS cascade layers
 - List styles
 
 ### Changed

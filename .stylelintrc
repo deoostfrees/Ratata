@@ -3,11 +3,12 @@
     "stylelint-config-standard"
   ],
   "plugins": [
-
+    "stylelint-use-logical"
   ],
   "rules": {
     "property-no-vendor-prefix": null,
     "selector-no-vendor-prefix": null,
+    "selector-not-notation": null,
     "color-hex-length": "long",
     "no-descending-specificity": null,
     "shorthand-property-no-redundant-values": [true, {"severity": "warning"}],
@@ -18,6 +19,7 @@
     "rule-empty-line-before": ["always-multi-line", {"ignore": ["after-comment"]}],
     "value-keyword-case": "lower",
     "selector-class-pattern": ["^([a-z][a-z0-9]*)(-[a-z0-9]+)*(_[a-z0-9]+)*(__[a-z]((_|-)?[a-z0-9])*)?(--[a-z0-9]((_|-)?[a-z0-9\\\\\\/])*)?$", { "resolveNestedSelectors": true }],
-    "declaration-block-no-redundant-longhand-properties": null
+    "declaration-block-no-redundant-longhand-properties": null,
+    "csstools/use-logical": true
   }
 }

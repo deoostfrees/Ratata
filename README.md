@@ -32,7 +32,7 @@ The file `_variables.css` in the `src` folder contains variables for all layout,
    * Layout
    *
    */
-  --container-max-width: calc((1248 / 18) * 1rem);
+  --container-max-width: calc((1848 / 18) * 1rem);
   --container-small-max-width: calc((660 / 18) * 1rem);
   --container-padding-inline: calc((24 / 18) * 1rem);
 

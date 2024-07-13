@@ -1,6 +1,4 @@
-:root:not([data-color-scheme='light']) {
-  color-scheme: dark;
-
+:root {
   /**
    * Body
    *
@@ -110,16 +108,6 @@
   --button-file-input-background-color: var(--color-neutral-900);
   --button-file-input-border-color: var(--color-neutral-900);
   --button-file-input-color: var(--color-neutral-100);
-
-  /**
-   * Theme switcher
-   *
-   */
-  --theme-switcher-background-color: var(--color-neutral-100);
-  --theme-switcher-border-color: transparent;
-  --theme-switcher-color: var(--color-neutral-900);
-  --theme-switcher-active-background-color: var(--color-neutral-900);
-  --theme-switcher-active-color: var(--color-neutral-100);
 
   /**
    * Accordion

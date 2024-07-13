@@ -1,7 +1,7 @@
 {
   "name": "ratata",
   "version": "0.7.0",
-  "description": "HTML, CSS and JavaScript Boilerplate using just HTML, CSS and JavaScript.",
+  "description": "HTML, CSS and JavaScript boilerplate using just HTML, CSS and JavaScript.",
   "main": "src/css/ratata.css",
   "scripts": {
     "testJs": "standard src/js/*",
@@ -25,8 +25,8 @@
   },
   "devDependencies": {
     "standard": "^17.1.0",
-    "stylelint": "^16.6.1",
-    "stylelint-config-standard": "^36.0.0",
+    "stylelint": "^16.7.0",
+    "stylelint-config-standard": "^36.0.1",
     "stylelint-use-logical": "^2.1.2"
   },
   "standard": {

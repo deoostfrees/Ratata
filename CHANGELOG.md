@@ -4,6 +4,16 @@
 
 - Grid system
 
+## [0.8.0] - 2024-07-
+
+### Added
+
+- TODO
+
+### Removed
+
+- **Breaking:** Theme switcher (Waiting for CSS Functions & Mixins)
+
 ## [0.7.0] - 2024-05-29
 
 ### Added
@@ -24,7 +34,7 @@
 
 ### Changed
 
-- **Breaking** Use `details` and `summary` instead of JavaScript for accordions
+- **Breaking:** Use `details` and `summary` instead of JavaScript for accordions
 
 ## [0.5.0] - 2024-04-21
 
@@ -40,9 +50,9 @@
 
 In this release, some additional styles have been removed to keep the boilerplate small.
 
-- **Breaking** Zepra striped table style
-- **Breaking** Vertically aligned card
-- **Breaking** Card with an icon
+- **Breaking:** Zepra striped table style
+- **Breaking:** Vertically aligned card
+- **Breaking:** Card with an icon
 
 ## [0.4.0] - 2024-03-20
 
@@ -62,7 +72,7 @@ In this release, some additional styles have been removed to keep the boilerplat
 
 ### Changed
 
-- **Breaking** CSS custom properties for table
+- **Breaking:** CSS custom properties for table
 
 ### Added
 
@@ -81,7 +91,7 @@ In this release, some additional styles have been removed to keep the boilerplat
 
 ### Changed
 
-- **Breaking** CSS custom properties for colors
+- **Breaking:** CSS custom properties for colors
 
 ### Added
 

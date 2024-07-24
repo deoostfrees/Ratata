@@ -5,7 +5,8 @@
   border-radius: 0;
   border: calc((1 / 18) * 1rem) solid var(--button-border-color);
   color: var(--button-color);
-  display: inline-flex;
+  display: flex;
+  inline-size: fit-content;
   text-decoration: none;
 
   &:hover,
@@ -63,5 +64,6 @@
 .btn--icon {
   align-items: center;
   column-gap: calc((8 / 18) * 1rem);
-  display: inline-flex;
+  display: flex;
+  inline-size: fit-content;
 }

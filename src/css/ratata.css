@@ -1,4 +1,4 @@
-@layer reset, layout, content, components, utilities, config, print;
+@layer reset, config, content, layout, components, utilities, print;
 
 @import url('./_print.css') layer(print) print;
 @import url('./_reset.css') layer(reset);

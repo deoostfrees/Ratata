@@ -25,7 +25,7 @@
   },
   "devDependencies": {
     "standard": "^17.1.0",
-    "stylelint": "^16.7.0",
+    "stylelint": "^16.8.1",
     "stylelint-config-standard": "^36.0.1",
     "stylelint-use-logical": "^2.1.2"
   },

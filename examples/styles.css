@@ -68,6 +68,8 @@ header {
 }
 
 .anchor {
+  font-size: calc((18 / 18) * 1rem);
+  font-weight: var(--base-font-weight);
   margin-inline-start: calc((16 / 18) * 1rem);
 }
 

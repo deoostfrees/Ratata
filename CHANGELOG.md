@@ -4,11 +4,11 @@
 
 - Grid system
 
-## [0.8.0] - 2024-07-
+## [0.8.0] - 2024-08-
 
 ### Added
 
-- TODO
+- Description list
 
 ### Removed
 

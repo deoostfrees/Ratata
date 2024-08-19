@@ -53,13 +53,15 @@ form {
 
 
 
-  & > * + * {
+  & > * + *:not(.accordion) {
     margin-block-start: 1rlh;
   }
 }
 
 header {
-
+  align-items: baseline;
+  display: flex;
+  flex-wrap: wrap;
 
 
   & + * {

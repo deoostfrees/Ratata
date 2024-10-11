@@ -1,4 +1,4 @@
-@layer reset, config, content, layout, components, utilities, print;
+@layer reset, vendor, config, content, layout, components, utilities, print;
 
 @import url('./_print.css') layer(print) print;
 @import url('./_reset.css') layer(reset);
@@ -41,3 +41,4 @@
 @import url('./components/_alert.css') layer(components);
 @import url('./components/_breadcrumb.css') layer(components);
 @import url('./components/_card.css') layer(components);
+@import url('./components/_textmedia.css') layer(components);

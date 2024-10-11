@@ -1,4 +1,4 @@
-:root:not([data-color-scheme='dark']) {
+:root {
   color-scheme: light;
 
   /**
@@ -110,16 +110,6 @@
   --button-file-input-background-color: var(--primary-color);
   --button-file-input-border-color: var(--primary-color);
   --button-file-input-color: var(--white);
-
-  /**
-   * Theme switcher
-   *
-   */
-  --theme-switcher-background-color: var(--primary-color);
-  --theme-switcher-border-color: transparent;
-  --theme-switcher-color: var(--white);
-  --theme-switcher-active-background-color: var(--white);
-  --theme-switcher-active-color: var(--primary-color);
 
   /**
    * Accordion

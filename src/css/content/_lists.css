@@ -1,4 +1,21 @@
 /**
+ * Description list
+ *
+ */
+dt {
+  font-weight: var(--bold-font-weight);
+}
+
+dd {
+  margin-inline-start: 1rem;
+
+
+  & + dt {
+    margin-block-start: 1rem;
+  }
+}
+
+/**
  * Unordered list
  *
  */

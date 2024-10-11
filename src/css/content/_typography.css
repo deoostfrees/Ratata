@@ -66,6 +66,7 @@ em {
 
 small {
   font-size: var(--small-font-size);
+  line-height: var(--small-line-height);
 }
 
 del,

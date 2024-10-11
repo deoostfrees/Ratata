@@ -1,0 +1,27 @@
+*:has(> .textmedia) {
+  container-type: inline-size;
+  container-name: textmedia;
+}
+
+.textmedia {
+  display: flex;
+  flex-direction: column;
+  gap: calc((24 / 18) * 1rem);
+
+  @container textmedia (min-width: 600px) {
+    flex-direction: row;
+  }
+}
+
+.textmedia__media {
+  flex: 1;
+}
+
+.textmedia__text {
+  flex: 1;
+
+
+  & > * + * {
+    margin-block-start: 1rlh;
+  }
+}

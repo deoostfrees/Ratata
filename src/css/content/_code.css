@@ -1,3 +1,11 @@
+kbd,
+code,
+samp,
+pre {
+  font-family: var(--code-font-family);
+  font-weight: var(--code-font-weight);
+}
+
 /**
  * Keyboard input
  *

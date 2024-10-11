@@ -59,10 +59,14 @@ form {
 }
 
 header {
-  align-items: baseline;
-  display: flex;
-  flex-wrap: wrap;
 
+
+
+  &:has(.anchor) {
+    align-items: baseline;
+    display: flex;
+    flex-wrap: wrap;
+  }
 
   & + * {
     margin-block-start: calc((48 / 18) * 1rem);

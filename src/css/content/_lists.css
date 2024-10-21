@@ -20,7 +20,7 @@ dd {
  *
  */
 ul {
-
+  margin-inline-start: 1rem;
 
 
   & ul {
@@ -33,7 +33,7 @@ ul {
  *
  */
 ol {
-
+  margin-inline-start: 1rem;
 
 
   & ol {

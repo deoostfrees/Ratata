@@ -1,3 +1,24 @@
+kbd,
+code,
+samp,
+pre {
+  font-family: var(--code-font-family);
+  font-weight: var(--code-font-weight);
+}
+
+/**
+ * Keyboard input
+ *
+ */
+kbd {
+  background-color: var(--code-background-color);
+  box-decoration-break: clone;
+  color: var(--code-color);
+  font-size: calc((16 / 18) * 1rem);
+  padding-block: calc((4 / 18) * 1rem);
+  padding-inline: calc((8 / 18) * 1rem);
+}
+
 /**
  * Inline code
  *
@@ -9,6 +30,14 @@ code {
   font-size: calc((16 / 18) * 1rem);
   padding-block: calc((4 / 18) * 1rem);
   padding-inline: calc((8 / 18) * 1rem);
+}
+
+/**
+ * Sample output
+ *
+ */
+samp {
+  font-size: calc((16 / 18) * 1rem);
 }
 
 /**

@@ -27,6 +27,7 @@
     column-gap: calc((16 / 18) * 1rem);
     display: flex;
     flex-wrap: wrap;
+    margin-inline-start: 0;
     row-gap: calc((8 / 18) * 1rem);
 
     /* Remove list style without affecting semantics. */
@@ -53,7 +54,7 @@ form {
 
 
 
-  & > * + * {
+  & > * + *:not(.accordion) {
     margin-block-start: 1rlh;
   }
 }
@@ -62,12 +63,20 @@ header {
 
 
 
+  &:has(.anchor) {
+    align-items: baseline;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
   & + * {
     margin-block-start: calc((48 / 18) * 1rem);
   }
 }
 
 .anchor {
+  font-size: calc((18 / 18) * 1rem);
+  font-weight: var(--base-font-weight);
   margin-inline-start: calc((16 / 18) * 1rem);
 }
 
@@ -78,10 +87,6 @@ header {
   & ol {
     display: flex;
     flex-flow: column;
-    list-style: none;
     row-gap: calc((8 / 18) * 1rem);
-
-    /* Remove list style without affecting semantics. */
-    list-style-type: '';
   }
 }

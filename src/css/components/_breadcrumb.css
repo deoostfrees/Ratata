@@ -2,6 +2,7 @@
   display: flex;
   flex-wrap: wrap;
   font-size: calc((16 / 18) * 1rem);
+  margin-inline-start: 0;
 
   /* Remove list style without affecting semantics. */
   list-style-type: '';

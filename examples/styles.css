@@ -27,6 +27,7 @@
     column-gap: calc((16 / 18) * 1rem);
     display: flex;
     flex-wrap: wrap;
+    margin-inline-start: 0;
     row-gap: calc((8 / 18) * 1rem);
 
     /* Remove list style without affecting semantics. */
@@ -86,10 +87,6 @@ header {
   & ol {
     display: flex;
     flex-flow: column;
-    list-style: none;
     row-gap: calc((8 / 18) * 1rem);
-
-    /* Remove list style without affecting semantics. */
-    list-style-type: '';
   }
 }

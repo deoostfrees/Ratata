@@ -30,6 +30,13 @@ input,
 textarea {
 
 
+
+  &:user-valid {
+    background-color: var(--input-valid-background-color);
+    border-color: var(--input-valid-border-color);
+    color: var(--input-valid-color);
+  }
+
   &:user-invalid {
     background-color: var(--input-invalid-background-color);
     border-color: var(--input-invalid-border-color);

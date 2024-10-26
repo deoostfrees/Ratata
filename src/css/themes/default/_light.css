@@ -87,6 +87,9 @@
   --input-background-color: var(--white);
   --input-border-color: var(--color-neutral-500);
   --input-color: var(--color-neutral-900);
+  --input-valid-background-color: var(--input-background-color);
+  --input-valid-border-color: var(--input-border-color);
+  --input-valid-color: var(--input-color);
   --input-invalid-background-color: var(--color-red-100);
   --input-invalid-border-color: var(--color-red-200);
   --input-invalid-color: var(--color-red-600);

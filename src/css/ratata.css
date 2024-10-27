@@ -32,6 +32,7 @@
 @import url('./content/_lists.css') layer(content);
 @import url('./content/_table.css') layer(content);
 @import url('./content/_forms.css') layer(content);
+@import url('./content/_images.css') layer(content);
 
 /**
  * Components

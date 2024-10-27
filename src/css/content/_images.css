@@ -1,0 +1,12 @@
+/**
+ * Figure
+ *
+ */
+figure {
+
+}
+
+figcaption {
+  font-size: calc((16 / 18) * 1rem);
+  margin-block-start: calc((2 / 18) * 1rem);
+}

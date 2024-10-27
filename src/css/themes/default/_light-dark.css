@@ -1,0 +1,187 @@
+html {
+  color-scheme: light dark;
+}
+
+[data-color-scheme='light'] {
+  color-scheme: light;
+}
+
+[data-color-scheme='dark'] {
+  color-scheme: dark;
+}
+
+:root {
+  /**
+   * Body
+   *
+   */
+  --body-background-color: light-dark(var(--white), var(--color-neutral-900));
+  --body-color: light-dark(var(--color-neutral-900), var(--color-neutral-100));
+
+  /**
+   * Focus
+   *
+   */
+  --focus-background-color: var(--yellow);
+  --focus-color: var(--color-neutral-900);
+
+  /**
+   * Links
+   *
+   */
+  --link-color: light-dark(var(--primary-color), var(--color-neutral-100));
+  --link-decoration-line: underline;
+  --link-hover-color: light-dark(var(--primary-color), var(--color-neutral-100));
+  --link-hover-decoration-line: none;
+
+  /**
+   * hr
+   *
+   */
+  --hr-border-color: var(--color-neutral-500);
+
+  /**
+   * Table
+   *
+   */
+  --table-thead-tr-background-color: light-dark(var(--white), var(--color-neutral-900));
+  --table-thead-tr-color: light-dark(var(--color-neutral-900), var(--color-neutral-100));
+  --table-thead-th-border-color: light-dark(var(--color-neutral-500), var(--color-neutral-100));
+
+  /* tbody */
+  --table-tbody-tr-background-color: light-dark(var(--white), var(--color-neutral-900));
+  --table-tbody-tr-color: light-dark(var(--color-neutral-900), var(--color-neutral-100));
+  --table-tbody-th-border-color: light-dark(var(--color-neutral-100), var(--color-neutral-800));
+  --table-tbody-td-border-color: light-dark(var(--color-neutral-100), var(--color-neutral-800));
+
+  /**
+   * Code
+   *
+   */
+  --code-background-color: light-dark(var(--color-neutral-100), var(--color-neutral-800));
+  --code-color: light-dark(var(--color-neutral-900), var(--color-neutral-100));
+
+  /**
+   * Buttons
+   *
+   */
+  --button-background-color: transparent;
+  --button-color: light-dark(var(--color-neutral-900), var(--color-neutral-100));
+  --button-border-color: transparent;
+  --button-hover-background-color: transparent;
+  --button-hover-border-color: transparent;
+  --button-hover-color: light-dark(var(--color-neutral-900), var(--color-neutral-100));
+
+  /* Primary */
+  --button-primary-background-color: light-dark(var(--primary-color), var(--color-neutral-100));
+  --button-primary-border-color: light-dark(var(--primary-color), var(--color-neutral-100));
+  --button-primary-color: light-dark(var(--white), var(--color-neutral-900));
+  --button-primary-hover-background-color: light-dark(color-mix(in srgb, var(--primary-color) 80%, black), color-mix(in srgb, var(--color-neutral-100) 80%, black));
+  --button-primary-hover-border-color: light-dark(color-mix(in srgb, var(--primary-color) 80%, black), color-mix(in srgb, var(--color-neutral-100) 80%, black));
+  --button-primary-hover-color: light-dark(var(--white), var(--color-neutral-900));
+
+  /* Secondary */
+  --button-secondary-background-color: transparent;
+  --button-secondary-border-color: light-dark(var(--primary-color), var(--color-neutral-100));
+  --button-secondary-color: light-dark(var(--primary-color), var(--color-neutral-100));
+  --button-secondary-hover-background-color: light-dark(var(--primary-color), var(--color-neutral-100));
+  --button-secondary-hover-border-color: light-dark(var(--primary-color), var(--color-neutral-100));
+  --button-secondary-hover-color: light-dark(var(--white), var(--color-neutral-900));
+
+  /**
+   * Forms
+   *
+   */
+
+  /* Input */
+  --input-background-color: light-dark(var(--white), var(--color-neutral-100));
+  --input-border-color: var(--color-neutral-500);
+  --input-color: var(--color-neutral-900);
+  --input-valid-background-color: var(--input-background-color);
+  --input-valid-border-color: var(--input-border-color);
+  --input-valid-color: var(--input-color);
+  --input-invalid-background-color: var(--color-red-100);
+  --input-invalid-border-color: var(--color-red-200);
+  --input-invalid-color: var(--color-red-600);
+
+  /* Checkbox */
+  --check-background-color: light-dark(var(--white), var(--color-neutral-100));
+  --check-border-color: var(--color-neutral-500);
+  --check-color: light-dark(var(--primary-color), var(--color-neutral-900));
+
+  /* Radio */
+  --radio-background-color: light-dark(var(--white), var(--color-neutral-100));
+  --radio-border-color: var(--color-neutral-500);
+  --radio-color: light-dark(var(--primary-color), var(--color-neutral-900));
+
+  /* Select */
+  --select-background-color: light-dark(var(--white), var(--color-neutral-100));
+  --select-border-color: var(--color-neutral-500);
+  --select-color: var(--color-neutral-900);
+
+  /* File input */
+  --button-file-input-background-color: light-dark(var(--primary-color), var(--color-neutral-900));
+  --button-file-input-border-color: light-dark(var(--primary-color), var(--color-neutral-900));
+  --button-file-input-color: light-dark(var(--white), var(--color-neutral-100));
+
+  /**
+   * Accordion
+   *
+   */
+  --accordion-button-background-color: transparent;
+  --accordion-button-color: light-dark(var(--color-neutral-900), var(--color-neutral-100));
+  --accordion-button-border-color: var(--color-neutral-500);
+  --accordion-content-background-color: transparent;
+  --accordion-content-color: light-dark(var(--color-neutral-900), var(--color-neutral-100));
+
+  /**
+   * Alert
+   *
+   */
+
+  /* Info */
+  --alert-info-background-color: var(--color-blue-100);
+  --alert-info-border-color: var(--color-blue-200);
+  --alert-info-color: var(--color-blue-600);
+
+  /* Success */
+  --alert-success-background-color: var(--color-green-100);
+  --alert-success-border-color: var(--color-green-200);
+  --alert-success-color: var(--color-green-600);
+
+  /* Warning */
+  --alert-warning-background-color: var(--color-orange-100);
+  --alert-warning-border-color: var(--color-orange-200);
+  --alert-warning-color: var(--color-orange-600);
+
+  /* Danger */
+  --alert-danger-background-color: var(--color-red-100);
+  --alert-danger-border-color: var(--color-red-200);
+  --alert-danger-color: var(--color-red-600);
+
+    /**
+   * Theme switcher
+   *
+   */
+  --theme-switcher-background-color: light-dark(var(--primary-color), var(--color-neutral-100));
+  --theme-switcher-border-color: transparent;
+  --theme-switcher-color: light-dark(var(--white), var(--color-neutral-900));
+  --theme-switcher-active-background-color: light-dark(var(--white), var(--color-neutral-900));
+  --theme-switcher-active-color: light-dark(var(--primary-color), var(--color-neutral-100));
+
+  /**
+   * Card
+   *
+   */
+  --card-background-color: transparent;
+  --card-border-color: light-dark(var(--color-neutral-500), var(--color-neutral-800));
+  --card-color: var(--color-neutral-900);
+  --card-image-background-color: light-dark(var(--primary-color), var(--color-neutral-800));
+  --card-image-color: light-dark(var(--white), var(--color-neutral-100));
+  --card-body-background-color: light-dark(var(--white), var(--color-neutral-100));
+  --card-body-color: var(--color-neutral-900);
+  --card-link-color: light-dark(var(--primary-color), var(--color-neutral-900));
+  --card-link-decoration-line: underline;
+  --card-link-hover-color: light-dark(var(--primary-color), var(--color-neutral-900));
+  --card-link-hover-decoration-line: none;
+}

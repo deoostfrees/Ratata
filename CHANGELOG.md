@@ -4,15 +4,23 @@
 
 - Grid system
 
-## [0.8.0] - 2024-08-
+## [0.8.0] - 2024-10-27
 
 ### Added
 
+- Code styles (keyboard input, sample output)
 - Description list
+- Image related styles (WIP)
+- Form validation styles
+- Textmedia component (WIP)
+
+### Changed
+
+- **Breaking:** Use light-dark() color function instead media feature query
 
 ### Removed
 
-- **Breaking:** Theme switcher (Waiting for CSS Functions & Mixins)
+- **Breaking:** Share button
 
 ## [0.7.0] - 2024-05-29
 

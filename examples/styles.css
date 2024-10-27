@@ -1,52 +1,9 @@
-.page {
-  grid-template-rows: auto 1fr auto;
-  min-block-size: 100svh;
-}
-
-.page__header {
-  background-color: var(--body-background-color);
-  border-block-end: calc((1 / 18) * 1rem) solid var(--color-neutral-500);
-  color: var(--body-color);
-  padding-block: calc((12 / 18) * 1rem);
-
-  @media screen and (min-height: 37.5em) {
-    inset-block-start: 0;
-    position: sticky;
-    z-index: 1;
-  }
-
-  & > .container {
-    align-items: center;
-    display: flex;
-    flex-wrap: wrap;
-    gap: calc((16 / 18) * 1rem);
-    justify-content: flex-end;
-  }
-
-  & ul {
-    column-gap: calc((16 / 18) * 1rem);
-    display: flex;
-    flex-wrap: wrap;
-    margin-inline-start: 0;
-    row-gap: calc((8 / 18) * 1rem);
-
-    /* Remove list style without affecting semantics. */
-    list-style-type: '';
-  }
-}
-
-.page__main {
-  margin-block-start: calc((80 / 18) * 1rem);
+main {
+  margin-block: calc((80 / 18) * 1rem);
 
   & > * + * {
     margin-block-start: calc((120 / 18) * 1rem);
   }
-}
-
-.page__footer {
-  border-block-start: calc((1 / 18) * 1rem) solid var(--color-neutral-500);
-  margin-block-start: calc((120 / 18) * 1rem);
-  padding-block: calc((32 / 18) * 1rem);
 }
 
 section,
@@ -89,4 +46,8 @@ header {
     flex-flow: column;
     row-gap: calc((8 / 18) * 1rem);
   }
+}
+
+.card {
+  max-inline-size: calc((350 / 18) * 1rem);
 }

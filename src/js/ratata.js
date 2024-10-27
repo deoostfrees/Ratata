@@ -1,4 +1,15 @@
 /**
+ * Toggle color scheme
+ *
+ */
+if (document.querySelector('.btn--color-scheme-switch') !== null) {
+  import('./libs/_toggle-color-scheme.js')
+    .then(({ default: toggleColorScheme }) => {
+      toggleColorScheme()
+    })
+}
+
+/**
  * Accordion
  *
  */

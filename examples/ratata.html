@@ -9,558 +9,565 @@
     <meta name="description" content="HTML, CSS, and JavaScript framework (WIP)">
     <meta name="robots" content="index, follow">
 
-    <link href="https://rqrauhvmra.com/gibki/css/gibki.min.css" rel="stylesheet">
+    <!-- JavaScript to avoid FART (Flash of inAccurate coloR Theme) -->
+    <script src="../src/js/helpers/set-color-scheme.js"></script>
+
     <link href="../src/css/ratata.css" rel="stylesheet">
     <link href="./styles.css" rel="stylesheet">
   </head>
 
   <body>
-    <a href="#content" class="skip-link visually-hidden btn btn--primary" accesskey="s">Skip to content.</a>
+    <main>
+      <section class="container container--small">
+        <header>
+          <h1>Ratata</h1>
+          <p>More web standards, less bullshit.</p>
+        </header>
 
-    <div class="page">
-      <header class="page__header">
-        <div class="container">
-          <nav aria-label="Main">
-            <ul>
-              <li><a href="#content">Ratata</a></li>
-            </ul>
-          </nav>
-        </div>
-      </header>
+        <p>Ratata is a HTML, CSS and JavaScript boilerplate using just HTML, CSS and JavaScript. It's main focus is on web standards, accessibility and performance. <a href="https://github.com/deoostfrees/Ratata">Check it out on GitHub</a>.</p>
+      </section>
 
-      <main id="content" class="page__main" tabindex="-1">
-        <section class="container container--small">
-          <header>
-            <h1>Ratata</h1>
-            <p>More web standards, less bullshit.</p>
-          </header>
+      <section class="container container--small">
+        <details class="accordion">
+          <summary class="accordion__title">
+            <span>Table of Contents</span>
 
-          <p>Ratata is a HTML, CSS and JavaScript boilerplate using just HTML, CSS and JavaScript. It's main focus is on web standards, accessibility and performance. <a href="https://github.com/deoostfrees/Ratata">Check it out on GitHub</a>.</p>
-        </section>
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="round" aria-hidden="true">
+              <line x1="12" y1="5" x2="12" y2="19"></line>
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+            </svg>
+          </summary>
 
-        <section class="container container--small">
-          <details class="accordion">
-            <summary class="accordion__title">
-              <span>Table of Contents</span>
-
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="round" aria-hidden="true">
-                <line x1="12" y1="5" x2="12" y2="19"></line>
-                <line x1="5" y1="12" x2="19" y2="12"></line>
-              </svg>
-            </summary>
-
-            <div class="accordion__content">
-              <nav class="toc" aria-label="Table of Contents">
-                <ol>
-                  <li><a href="#headings">Headings</a></li>
-                  <li><a href="#typography">Typography</a></li>
-                  <li><a href="#lists">Lists</a></li>
-                  <li><a href="#code">Code</a></li>
-                  <li><a href="#hr">hr</a></li>
-                  <li><a href="#table">Table</a></li>
-                  <li><a href="#buttons">Buttons</a></li>
-                  <li><a href="#forms">Forms</a></li>
-                  <li><a href="#breadcrumb">Breadcrumb</a></li>
-                  <li><a href="#accordion">Accordion</a></li>
-                  <li><a href="#alert">Alert</a></li>
-                  <li><a href="#textmedia">Textmedia</a></li>
-                  <li><a href="#card">Card</a></li>
-                </ol>
-              </nav>
-            </div>
-          </details>
-        </section>
-
-        <section class="container container--small">
-          <header>
-            <h2 id="headings">Headings</h2>
-            <a class="anchor" href="#headings">
-              <span aria-hidden="true">Permalink</span>
-              <span class="visually-hidden">Section titled Headings</span>
-            </a>
-          </header>
-
-          <h1>Heading level 1</h1>
-          <h2>Heading level 2</h2>
-          <h3>Heading level 3</h3>
-          <h4>Heading level 4</h4>
-        </section>
-
-        <section class="container container--small">
-          <header>
-            <h2 id="typography">Typography</h2>
-            <a class="anchor" href="#typography">
-              <span aria-hidden="true">Permalink</span>
-              <span class="visually-hidden">Section titled Typography</span>
-            </a>
-          </header>
-
-          <p><a href="#">Link</a></p>
-
-          <p><strong>Bold</strong></p>
-
-          <p><em>Italic</em></p>
-
-          <p><del>Deleted</del></p>
-
-          <p><ins>Inserted</ins></p>
-
-          <p><s>Strikethrough</s></p>
-
-          <p><small>Small</small></p>
-
-          <p>Text <sub>Sub</sub></p>
-
-          <p>Text <sup>Sup</sup></p>
-
-          <p><mark>Highlighted</mark></p>
-
-          <blockquote>
-            <p lang="de">Man muss noch Chaos in sich haben, um einen tanzenden Stern gebären zu können.</p>
-
-            <footer>—Friedrich Nietzsche, <cite lang="de">Also sprach Zarathustra</cite></footer>
-          </blockquote>
-        </section>
-
-        <section class="container container--small">
-          <header>
-            <h2 id="lists">Lists</h2>
-            <a class="anchor" href="#lists">
-              <span aria-hidden="true">Permalink</span>
-              <span class="visually-hidden">Section titled Lists</span>
-            </a>
-          </header>
-
-          <h3>Description list</h3>
-
-          <dl>
-            <dt>Description term</dt>
-            <dd>Description details</dd>
-          </dl>
-
-          <h3>Unordered list</h3>
-
-          <ul>
-            <li>First item</li>
-            <li>Second item
-              <ul>
-                <li>First subitem of second item</li>
-                <li>Second subitem of second item</li>
-              </ul>
-            </li>
-          </ul>
-
-          <h3>Ordered list</h3>
-
-          <ol>
-            <li>First item</li>
-            <li>Second item
+          <div class="accordion__content">
+            <nav class="toc" aria-label="Table of Contents">
               <ol>
-                <li>First subitem of second item</li>
-                <li>Second subitem of second item</li>
+                <li><a href="#headings">Headings</a></li>
+                <li><a href="#typography">Typography</a></li>
+                <li><a href="#lists">Lists</a></li>
+                <li><a href="#code">Code</a></li>
+                <li><a href="#hr">hr</a></li>
+                <li><a href="#table">Table</a></li>
+                <li><a href="#buttons">Buttons</a></li>
+                <li><a href="#forms">Forms</a></li>
+                <li><a href="#theme-switcher">Theme switcher</a></li>
+                <li><a href="#breadcrumb">Breadcrumb</a></li>
+                <li><a href="#accordion">Accordion</a></li>
+                <li><a href="#alert">Alert</a></li>
+                <li><a href="#textmedia">Textmedia</a></li>
+                <li><a href="#card">Card</a></li>
               </ol>
-            </li>
-            <li>Third item</li>
-            <li>Fourth item</li>
-            <li>Fifth item</li>
-          </ol>
-        </section>
-
-        <section class="container container--small">
-          <header>
-            <h2 id="code">Code</h2>
-            <a class="anchor" href="#code">
-              <span aria-hidden="true">Permalink</span>
-              <span class="visually-hidden">Section titled Code</span>
-            </a>
-          </header>
-
-          <h3>Keyboard input</h3>
-
-          <p><kbd>F2</kbd></p>
-
-          <h3>Inline code</h3>
-
-          <p><code>.class</code></p>
-
-          <h3>Sample output</h3>
-
-          <p><samp>Press any key to continue.</samp></p>
-
-          <h3>Preformatted text</h3>
-
-          <pre><code>.class {
-  background-color: var(--black);
-  box-decoration-break: clone;
-  color: var(--white);
-  padding-block: calc((4 / 18) * 1rem);
-  padding-inline: calc((8 / 18) * 1rem);
-}</code></pre>
-        </section>
-
-        <section class="container container--small">
-          <header>
-            <h2 id="hr">hr</h2>
-            <a class="anchor" href="#hr">
-              <span aria-hidden="true">Permalink</span>
-              <span class="visually-hidden">Section titled hr</span>
-            </a>
-          </header>
-
-          <hr>
-        </section>
-
-        <section class="container container--small">
-          <header>
-            <h2 id="table">Table</h2>
-            <a class="anchor" href="#table">
-              <span aria-hidden="true">Permalink</span>
-              <span class="visually-hidden">Section titled Table</span>
-            </a>
-          </header>
-
-          <table>
-            <caption>
-              Superheroes information
-            </caption>
-            <thead>
-              <tr>
-                <th scope="col">First Name</th>
-                <th scope="col">Last Name</th>
-                <th scope="col">Super Hero</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>Peter</td>
-                <td>Parker</td>
-                <td>Spiderman</td>
-              </tr>
-              <tr>
-                <td>Bruce</td>
-                <td>Wayne</td>
-                <td>Batman</td>
-              </tr>
-              <tr>
-                <td>Clark</td>
-                <td>Kent</td>
-                <td>Superman</td>
-              </tr>
-            </tbody>
-          </table>
-        </section>
-
-        <section class="container container--small">
-          <header>
-            <h2 id="buttons">Buttons</h2>
-            <a class="anchor" href="#buttons">
-              <span aria-hidden="true">Permalink</span>
-              <span class="visually-hidden">Section titled Buttons</span>
-            </a>
-          </header>
-
-          <div class="flex flex--middle">
-            <button type="button" class="btn">Default</button>
-
-            <button type="button" class="btn btn--primary">Primary</button>
-
-            <button type="button" class="btn btn--secondary">Secondary</button>
+            </nav>
           </div>
+        </details>
+      </section>
 
-          <div class="flex flex--middle">
-            <button type="button" class="btn btn--icon">
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="round" aria-hidden="true">
-                <circle cx="11" cy="11" r="8"></circle>
-                <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
-              </svg>
+      <section class="container container--small">
+        <header>
+          <h2 id="headings">Headings</h2>
+          <a class="anchor" href="#headings">
+            <span aria-hidden="true">Permalink</span>
+            <span class="visually-hidden">Section titled Headings</span>
+          </a>
+        </header>
 
-              <span>Button with icon</span>
-            </button>
+        <h1>Heading level 1</h1>
+        <h2>Heading level 2</h2>
+        <h3>Heading level 3</h3>
+        <h4>Heading level 4</h4>
+      </section>
 
-            <button type="button" class="btn btn--icon btn--primary">
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="round" aria-hidden="true">
-                <circle cx="11" cy="11" r="8"></circle>
-                <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
-              </svg>
+      <section class="container container--small">
+        <header>
+          <h2 id="typography">Typography</h2>
+          <a class="anchor" href="#typography">
+            <span aria-hidden="true">Permalink</span>
+            <span class="visually-hidden">Section titled Typography</span>
+          </a>
+        </header>
 
-              <span>Button with icon</span>
-            </button>
+        <p><a href="#">Link</a></p>
 
-            <button type="button" class="btn btn--icon btn--secondary">
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="round" aria-hidden="true">
-                <circle cx="11" cy="11" r="8"></circle>
-                <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
-              </svg>
+        <p><strong>Bold</strong></p>
 
-              <span>Button with icon</span>
-            </button>
-          </div>
+        <p><em>Italic</em></p>
 
-          <div class="flex flex--middle">
-            <button type="button" class="btn btn--icon">
-              <span>Button with icon</span>
+        <p><del>Deleted</del></p>
 
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="round" aria-hidden="true">
-                <circle cx="11" cy="11" r="8"></circle>
-                <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
-              </svg>
-            </button>
+        <p><ins>Inserted</ins></p>
 
-            <button type="button" class="btn btn--icon btn--primary">
-              <span>Button with icon</span>
+        <p><s>Strikethrough</s></p>
 
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="round" aria-hidden="true">
-                <circle cx="11" cy="11" r="8"></circle>
-                <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
-              </svg>
-            </button>
+        <p><small>Small</small></p>
 
-            <button type="button" class="btn btn--icon btn--secondary">
-              <span>Button with icon</span>
+        <p>Text <sub>Sub</sub></p>
 
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="round" aria-hidden="true">
-                <circle cx="11" cy="11" r="8"></circle>
-                <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
-              </svg>
-            </button>
-          </div>
-        </section>
+        <p>Text <sup>Sup</sup></p>
 
-        <section class="container container--small">
-          <header>
-            <h2 id="forms">Forms</h2>
-            <a class="anchor" href="#forms">
-              <span aria-hidden="true">Permalink</span>
-              <span class="visually-hidden">Section titled Forms</span>
-            </a>
-          </header>
+        <p><mark>Highlighted</mark></p>
 
-          <form>
-            <div class="form-group">
-              <label for="input">Input <span aria-hidden="true">(required)</span></label>
-              <input class="form-input" id="input" type="text" name="input" aria-required="true" required>
-            </div>
+        <blockquote>
+          <p lang="de">Man muss noch Chaos in sich haben, um einen tanzenden Stern gebären zu können.</p>
 
-            <div class="form-group">
-              <label for="select">Select</label>
-              <select id="select" name="select">
-                <option value="">Select a feature</option>
-                <hr>
-                <optgroup label="Content">
-                  <option value="buttons">Buttons</option>
-                  <option value="typography">Typography</option>
-                </optgroup>
-                <optgroup label="Components">
-                  <option value="alerts">Alerts</option>
-                </optgroup>
-              </select>
-            </div>
+          <footer>—Friedrich Nietzsche, <cite lang="de">Also sprach Zarathustra</cite></footer>
+        </blockquote>
+      </section>
 
-            <div class="form-group">
-              <label for="text">Textarea <span aria-hidden="true">(required)</span></label>
-              <textarea class="form-input" id="text" name="text" aria-required="true" required></textarea>
-            </div>
+      <section class="container container--small">
+        <header>
+          <h2 id="lists">Lists</h2>
+          <a class="anchor" href="#lists">
+            <span aria-hidden="true">Permalink</span>
+            <span class="visually-hidden">Section titled Lists</span>
+          </a>
+        </header>
 
-            <fieldset>
-              <legend>Checkbox</legend>
+        <h3>Description list</h3>
 
-              <div class="form-group form-group--check">
-                <input id="checkbox1" type="checkbox" name="checkbox1">
-                <label for="checkbox1">Checkbox</label>
-              </div>
+        <dl>
+          <dt>Description term</dt>
+          <dd>Description details</dd>
+        </dl>
 
-              <div class="form-group form-group--check">
-                <input id="checkbox2" type="checkbox" name="checkbox2" aria-required="true" checked required>
-                <label for="checkbox2">Checkbox - checked <span aria-hidden="true">(required)</span></label>
-              </div>
+        <h3>Unordered list</h3>
 
-              <div class="form-group form-group--check">
-                <input id="checkbox3" type="checkbox" name="checkbox3" checked disabled>
-                <label for="checkbox3">Checkbox - checked, disabled</label>
-              </div>
-            </fieldset>
+        <ul>
+          <li>First item</li>
+          <li>Second item
+            <ul>
+              <li>First subitem of second item</li>
+              <li>Second subitem of second item</li>
+            </ul>
+          </li>
+        </ul>
 
-            <fieldset>
-              <legend>Radio <span aria-hidden="true">(required)</span></legend>
+        <h3>Ordered list</h3>
 
-              <div class="form-group form-group--radio">
-                <input id="radio1" type="radio" name="radio" aria-required="true" required>
-                <label for="radio1">Radio</label>
-              </div>
-
-              <div class="form-group form-group--radio">
-                <input id="radio2" type="radio" name="radio" aria-required="true" required checked>
-                <label for="radio2">Radio - checked</label>
-              </div>
-
-              <div class="form-group form-group--radio">
-                <input id="radio3" type="radio" name="radio" aria-required="true" required disabled>
-                <label for="radio3">Radio - disabled</label>
-              </div>
-            </fieldset>
-
-            <div class="form-group">
-              <label for="file">File input</label>
-              <input class="form-input" id="file" type="file" name="file">
-            </div>
-
-            <button type="submit" class="btn btn--primary">Send</button>
-          </form>
-        </section>
-
-        <section class="container container--small">
-          <header>
-            <h2 id="breadcrumb">Breadcrumb</h2>
-            <a class="anchor" href="#breadcrumb">
-              <span aria-hidden="true">Permalink</span>
-              <span class="visually-hidden">Section titled Breadcrumb</span>
-            </a>
-          </header>
-
-          <nav aria-label="Breadcrumb">
-            <ol class="breadcrumb">
-              <li class="breadcrumb__item"><a href="#">Page</a></li>
-              <li class="breadcrumb__item"><a href="#">Subpage 1</a></li>
-              <li class="breadcrumb__item breadcrumb__item--active"><a href="" aria-current="page">Subpage 2</a></li>
+        <ol>
+          <li>First item</li>
+          <li>Second item
+            <ol>
+              <li>First subitem of second item</li>
+              <li>Second subitem of second item</li>
             </ol>
-          </nav>
-        </section>
+          </li>
+          <li>Third item</li>
+          <li>Fourth item</li>
+          <li>Fifth item</li>
+        </ol>
+      </section>
 
-        <section class="container container--small">
-          <header>
-            <h2 id="accordion">Accordion</h2>
-            <a class="anchor" href="#accordion">
-              <span aria-hidden="true">Permalink</span>
-              <span class="visually-hidden">Section titled Accordion</span>
-            </a>
-          </header>
+      <section class="container container--small">
+        <header>
+          <h2 id="code">Code</h2>
+          <a class="anchor" href="#code">
+            <span aria-hidden="true">Permalink</span>
+            <span class="visually-hidden">Section titled Code</span>
+          </a>
+        </header>
 
-          <details class="accordion">
-            <summary class="accordion__title">
-              <span>Title</span>
+        <h3>Keyboard input</h3>
 
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="round" aria-hidden="true">
-                <line x1="12" y1="5" x2="12" y2="19"></line>
-                <line x1="5" y1="12" x2="19" y2="12"></line>
-              </svg>
-            </summary>
+        <p><kbd>F2</kbd></p>
 
-            <div class="accordion__content">
-              Content
-            </div>
-          </details>
+        <h3>Inline code</h3>
 
-          <details class="accordion">
-            <summary class="accordion__title">
-              <span>Title</span>
+        <p><code>.class</code></p>
 
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="round" aria-hidden="true">
-                <line x1="12" y1="5" x2="12" y2="19"></line>
-                <line x1="5" y1="12" x2="19" y2="12"></line>
-              </svg>
-            </summary>
+        <h3>Sample output</h3>
 
-            <div class="accordion__content">
-              Content
-            </div>
-          </details>
-        </section>
+        <p><samp>Press any key to continue.</samp></p>
 
-        <section class="container container--small">
-          <header>
-            <h2 id="alert">Alert</h2>
-            <a class="anchor" href="#alert">
-              <span aria-hidden="true">Permalink</span>
-              <span class="visually-hidden">Section titled Alert</span>
-            </a>
-          </header>
+        <h3>Preformatted text</h3>
 
-          <div class="alert alert--info" role="alert">
-            <p>Info alert. <a href="#">More info about the info alert</a>.</p>
-          </div>
+        <pre><code>.class {
+background-color: var(--black);
+box-decoration-break: clone;
+color: var(--white);
+padding-block: calc((4 / 18) * 1rem);
+padding-inline: calc((8 / 18) * 1rem);
+}</code></pre>
+      </section>
 
-          <div class="alert alert--success" role="alert">
-            <p>Success alert. <a href="#">More info about the success alert</a>.</p>
-          </div>
+      <section class="container container--small">
+        <header>
+          <h2 id="hr">hr</h2>
+          <a class="anchor" href="#hr">
+            <span aria-hidden="true">Permalink</span>
+            <span class="visually-hidden">Section titled hr</span>
+          </a>
+        </header>
 
-          <div class="alert alert--warning" role="alert">
-            <p>Warning alert. <a href="#">More info about the warning alert</a>.</p>
-          </div>
+        <hr>
+      </section>
 
-          <div class="alert alert--danger" role="alert">
-            <p>Danger alert. <a href="#">More info about the danger alert</a>.</p>
-          </div>
-        </section>
+      <section class="container container--small">
+        <header>
+          <h2 id="table">Table</h2>
+          <a class="anchor" href="#table">
+            <span aria-hidden="true">Permalink</span>
+            <span class="visually-hidden">Section titled Table</span>
+          </a>
+        </header>
 
-        <section class="container container--small">
-          <header>
-            <h2 id="textmedia">Textmedia</h2>
-            <a class="anchor" href="#textmedia">
-              <span aria-hidden="true">Permalink</span>
-              <span class="visually-hidden">Section titled Textmedia</span>
-            </a>
-          </header>
+        <table>
+          <caption>
+            Superheroes information
+          </caption>
+          <thead>
+            <tr>
+              <th scope="col">First Name</th>
+              <th scope="col">Last Name</th>
+              <th scope="col">Super Hero</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Peter</td>
+              <td>Parker</td>
+              <td>Spiderman</td>
+            </tr>
+            <tr>
+              <td>Bruce</td>
+              <td>Wayne</td>
+              <td>Batman</td>
+            </tr>
+            <tr>
+              <td>Clark</td>
+              <td>Kent</td>
+              <td>Superman</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
 
-          <div class="textmedia">
-            <div class="textmedia__media">
-              <img src="./demo.webp" alt="" width="1200" height="675" loading="lazy">
-            </div>
+      <section class="container container--small">
+        <header>
+          <h2 id="buttons">Buttons</h2>
+          <a class="anchor" href="#buttons">
+            <span aria-hidden="true">Permalink</span>
+            <span class="visually-hidden">Section titled Buttons</span>
+          </a>
+        </header>
 
-            <div class="textmedia__text">
-              <p>Lorem ipsum odor amet, consectetuer adipiscing elit. Eget rhoncus duis massa curabitur tempus egestas.</p>
+        <div class="flex flex--middle">
+          <button type="button" class="btn">Default</button>
 
-              <p>Sodales taciti aptent porttitor dapibus nunc. Erat eros risus nibh sed, senectus vel ultricies facilisis orci.</p>
-            </div>
-          </div>
-        </section>
+          <button type="button" class="btn btn--primary">Primary</button>
 
-        <section class="container container--small">
-          <header>
-            <h2 id="card">Card</h2>
-            <a class="anchor" href="#card">
-              <span aria-hidden="true">Permalink</span>
-              <span class="visually-hidden">Section titled Card</span>
-            </a>
-          </header>
-
-          <div class="flex">
-            <div class="flex__md-6">
-              <div class="card">
-                <div class="card__image">
-                  <img src="./demo.webp" alt="" width="1200" height="675" loading="lazy">
-                </div>
-
-                <div class="card__body">
-                  <h3><a href="#card">Card title</a></h3>
-
-                  <p>Lorem ipsum odor amet, consectetuer adipiscing elit. Eget rhoncus duis massa curabitur tempus egestas.</p>
-                </div>
-              </div>
-            </div>
-
-            <div class="flex__md-6">
-              <div class="card">
-                <div class="card__image">
-                  <img src="./demo.webp" alt="" width="1200" height="675" loading="lazy">
-                </div>
-
-                <div class="card__body">
-                  <h3><a href="#card">Card title</a></h3>
-
-                  <p>Lorem ipsum odor amet, consectetuer adipiscing elit. Eget rhoncus duis massa curabitur tempus egestas.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-      </main>
-
-      <footer class="page__footer">
-        <div class="container container--small">
-          Footer
+          <button type="button" class="btn btn--secondary">Secondary</button>
         </div>
-      </footer>
-    </div>
+
+        <div class="flex flex--middle">
+          <button type="button" class="btn btn--icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="round" aria-hidden="true">
+              <circle cx="11" cy="11" r="8"></circle>
+              <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+            </svg>
+
+            <span>Button with icon</span>
+          </button>
+
+          <button type="button" class="btn btn--icon btn--primary">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="round" aria-hidden="true">
+              <circle cx="11" cy="11" r="8"></circle>
+              <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+            </svg>
+
+            <span>Button with icon</span>
+          </button>
+
+          <button type="button" class="btn btn--icon btn--secondary">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="round" aria-hidden="true">
+              <circle cx="11" cy="11" r="8"></circle>
+              <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+            </svg>
+
+            <span>Button with icon</span>
+          </button>
+        </div>
+
+        <div class="flex flex--middle">
+          <button type="button" class="btn btn--icon">
+            <span>Button with icon</span>
+
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="round" aria-hidden="true">
+              <circle cx="11" cy="11" r="8"></circle>
+              <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+            </svg>
+          </button>
+
+          <button type="button" class="btn btn--icon btn--primary">
+            <span>Button with icon</span>
+
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="round" aria-hidden="true">
+              <circle cx="11" cy="11" r="8"></circle>
+              <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+            </svg>
+          </button>
+
+          <button type="button" class="btn btn--icon btn--secondary">
+            <span>Button with icon</span>
+
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="round" aria-hidden="true">
+              <circle cx="11" cy="11" r="8"></circle>
+              <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+            </svg>
+          </button>
+        </div>
+      </section>
+
+      <section class="container container--small">
+        <header>
+          <h2 id="forms">Forms</h2>
+          <a class="anchor" href="#forms">
+            <span aria-hidden="true">Permalink</span>
+            <span class="visually-hidden">Section titled Forms</span>
+          </a>
+        </header>
+
+        <form>
+          <div class="form-group">
+            <label for="input">Input <span aria-hidden="true">(required)</span></label>
+            <input class="form-input" id="input" type="text" name="input" aria-required="true" required>
+          </div>
+
+          <div class="form-group">
+            <label for="select">Select</label>
+            <select id="select" name="select">
+              <option value="">Select a feature</option>
+              <hr>
+              <optgroup label="Content">
+                <option value="buttons">Buttons</option>
+                <option value="typography">Typography</option>
+              </optgroup>
+              <optgroup label="Components">
+                <option value="alerts">Alerts</option>
+              </optgroup>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="text">Textarea <span aria-hidden="true">(required)</span></label>
+            <textarea class="form-input" id="text" name="text" aria-required="true" required></textarea>
+          </div>
+
+          <fieldset>
+            <legend>Checkbox</legend>
+
+            <div class="form-group form-group--check">
+              <input id="checkbox1" type="checkbox" name="checkbox1">
+              <label for="checkbox1">Checkbox</label>
+            </div>
+
+            <div class="form-group form-group--check">
+              <input id="checkbox2" type="checkbox" name="checkbox2" aria-required="true" checked required>
+              <label for="checkbox2">Checkbox - checked <span aria-hidden="true">(required)</span></label>
+            </div>
+
+            <div class="form-group form-group--check">
+              <input id="checkbox3" type="checkbox" name="checkbox3" checked disabled>
+              <label for="checkbox3">Checkbox - checked, disabled</label>
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <legend>Radio <span aria-hidden="true">(required)</span></legend>
+
+            <div class="form-group form-group--radio">
+              <input id="radio1" type="radio" name="radio" aria-required="true" required>
+              <label for="radio1">Radio</label>
+            </div>
+
+            <div class="form-group form-group--radio">
+              <input id="radio2" type="radio" name="radio" aria-required="true" required checked>
+              <label for="radio2">Radio - checked</label>
+            </div>
+
+            <div class="form-group form-group--radio">
+              <input id="radio3" type="radio" name="radio" aria-required="true" required disabled>
+              <label for="radio3">Radio - disabled</label>
+            </div>
+          </fieldset>
+
+          <div class="form-group">
+            <label for="file">File input</label>
+            <input class="form-input" id="file" type="file" name="file">
+          </div>
+
+          <button type="submit" class="btn btn--primary">Send</button>
+        </form>
+      </section>
+
+      <section class="container container--small">
+        <header>
+          <h2 id="theme-switcher">Theme switcher</h2>
+          <a class="anchor" href="#theme-switcher">
+            <span aria-hidden="true">Permalink</span>
+            <span class="visually-hidden">Section titled Theme switcher</span>
+          </a>
+        </header>
+
+        <div class="theme-switcher">
+          <button type="button" class="btn btn--color-scheme-switch" data-color-scheme="system">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="round">
+              <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+              <line x1="8" y1="21" x2="16" y2="21"></line>
+              <line x1="12" y1="17" x2="12" y2="21"></line>
+            </svg>
+            <span class="visually-hidden">Select color scheme "system"</span>
+          </button>
+
+          <button type="button" class="btn btn--color-scheme-switch" data-color-scheme="light">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="5"/>
+              <path d="M12 1v2M12 21v2M4.2 4.2l1.4 1.4M18.4 18.4l1.4 1.4M1 12h2M21 12h2M4.2 19.8l1.4-1.4M18.4 5.6l1.4-1.4"/>
+            </svg>
+            <span class="visually-hidden">Select color scheme "light"</span>
+          </button>
+
+          <button type="button" class="btn btn--color-scheme-switch" data-color-scheme="dark">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="round">
+              <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+            </svg>
+            <span class="visually-hidden">Select color scheme "dark"</span>
+          </button>
+        </div>
+      </section>
+
+      <section class="container container--small">
+        <header>
+          <h2 id="breadcrumb">Breadcrumb</h2>
+          <a class="anchor" href="#breadcrumb">
+            <span aria-hidden="true">Permalink</span>
+            <span class="visually-hidden">Section titled Breadcrumb</span>
+          </a>
+        </header>
+
+        <nav aria-label="Breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb__item"><a href="#">Page</a></li>
+            <li class="breadcrumb__item"><a href="#">Subpage 1</a></li>
+            <li class="breadcrumb__item breadcrumb__item--active"><a href="" aria-current="page">Subpage 2</a></li>
+          </ol>
+        </nav>
+      </section>
+
+      <section class="container container--small">
+        <header>
+          <h2 id="accordion">Accordion</h2>
+          <a class="anchor" href="#accordion">
+            <span aria-hidden="true">Permalink</span>
+            <span class="visually-hidden">Section titled Accordion</span>
+          </a>
+        </header>
+
+        <details class="accordion">
+          <summary class="accordion__title">
+            <span>Title</span>
+
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="round" aria-hidden="true">
+              <line x1="12" y1="5" x2="12" y2="19"></line>
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+            </svg>
+          </summary>
+
+          <div class="accordion__content">
+            Content
+          </div>
+        </details>
+
+        <details class="accordion">
+          <summary class="accordion__title">
+            <span>Title</span>
+
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="round" aria-hidden="true">
+              <line x1="12" y1="5" x2="12" y2="19"></line>
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+            </svg>
+          </summary>
+
+          <div class="accordion__content">
+            Content
+          </div>
+        </details>
+      </section>
+
+      <section class="container container--small">
+        <header>
+          <h2 id="alert">Alert</h2>
+          <a class="anchor" href="#alert">
+            <span aria-hidden="true">Permalink</span>
+            <span class="visually-hidden">Section titled Alert</span>
+          </a>
+        </header>
+
+        <div class="alert alert--info" role="alert">
+          <p>Info alert. <a href="#">More info about the info alert</a>.</p>
+        </div>
+
+        <div class="alert alert--success" role="alert">
+          <p>Success alert. <a href="#">More info about the success alert</a>.</p>
+        </div>
+
+        <div class="alert alert--warning" role="alert">
+          <p>Warning alert. <a href="#">More info about the warning alert</a>.</p>
+        </div>
+
+        <div class="alert alert--danger" role="alert">
+          <p>Danger alert. <a href="#">More info about the danger alert</a>.</p>
+        </div>
+      </section>
+
+      <section class="container">
+        <header>
+          <h2 id="textmedia">Textmedia</h2>
+          <a class="anchor" href="#textmedia">
+            <span aria-hidden="true">Permalink</span>
+            <span class="visually-hidden">Section titled Textmedia</span>
+          </a>
+        </header>
+
+        <div class="textmedia">
+          <div class="textmedia__media">
+            <figure>
+              <img src="./demo.webp" alt="" width="1200" height="675" loading="lazy">
+
+              <figcaption>
+                Test
+              </figcaption>
+            </figure>
+          </div>
+
+          <div class="textmedia__text">
+            <p>Lorem ipsum odor amet, consectetuer adipiscing elit. Eget rhoncus duis massa curabitur tempus egestas.</p>
+
+            <p>Sodales taciti aptent porttitor dapibus nunc. Erat eros risus nibh sed, senectus vel ultricies facilisis orci.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="container container--small">
+        <header>
+          <h2 id="card">Card</h2>
+          <a class="anchor" href="#card">
+            <span aria-hidden="true">Permalink</span>
+            <span class="visually-hidden">Section titled Card</span>
+          </a>
+        </header>
+
+        <div class="card">
+          <div class="card__image">
+            <img src="./demo.webp" alt="" width="1200" height="675" loading="lazy">
+          </div>
+
+          <div class="card__body">
+            <h3><a href="#card">Card title</a></h3>
+
+            <p>Lorem ipsum odor amet, consectetuer adipiscing elit. Eget rhoncus duis massa curabitur tempus egestas.</p>
+          </div>
+        </div>
+      </section>
+    </main>
 
     <script src="../src/js/ratata.js" type="module"></script>
   </body>

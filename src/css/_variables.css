@@ -39,7 +39,7 @@
   --blockquote-line-height: calc((38 / 23));
 
   /* Code */
-  --code-font-family: ui-monospace, 'Cascadia Code', 'Source Code Pro', Menlo, Consolas, 'DejaVu Sans Mono', monospace;
+  --code-font-family: ui-monospace, 'Cascadia Code', 'Source Code Pro', menlo, consolas, 'DejaVu Sans Mono', monospace;
   --code-font-weight: 400;
 
   /* Headings */

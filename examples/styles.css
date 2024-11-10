@@ -44,6 +44,7 @@ header {
   & ol {
     display: flex;
     flex-flow: column;
+    margin-inline-start: calc((32 / 18) * 1rem);
     row-gap: calc((8 / 18) * 1rem);
   }
 }

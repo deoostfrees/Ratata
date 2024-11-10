@@ -5,7 +5,7 @@
 
   /* No padding for .container in .container */
   &:not(.container--full) & {
-    inline-size: min(100%, (--container-max-width));
+    inline-size: min(100%, var(--container-max-width));
   }
 }
 

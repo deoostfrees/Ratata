@@ -1,6 +1,6 @@
 {
   "name": "ratata",
-  "version": "0.8.0",
+  "version": "0.9.0",
   "description": "HTML, CSS and JavaScript boilerplate using just HTML, CSS and JavaScript.",
   "main": "src/css/ratata.css",
   "scripts": {

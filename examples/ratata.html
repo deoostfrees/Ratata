@@ -55,6 +55,7 @@
                 <li><a href="#alert">Alert</a></li>
                 <li><a href="#textmedia">Textmedia</a></li>
                 <li><a href="#card">Card</a></li>
+                <li><a href="#grid">Grid (WIP)</a></li>
               </ol>
             </nav>
           </div>
@@ -566,6 +567,599 @@ padding-inline: calc((8 / 18) * 1rem);
             <p>Lorem ipsum odor amet, consectetuer adipiscing elit. Eget rhoncus duis massa curabitur tempus egestas.</p>
           </div>
         </div>
+      </section>
+
+      <section class="container container--small">
+        <header>
+          <h2 id="grid">Grid (WIP)</h2>
+          <a class="anchor" href="#grid">
+            <span aria-hidden="true">Permalink</span>
+            <span class="visually-hidden">Section titled Grid</span>
+          </a>
+        </header>
+
+        <h3>.flex</h3>
+
+        <p><code>.flex</code> is the wrapper for columns.</p>
+
+        <pre>
+&#x3C;div class=&#x22;flex&#x22;&#x3E;
+
+&#x3C;/div&#x3E;</pre>
+
+        <h3>.flex__</h3>
+
+        <p><code>.flex__</code> classes create different column sizes.</p>
+
+        <div class="container"><span style="padding: 1rem; display: inline-block;">flex</span>
+          <div class="flex">
+            <div class="flex__2"><span>flex__2</span></div>
+            <div class="flex__10"><span>flex__10</span></div>
+            <div class="flex__8"><span>flex__8</span></div>
+            <div class="flex__4"><span>flex__4</span></div>
+            <div class="flex__7"><span>flex__7</span></div>
+            <div class="flex__5"><span>flex__5</span></div>
+          </div>
+        </div>
+
+        <pre>
+&#x3C;div class=&#x22;flex&#x22;&#x3E;
+  &#x3C;div class=&#x22;flex__2&#x22;&#x3E;&#x3C;/div&#x3E;
+  &#x3C;div class=&#x22;flex__10&#x22;&#x3E;&#x3C;/div&#x3E;
+  &#x3C;div class=&#x22;flex__8&#x22;&#x3E;&#x3C;/div&#x3E;
+  &#x3C;div class=&#x22;flex__4&#x22;&#x3E;&#x3C;/div&#x3E;
+  &#x3C;div class=&#x22;flex__7&#x22;&#x3E;&#x3C;/div&#x3E;
+  &#x3C;div class=&#x22;flex__5&#x22;&#x3E;&#x3C;/div&#x3E;
+&#x3C;/div&#x3E;</pre>
+
+        <h3>.flex__auto</h3>
+
+        <p><code>.flex__auto</code> creates columns that take up the remaining space.</p>
+
+        <div class="container"><span style="padding: 1rem; display: inline-block;">flex</span>
+          <div class="flex">
+            <div class="flex__6"><span>flex__6</span></div>
+            <div class="flex__auto"><span>flex__auto</span></div>
+            <div class="flex__auto"><span>flex__auto</span></div>
+            <div class="flex__8"><span>flex__8</span></div>
+            <div class="flex__auto"><span>flex__auto</span></div>
+          </div>
+        </div>
+
+        <pre>
+&#x3C;div class=&#x22;flex&#x22;&#x3E;
+  &#x3C;div class=&#x22;flex__6&#x22;&#x3E;&#x3C;/div&#x3E;
+  &#x3C;div class=&#x22;flex__auto&#x22;&#x3E;&#x3C;/div&#x3E;
+  &#x3C;div class=&#x22;flex__auto&#x22;&#x3E;&#x3C;/div&#x3E;
+  &#x3C;div class=&#x22;flex__8&#x22;&#x3E;&#x3C;/div&#x3E;
+  &#x3C;div class=&#x22;flex__auto&#x22;&#x3E;&#x3C;/div&#x3E;
+&#x3C;/div&#x3E;</pre>
+
+        <h3>Nesting</h3>
+
+        <p>To nest content with the default grid, add a new <code>.flex</code> container and a set of <code>.flex__</code> columns within an existing <code>.flex__</code> column.</p>
+
+        <div class="container"><span style="padding: 1rem; display: inline-block;">flex</span>
+          <div class="flex">
+            <div class="flex__4"><span>flex__4</span></div>
+            <div class="flex__8"><span style="padding: 0; background-color: var(--body-background-color); color: var(--body-color); border: calc((4 / 18) * 1rem) solid var(--blue-light)"><span style="height: auto;">flex__8</span><span style="background-color: transparent; color: inherit; height: auto;">flex</span>
+              <div class="flex">
+                <div class="flex__6"><span>flex__6</span></div>
+                <div class="flex__auto"><span>flex__auto</span></div>
+                <div class="flex__auto"><span>flex__auto</span></div>
+              </div></span>
+            </div>
+          </div>
+        </div>
+
+        <pre>
+&#x3C;div class=&#x22;flex&#x22;&#x3E;
+  &#x3C;div class=&#x22;flex__lg-4&#x22;&#x3E;&#x3C;/div&#x3E;
+  &#x3C;div class=&#x22;flex__lg-8&#x22;&#x3E;
+    &#x3C;div class=&#x22;flex&#x22;&#x3E;
+      &#x3C;div class=&#x22;flex__6&#x22;&#x3E;&#x3C;/div&#x3E;
+      &#x3C;div class=&#x22;flex__auto&#x22;&#x3E;&#x3C;/div&#x3E;
+      &#x3C;div class=&#x22;flex__auto&#x22;&#x3E;&#x3C;/div&#x3E;
+    &#x3C;/div&#x3E;
+  &#x3C;/div&#x3E;
+&#x3C;/div&#x3E;</pre>
+
+        <h3>Responsive Layouts</h3>
+
+        <p>The grid system allows you to create responsive layouts by defining different column widths for each viewport. There are four breakpoints that determine the viewports:</p>
+
+        <ul>
+          <li>Small <code>sm</code>: &#x3E;= 500px</li>
+          <li>Medium <code>md</code>: &#x3E;= 700px</li>
+          <li>Large <code>lg</code>: &#x3E;= 1000px</li>
+          <li>Extra large <code>xl</code>: &#x3E;= 1200px</li>
+        </ul>
+
+        <div class="container"><span style="padding: 1rem; display: inline-block;">flex</span>
+          <div class="flex">
+            <div class="flex__md-6 flex__lg-3"><span>flex__md-6 flex__lg-3</span></div>
+            <div class="flex__md-6 flex__lg-3"><span>flex__md-6 flex__lg-3</span></div>
+            <div class="flex__md-6 flex__lg-3"><span>flex__md-6 flex__lg-3</span></div>
+            <div class="flex__md-6 flex__lg-3"><span>flex__md-6 flex__lg-3</span></div>
+          </div>
+        </div>
+
+        <pre>
+&#x3C;div class=&#x22;flex&#x22;&#x3E;
+  &#x3C;div class=&#x22;flex__md-6 flex__lg-3&#x22;&#x3E;&#x3C;/div&#x3E;
+  &#x3C;div class=&#x22;flex__md-6 flex__lg-3&#x22;&#x3E;&#x3C;/div&#x3E;
+  &#x3C;div class=&#x22;flex__md-6 flex__lg-3&#x22;&#x3E;&#x3C;/div&#x3E;
+  &#x3C;div class=&#x22;flex__md-6 flex__lg-3&#x22;&#x3E;&#x3C;/div&#x3E;
+&#x3C;/div&#x3E;</pre>
+
+        <h3>Wrapping</h3>
+
+        <p>By default, columns will wrap if necessary.</p>
+
+        <div class="container"><span style="padding: 1rem; display: inline-block;">flex</span>
+          <div class="flex">
+            <div class="flex__6"><span>flex__6</span></div>
+            <div class="flex__8"><span>flex__8</span></div>
+          </div>
+        </div>
+
+        <pre>
+&#x3C;div class=&#x22;flex&#x22;&#x3E;
+  &#x3C;div class=&#x22;flex__6&#x22;&#x3E;&#x3C;/div&#x3E;
+  &#x3C;div class=&#x22;flex__8&#x22;&#x3E;&#x3C;/div&#x3E;
+&#x3C;/div&#x3E;</pre>
+
+        <h4>.flex--wrap-reverse</h4>
+
+        <p>The columns will wrap if necessary but in reverse order.</p>
+
+        <div class="container"><span style="padding: 1rem; display: inline-block;">flex flex--wrap-reverse</span>
+          <div class="flex flex--wrap-reverse">
+            <div class="flex__6"><span>flex__6</span></div>
+            <div class="flex__8"><span>flex__8</span></div>
+          </div>
+        </div>
+
+        <pre>
+&#x3C;div class=&#x22;flex flex-wrap-reverse&#x22;&#x3E;
+  &#x3C;div class=&#x22;flex__6&#x22;&#x3E;&#x3C;/div&#x3E;
+  &#x3C;div class=&#x22;flex__8&#x22;&#x3E;&#x3C;/div&#x3E;
+&#x3C;/div&#x3E;</pre>
+
+        <h4>.flex--nowrap</h4>
+
+        <p>The columns will not wrap.</p>
+
+        <div class="container"><span style="padding: 1rem; display: inline-block;">flex flex--nowrap</span>
+          <div class="flex flex--nowrap">
+            <div class="flex__6"><span>flex__6</span></div>
+            <div class="flex__8"><span>flex__8</span></div>
+          </div>
+        </div>
+
+        <pre>
+&#x3C;div class=&#x22;flex flex--nowrap&#x22;&#x3E;
+  &#x3C;div class=&#x22;flex__6&#x22;&#x3E;&#x3C;/div&#x3E;
+  &#x3C;div class=&#x22;flex__8&#x22;&#x3E;&#x3C;/div&#x3E;
+&#x3C;/div&#x3E;</pre>
+
+        <h3>Gutters</h3>
+
+        <p>You can remove the spacing with <code>.flex--no-gutters</code>.</p>
+
+        <div class="container"><span style="padding: 1rem; display: inline-block;">flex flex--no-gutters</span>
+          <div class="flex flex--no-gutters">
+            <div class="flex__md-6"><span>flex__md-6</span></div>
+            <div class="flex__md-6"><span>flex__md-6</span></div>
+            <div class="flex__md-6"><span>flex__md-6</span></div>
+            <div class="flex__md-6"><span>flex__md-6</span></div>
+          </div>
+        </div>
+
+        <pre>
+&#x3C;div class=&#x22;flex flex--no-gutters&#x22;&#x3E;
+  &#x3C;div class=&#x22;flex__md-6&#x22;&#x3E;&#x3C;/div&#x3E;
+  &#x3C;div class=&#x22;flex__md-6&#x22;&#x3E;&#x3C;/div&#x3E;
+  &#x3C;div class=&#x22;flex__md-6&#x22;&#x3E;&#x3C;/div&#x3E;
+  &#x3C;div class=&#x22;flex__md-6&#x22;&#x3E;&#x3C;/div&#x3E;
+&#x3C;/div&#x3E;</pre>
+
+        <p>You can also only remove the horizontal gutters with <code>.flex--no-horizontal-gutters</code>.</p>
+
+        <div class="container"><span style="padding: 1rem; display: inline-block;">flex flex--no-horizontal-gutters</span>
+          <div class="flex flex--no-horizontal-gutters">
+            <div class="flex__md-6"><span>flex__md-6</span></div>
+            <div class="flex__md-6"><span>flex__md-6</span></div>
+            <div class="flex__md-6"><span>flex__md-6</span></div>
+            <div class="flex__md-6"><span>flex__md-6</span></div>
+          </div>
+        </div>
+
+        <pre>
+&#x3C;div class=&#x22;flex flex--no-horizontal-gutters&#x22;&#x3E;
+  &#x3C;div class=&#x22;flex__md-6&#x22;&#x3E;&#x3C;/div&#x3E;
+  &#x3C;div class=&#x22;flex__md-6&#x22;&#x3E;&#x3C;/div&#x3E;
+  &#x3C;div class=&#x22;flex__md-6&#x22;&#x3E;&#x3C;/div&#x3E;
+  &#x3C;div class=&#x22;flex__md-6&#x22;&#x3E;&#x3C;/div&#x3E;
+&#x3C;/div&#x3E;</pre>
+
+        <p>Or you remove only the vertical gutters with <code>.flex--no-vertical-gutters</code>.</p>
+
+        <div class="container"><span style="padding: 1rem; display: inline-block;">flex flex--no-vertical-gutters</span>
+          <div class="flex flex--no-vertical-gutters">
+            <div class="flex__md-6"><span>flex__md-6</span></div>
+            <div class="flex__md-6"><span>flex__md-6</span></div>
+            <div class="flex__md-6"><span>flex__md-6</span></div>
+            <div class="flex__md-6"><span>flex__md-6</span></div>
+          </div>
+        </div>
+
+        <pre>
+&#x3C;div class=&#x22;flex flex--no-vertical-gutters&#x22;&#x3E;
+  &#x3C;div class=&#x22;flex__md-6&#x22;&#x3E;&#x3C;/div&#x3E;
+  &#x3C;div class=&#x22;flex__md-6&#x22;&#x3E;&#x3C;/div&#x3E;
+  &#x3C;div class=&#x22;flex__md-6&#x22;&#x3E;&#x3C;/div&#x3E;
+  &#x3C;div class=&#x22;flex__md-6&#x22;&#x3E;&#x3C;/div&#x3E;
+&#x3C;/div&#x3E;</pre>
+
+        <h3>Directions</h3>
+
+        <p>The following classes define the direction in which the columns are placed within the wrapper. By default, columns are set from left to right in <code>ltr</code> (left-to-right languages) and from right to left in <code>rtl</code> (right-to-left languages).</p>
+
+        <div class="container"><span style="padding: 1rem; display: inline-block;">flex</span>
+          <div class="flex">
+            <div class="flex__4"><span>flex__4</span></div>
+            <div class="flex__8"><span>flex__8</span></div>
+          </div>
+        </div>
+
+        <pre>
+&#x3C;div class=&#x22;flex&#x22;&#x3E;
+  &#x3C;div class=&#x22;flex__4&#x22;&#x3E;&#x3C;/div&#x3E;
+  &#x3C;div class=&#x22;flex__8&#x22;&#x3E;&#x3C;/div&#x3E;
+&#x3C;/div&#x3E;</pre>
+
+        <h4>.flex--row-reverse</h4>
+
+        <p>The columns are placed from right to left in <code>ltr</code> and left to right in <code>rtl</code>.</p>
+
+        <div class="container"><span style="padding: 1rem; display: inline-block;">flex flex--row-reverse</span>
+          <div class="flex flex--row-reverse">
+            <div class="flex__4"><span>flex__4</span></div>
+            <div class="flex__8"><span>flex__8</span></div>
+          </div>
+        </div>
+
+        <pre>
+&#x3C;div class=&#x22;flex flex--row-reverse&#x22;&#x3E;
+  &#x3C;div class=&#x22;flex__4&#x22;&#x3E;&#x3C;/div&#x3E;
+  &#x3C;div class=&#x22;flex__8&#x22;&#x3E;&#x3C;/div&#x3E;
+&#x3C;/div&#x3E;</pre>
+
+        <h4>.flex--column</h4>
+
+        <p><code>.flex--column</code> behaves the same way as <code>.flex--row</code> but the columns are stacked from top to bottom.</p>
+
+        <div class="container"><span style="padding: 1rem; display: inline-block;">flex flex--column</span>
+          <div class="flex flex--column">
+            <div class="flex__4"><span>flex__4</span></div>
+            <div class="flex__8"><span>flex__8</span></div>
+          </div>
+        </div>
+
+        <pre>
+&#x3C;div class=&#x22;flex flex--column&#x22;&#x3E;
+  &#x3C;div class=&#x22;flex__4&#x22;&#x3E;&#x3C;/div&#x3E;
+  &#x3C;div class=&#x22;flex__8&#x22;&#x3E;&#x3C;/div&#x3E;
+&#x3C;/div&#x3E;</pre>
+
+        <h4>.flex--column-reverse</h4>
+
+        <p><code>.flex--column-reverse</code> behaves the same way as <code>.flex--row-reverse</code> but the columns are stacked from bottom to top.</p>
+
+        <div class="container"><span style="padding: 1rem; display: inline-block;">flex flex--column-reverse</span>
+          <div class="flex flex--column-reverse">
+            <div class="flex__4"><span>flex__4</span></div>
+            <div class="flex__8"><span>flex__8</span></div>
+          </div>
+        </div>
+
+        <pre>
+&#x3C;div class=&#x22;flex flex--column-reverse&#x22;&#x3E;
+  &#x3C;div class=&#x22;flex__4&#x22;&#x3E;&#x3C;/div&#x3E;
+  &#x3C;div class=&#x22;flex__8&#x22;&#x3E;&#x3C;/div&#x3E;
+&#x3C;/div&#x3E;</pre>
+
+        <h3>Horizontal Alignment</h3>
+
+        <p>The following classes define how columns are aligned along the main axis. They help distribute extra space between the items when they don't reach their maximum size. By default, columns are positioned at the beginning of the container.</p>
+
+        <div class="container"><span style="padding: 1rem; display: inline-block;">flex</span>
+          <div class="flex">
+            <div class="flex__3"><span>flex__3</span></div>
+            <div class="flex__3"><span>flex__3</span></div>
+            <div class="flex__3"><span>flex__3</span></div>
+          </div>
+        </div>
+
+        <pre>
+&#x3C;div class=&#x22;flex&#x22;&#x3E;
+  &#x3C;div class=&#x22;flex__3&#x22;&#x3E;&#x3C;/div&#x3E;
+  &#x3C;div class=&#x22;flex__3&#x22;&#x3E;&#x3C;/div&#x3E;
+  &#x3C;div class=&#x22;flex__3&#x22;&#x3E;&#x3C;/div&#x3E;
+&#x3C;/div&#x3E;</pre>
+
+        <h4>.flex--right</h4>
+
+        <p>The columns are positioned at the end of the container.</p>
+
+        <div class="container"><span style="padding: 1rem; display: inline-block;">flex flex--right</span>
+          <div class="flex flex--right">
+            <div class="flex__3"><span>flex__3</span></div>
+            <div class="flex__3"><span>flex__3</span></div>
+            <div class="flex__3"><span>flex__3</span></div>
+          </div>
+        </div>
+
+        <pre>
+&#x3C;div class=&#x22;flex flex--right&#x22;&#x3E;
+  &#x3C;div class=&#x22;flex__3&#x22;&#x3E;&#x3C;/div&#x3E;
+  &#x3C;div class=&#x22;flex__3&#x22;&#x3E;&#x3C;/div&#x3E;
+  &#x3C;div class=&#x22;flex__3&#x22;&#x3E;&#x3C;/div&#x3E;
+&#x3C;/div&#x3E;</pre>
+
+        <h4>.flex--center</h4>
+
+        <p>The columns are positioned at the center of the container.</p>
+
+        <div class="container"><span style="padding: 1rem; display: inline-block;">flex flex--center</span>
+          <div class="flex flex--center">
+            <div class="flex__3"><span>flex__3</span></div>
+            <div class="flex__3"><span>flex__3</span></div>
+            <div class="flex__3"><span>flex__3</span></div>
+          </div>
+        </div>
+
+        <pre>
+&#x3C;div class=&#x22;flex flex--center&#x22;&#x3E;
+  &#x3C;div class=&#x22;flex__3&#x22;&#x3E;&#x3C;/div&#x3E;
+  &#x3C;div class=&#x22;flex__3&#x22;&#x3E;&#x3C;/div&#x3E;
+  &#x3C;div class=&#x22;flex__3&#x22;&#x3E;&#x3C;/div&#x3E;
+&#x3C;/div&#x3E;</pre>
+
+        <h4>.flex--space-between</h4>
+
+        <p>The columns are evenly spread horizontally; the first column is at the beginning of the container, and the last column is at the end of the container. Space is distributed between the columns.</p>
+
+        <div class="container"><span style="padding: 1rem; display: inline-block;">flex flex--space-between</span>
+          <div class="flex flex--space-between">
+            <div class="flex__3"><span>flex__3</span></div>
+            <div class="flex__3"><span>flex__3</span></div>
+            <div class="flex__3"><span>flex__3</span></div>
+          </div>
+        </div>
+
+        <pre>
+&#x3C;div class=&#x22;flex flex--space-between&#x22;&#x3E;
+  &#x3C;div class=&#x22;flex__3&#x22;&#x3E;&#x3C;/div&#x3E;
+  &#x3C;div class=&#x22;flex__3&#x22;&#x3E;&#x3C;/div&#x3E;
+  &#x3C;div class=&#x22;flex__3&#x22;&#x3E;&#x3C;/div&#x3E;
+&#x3C;/div&#x3E;</pre>
+
+        <h4>.flex--space-around</h4>
+
+        <p>The columns are positioned with equal space before, between, and after them.</p>
+
+        <div class="container"><span style="padding: 1rem; display: inline-block;">flex flex--space-around</span>
+          <div class="flex flex--space-around">
+            <div class="flex__3"><span>flex__3</span></div>
+            <div class="flex__3"><span>flex__3</span></div>
+            <div class="flex__3"><span>flex__3</span></div>
+          </div>
+        </div>
+
+        <pre>
+&#x3C;div class=&#x22;flex flex--space-around&#x22;&#x3E;
+  &#x3C;div class=&#x22;flex__3&#x22;&#x3E;&#x3C;/div&#x3E;
+  &#x3C;div class=&#x22;flex__3&#x22;&#x3E;&#x3C;/div&#x3E;
+  &#x3C;div class=&#x22;flex__3&#x22;&#x3E;&#x3C;/div&#x3E;
+&#x3C;/div&#x3E;</pre>
+
+        <h3>Vertical Alignment</h3>
+
+        <p>The following classes define how columns are aligned along the cross axis when they don't reach their maximum size.</p>
+
+        <h4>.flex--stretch</h4>
+
+        <p>This is the default value. You don't need to add the class to the wrapper; it stretches the height of the columns to fill the container while respecting <code>min-width</code> and <code>max-width</code>.</p>
+
+        <div class="container"><span style="padding: 1rem; display: inline-block;">flex</span>
+          <div class="flex">
+            <div class="flex__4"><span>Lorem ipsum dolor sit amet.</span></div>
+            <div class="flex__4"><span>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam.</span></div>
+            <div class="flex__4"><span>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod.</span></div>
+          </div>
+        </div>
+
+        <pre>
+&#x3C;div class=&#x22;flex&#x22;&#x3E;
+  &#x3C;div class=&#x22;flex__4&#x22;&#x3E;&#x3C;/div&#x3E;
+  &#x3C;div class=&#x22;flex__4&#x22;&#x3E;&#x3C;/div&#x3E;
+  &#x3C;div class=&#x22;flex__4&#x22;&#x3E;&#x3C;/div&#x3E;
+&#x3C;/div&#x3E;</pre>
+
+        <p>You can also apply <code>.flex--stretch</code> to individual columns if necessary.</p>
+
+        <div class="container"><span style="padding: 1rem; display: inline-block;">flex flex--top</span>
+          <div class="flex flex--top">
+            <div class="flex__4 flex--stretch"><span>flex--stretch</span></div>
+            <div class="flex__4"><span>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam.</span></div>
+            <div class="flex__4"><span>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod.</span></div>
+          </div>
+        </div>
+
+        <pre>
+&#x3C;div class=&#x22;flex flex--top&#x22;&#x3E;
+  &#x3C;div class=&#x22;flex__4 flex--stretch&#x22;&#x3E;&#x3C;/div&#x3E;
+  &#x3C;div class=&#x22;flex__4&#x22;&#x3E;&#x3C;/div&#x3E;
+  &#x3C;div class=&#x22;flex__4&#x22;&#x3E;&#x3C;/div&#x3E;
+&#x3C;/div&#x3E;</pre>
+
+        <h4>.flex--top</h4>
+
+        <p>The columns are positioned at the top of the container.</p>
+
+        <div class="container"><span style="padding: 1rem; display: inline-block;">flex flex--top</span>
+          <div class="flex flex--top">
+            <div class="flex__4"><span>Lorem ipsum dolor sit amet.</span></div>
+            <div class="flex__4"><span>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam.</span></div>
+            <div class="flex__4"><span>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod.</span></div>
+          </div>
+        </div>
+
+        <pre>
+&#x3C;div class=&#x22;flex flex--top&#x22;&#x3E;
+  &#x3C;div class=&#x22;flex__4&#x22;&#x3E;&#x3C;/div&#x3E;
+  &#x3C;div class=&#x22;flex__4&#x22;&#x3E;&#x3C;/div&#x3E;
+  &#x3C;div class=&#x22;flex__4&#x22;&#x3E;&#x3C;/div&#x3E;
+&#x3C;/div&#x3E;</pre>
+
+        <p>You can also apply <code>.flex--top</code> to individual columns.</p>
+
+        <div class="container"><span style="padding: 1rem; display: inline-block;">flex</span>
+          <div class="flex">
+            <div class="flex__4 flex--top"><span>flex--top</span></div>
+            <div class="flex__4"><span>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam.</span></div>
+            <div class="flex__4"><span>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod.</span></div>
+          </div>
+        </div>
+
+        <pre>
+&#x3C;div class=&#x22;flex&#x22;&#x3E;
+  &#x3C;div class=&#x22;flex__4 flex--top&#x22;&#x3E;&#x3C;/div&#x3E;
+  &#x3C;div class=&#x22;flex__4&#x22;&#x3E;&#x3C;/div&#x3E;
+  &#x3C;div class=&#x22;flex__4&#x22;&#x3E;&#x3C;/div&#x3E;
+&#x3C;/div&#x3E;</pre>
+
+        <h4>.flex--bottom</h4>
+
+        <p>The columns are positioned at the bottom of the container.</p>
+
+        <div class="container"><span style="padding: 1rem; display: inline-block;">flex flex--bottom</span>
+          <div class="flex flex--bottom">
+            <div class="flex__4"><span>Lorem ipsum dolor sit amet.</span></div>
+            <div class="flex__4"><span>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam.</span></div>
+            <div class="flex__4"><span>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod.</span></div>
+          </div>
+        </div>
+
+        <pre>
+&#x3C;div class=&#x22;flex flex--bottom&#x22;&#x3E;
+  &#x3C;div class=&#x22;flex__4&#x22;&#x3E;&#x3C;/div&#x3E;
+  &#x3C;div class=&#x22;flex__4&#x22;&#x3E;&#x3C;/div&#x3E;
+  &#x3C;div class=&#x22;flex__4&#x22;&#x3E;&#x3C;/div&#x3E;
+&#x3C;/div&#x3E;</pre>
+
+        <p>You can also apply <code>.flex--bottom</code> to individual columns.</p>
+
+        <div class="container"><span style="padding: 1rem; display: inline-block;">flex</span>
+          <div class="flex">
+            <div class="flex__4 flex--bottom"><span>flex--bottom</span></div>
+            <div class="flex__4"><span>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam.</span></div>
+            <div class="flex__4"><span>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod.</span></div>
+          </div>
+        </div>
+
+        <pre>
+&#x3C;div class=&#x22;flex&#x22;&#x3E;
+  &#x3C;div class=&#x22;flex__4 flex--bottom&#x22;&#x3E;&#x3C;/div&#x3E;
+  &#x3C;div class=&#x22;flex__4&#x22;&#x3E;&#x3C;/div&#x3E;
+  &#x3C;div class=&#x22;flex__4&#x22;&#x3E;&#x3C;/div&#x3E;
+&#x3C;/div&#x3E;</pre>
+
+        <h4>.flex--middle</h4>
+
+        <p>The columns are positioned at the vertical center of the container.</p>
+
+        <div class="container"><span style="padding: 1rem; display: inline-block;">flex flex--middle</span>
+          <div class="flex flex--middle">
+            <div class="flex__4"><span>Lorem ipsum dolor sit amet.</span></div>
+            <div class="flex__4"><span>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam.</span></div>
+            <div class="flex__4"><span>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod.</span></div>
+          </div>
+        </div>
+
+        <pre>
+&#x3C;div class=&#x22;flex flex--middle&#x22;&#x3E;
+  &#x3C;div class=&#x22;flex__4&#x22;&#x3E;&#x3C;/div&#x3E;
+  &#x3C;div class=&#x22;flex__4&#x22;&#x3E;&#x3C;/div&#x3E;
+  &#x3C;div class=&#x22;flex__4&#x22;&#x3E;&#x3C;/div&#x3E;
+&#x3C;/div&#x3E;</pre>
+
+        <p>You can also apply <code>.flex--middle</code> to individual columns.</p>
+
+        <div class="container"><span style="padding: 1rem; display: inline-block;">flex</span>
+          <div class="flex">
+            <div class="flex__4 flex--middle"><span>flex--middle</span></div>
+            <div class="flex__4"><span>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam.</span></div>
+            <div class="flex__4"><span>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod.</span></div>
+          </div>
+        </div>
+
+        <pre>
+&#x3C;div class=&#x22;flex&#x22;&#x3E;
+  &#x3C;div class=&#x22;flex__4 flex--middle&#x22;&#x3E;&#x3C;/div&#x3E;
+  &#x3C;div class=&#x22;flex__4&#x22;&#x3E;&#x3C;/div&#x3E;
+  &#x3C;div class=&#x22;flex__4&#x22;&#x3E;&#x3C;/div&#x3E;
+&#x3C;/div&#x3E;</pre>
+
+        <h3>Reordering</h3>
+
+        <p>Use <code>.flex--order-</code> classes to control the visual order of your content.</p>
+
+        <div class="container"><span style="padding: 1rem; display: inline-block;">flex</span>
+          <div class="flex">
+            <div class="flex__6 flex--order-5"><span>flex__6 flex--order-5</span></div>
+            <div class="flex__6 flex--order-6 flex--order-lg-3"><span>flex__6 flex--order-6 flex--order-lg-3</span></div>
+            <div class="flex__6 flex--order-2"><span>flex__6 flex--order-2</span></div>
+            <div class="flex__6 flex--order-3 flex--order-lg-6"><span>flex__6 flex--order-3 flex--order-lg-6</span></div>
+            <div class="flex__6 flex--order-4"><span>flex__6 flex--order-4</span></div>
+            <div class="flex__6 flex--order-1"><span>flex__6 flex--order-1</span></div>
+          </div>
+        </div>
+
+        <pre>
+&#x3C;div class=&#x22;flex&#x22;&#x3E;
+  &#x3C;div class=&#x22;flex__6 flex--order-5&#x22;&#x3E;&#x3C;/div&#x3E;
+  &#x3C;div class=&#x22;flex__6 flex--order-6 flex--order-lg-3&#x22;&#x3E;&#x3C;/div&#x3E;
+  &#x3C;div class=&#x22;flex__6 flex--order-2&#x22;&#x3E;&#x3C;/div&#x3E;
+  &#x3C;div class=&#x22;flex__6 flex--order-3 flex--order-lg-6&#x22;&#x3E;&#x3C;/div&#x3E;
+  &#x3C;div class=&#x22;flex__6 flex--order-4&#x22;&#x3E;&#x3C;/div&#x3E;
+  &#x3C;div class=&#x22;flex__6 flex--order-1&#x22;&#x3E;&#x3C;/div&#x3E;
+&#x3C;/div&#x3E;</pre>
+
+        <h4>Offsetting columns</h4>
+
+        <p>Offset a column by adding <code>.flex--offset-</code> classes.</p>
+
+        <div class="container"><span style="padding: 1rem; display: inline-block;">flex</span>
+          <div class="flex">
+            <div class="flex__2"><span>flex__2</span></div>
+            <div class="flex__8 flex--offset-2"><span>flex__8 flex--offset-2</span></div>
+            <div class="flex__md-8 flex--offset-md-4"><span>flex__md-8 flex--offset-md-4</span></div>
+            <div class="flex__6 flex__lg-4"><span>flex__6 flex__lg-4</span></div>
+            <div class="flex__6 flex--offset-lg-2"><span>flex__6 flex--offset-lg-2</span></div>
+          </div>
+        </div>
+
+        <pre>
+&#x3C;div class=&#x22;flex&#x22;&#x3E;
+  &#x3C;div class=&#x22;flex__2&#x22;&#x3E;&#x3C;/div&#x3E;
+  &#x3C;div class=&#x22;flex__8 flex--offset-2&#x22;&#x3E;&#x3C;/div&#x3E;
+  &#x3C;div class=&#x22;flex__md-8 flex--offset-md-4&#x22;&#x3E;&#x3C;/div&#x3E;
+  &#x3C;div class=&#x22;flex__6 flex__lg-4&#x22;&#x3E;&#x3C;/div&#x3E;
+  &#x3C;div class=&#x22;flex__6 flex--offset-lg-2&#x22;&#x3E;&#x3C;/div&#x3E;
+&#x3C;/div&#x3E;</pre>
       </section>
     </main>
 

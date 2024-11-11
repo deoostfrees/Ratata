@@ -41,6 +41,4 @@
 @import url('./components/_accordion.css') layer(components);
 @import url('./components/_alert.css') layer(components);
 @import url('./components/_breadcrumb.css') layer(components);
-@import url('./components/_card.css') layer(components);
-@import url('./components/_textmedia.css') layer(components);
-@import url('./components/_theme-switcher.css') layer(components);
+@import url('./components/_color-scheme-toggle.css') layer(components);

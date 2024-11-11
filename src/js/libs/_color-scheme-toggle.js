@@ -1,7 +1,7 @@
-export default function toggleColorScheme () {
+export default function colorSchemeToggle () {
   const DOCUMENT_EL = document.documentElement
   const BROWSER_WINDOW = window
-  const COLOR_SCHEME_TOGGLE = document.querySelectorAll('.btn--color-scheme-switch')
+  const COLOR_SCHEME_TOGGLE_BTN = document.querySelectorAll('.btn--color-scheme-switch')
 
   let currentColorScheme = 'system'
 
@@ -10,11 +10,11 @@ export default function toggleColorScheme () {
    *
    */
   const setActiveButton = (colorScheme) => {
-    COLOR_SCHEME_TOGGLE.forEach((colorSchemeToggle) => {
-      if (colorSchemeToggle.getAttribute('data-color-scheme') === colorScheme) {
-        colorSchemeToggle.setAttribute('aria-pressed', 'true')
+    COLOR_SCHEME_TOGGLE_BTN.forEach((colorSchemeToggleBtn) => {
+      if (colorSchemeToggleBtn.getAttribute('data-color-scheme') === colorScheme) {
+        colorSchemeToggleBtn.setAttribute('aria-pressed', 'true')
       } else {
-        colorSchemeToggle.setAttribute('aria-pressed', 'false')
+        colorSchemeToggleBtn.setAttribute('aria-pressed', 'false')
       }
     })
   }
@@ -30,10 +30,10 @@ export default function toggleColorScheme () {
     localStorage.setItem('color-scheme', colorScheme)
   }
 
-  COLOR_SCHEME_TOGGLE.forEach((colorSchemeToggle) => {
-    colorSchemeToggle.addEventListener('click', () => {
-      if (colorSchemeToggle.getAttribute('aria-pressed') !== 'true') {
-        currentColorScheme = colorSchemeToggle.getAttribute('data-color-scheme')
+  COLOR_SCHEME_TOGGLE_BTN.forEach((colorSchemeToggleBtn) => {
+    colorSchemeToggleBtn.addEventListener('click', () => {
+      if (colorSchemeToggleBtn.getAttribute('aria-pressed') !== 'true') {
+        currentColorScheme = colorSchemeToggleBtn.getAttribute('data-color-scheme')
 
         setColorScheme(currentColorScheme)
         setActiveButton(currentColorScheme)

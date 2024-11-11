@@ -48,7 +48,7 @@ pre {
   background-color: var(--code-background-color);
   color: var(--code-color);
   overflow-x: auto;
-  padding: calc((8 / 18) * 1rem);
+  padding: calc((16 / 18) * 1rem);
   tab-size: 4;
 
 

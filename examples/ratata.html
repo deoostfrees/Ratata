@@ -13,7 +13,7 @@
     <script src="../src/js/helpers/set-color-scheme.js"></script>
 
     <link href="../src/css/ratata.css" rel="stylesheet">
-    <link href="./styles.css" rel="stylesheet">
+    <link href="./example-assets/styles.css" rel="stylesheet">
   </head>
 
   <body>
@@ -49,12 +49,10 @@
                 <li><a href="#table">Table</a></li>
                 <li><a href="#buttons">Buttons</a></li>
                 <li><a href="#forms">Forms</a></li>
-                <li><a href="#theme-switcher">Theme switcher</a></li>
+                <li><a href="#color-scheme-toggle">Color scheme toggle</a></li>
                 <li><a href="#breadcrumb">Breadcrumb</a></li>
                 <li><a href="#accordion">Accordion</a></li>
                 <li><a href="#alert">Alert</a></li>
-                <li><a href="#textmedia">Textmedia</a></li>
-                <li><a href="#card">Card</a></li>
                 <li><a href="#grid">Grid (WIP)</a></li>
               </ol>
             </nav>
@@ -401,14 +399,14 @@
 
       <section class="container container--small">
         <header>
-          <h2 id="theme-switcher">Theme switcher</h2>
-          <a class="anchor" href="#theme-switcher">
+          <h2 id="color-scheme-toggle">Color scheme toggle</h2>
+          <a class="anchor" href="#color-scheme-toggle">
             <span aria-hidden="true">Permalink</span>
-            <span class="visually-hidden">Section titled Theme switcher</span>
+            <span class="visually-hidden">Section titled Color scheme toggle</span>
           </a>
         </header>
 
-        <div class="theme-switcher">
+        <div class="color-scheme-toggle">
           <button type="button" class="btn btn--color-scheme-switch" data-color-scheme="system">
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="round">
               <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
@@ -516,56 +514,6 @@
 
         <div class="alert alert--danger" role="alert">
           <p>Danger alert. <a href="#">More info about the danger alert</a>.</p>
-        </div>
-      </section>
-
-      <section class="container">
-        <header>
-          <h2 id="textmedia">Textmedia</h2>
-          <a class="anchor" href="#textmedia">
-            <span aria-hidden="true">Permalink</span>
-            <span class="visually-hidden">Section titled Textmedia</span>
-          </a>
-        </header>
-
-        <div class="textmedia">
-          <div class="textmedia__media">
-            <figure>
-              <img src="./demo.webp" alt="" width="1200" height="675" loading="lazy">
-
-              <figcaption>
-                Test
-              </figcaption>
-            </figure>
-          </div>
-
-          <div class="textmedia__text">
-            <p>Lorem ipsum odor amet, consectetuer adipiscing elit. Eget rhoncus duis massa <a href="#textmedia">curabitur tempus</a> egestas.</p>
-
-            <p>Sodales taciti aptent porttitor dapibus nunc. Erat eros risus nibh sed, senectus vel ultricies facilisis orci.</p>
-          </div>
-        </div>
-      </section>
-
-      <section class="container container--small">
-        <header>
-          <h2 id="card">Card</h2>
-          <a class="anchor" href="#card">
-            <span aria-hidden="true">Permalink</span>
-            <span class="visually-hidden">Section titled Card</span>
-          </a>
-        </header>
-
-        <div class="card">
-          <div class="card__image">
-            <img src="./demo.webp" alt="" width="1200" height="675" loading="lazy">
-          </div>
-
-          <div class="card__body">
-            <h3><a href="#card">Card title</a></h3>
-
-            <p>Lorem ipsum odor amet, consectetuer adipiscing elit. Eget rhoncus duis massa curabitur tempus egestas.</p>
-          </div>
         </div>
       </section>
 
@@ -1164,5 +1112,6 @@
     </main>
 
     <script src="../src/js/ratata.js" type="module"></script>
+    <script src="./example-assets/main.js" type="module"></script>
   </body>
 </html>

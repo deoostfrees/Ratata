@@ -3,9 +3,9 @@
  *
  */
 if (document.querySelector('.btn--color-scheme-switch') !== null) {
-  import('./libs/_toggle-color-scheme.js')
-    .then(({ default: toggleColorScheme }) => {
-      toggleColorScheme()
+  import('./libs/_color-scheme-toggle.js')
+    .then(({ default: colorSchemeToggle }) => {
+      colorSchemeToggle()
     })
 }
 

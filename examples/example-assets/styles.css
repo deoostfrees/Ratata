@@ -22,6 +22,7 @@ header {
 
   &:has(.anchor) {
     align-items: baseline;
+    column-gap: calc((16 / 18) * 1rem);
     display: flex;
     flex-wrap: wrap;
   }
@@ -34,7 +35,6 @@ header {
 .anchor {
   font-size: calc((18 / 18) * 1rem);
   font-weight: var(--base-font-weight);
-  margin-inline-start: calc((16 / 18) * 1rem);
 }
 
 .toc {
@@ -47,10 +47,6 @@ header {
     margin-inline-start: calc((32 / 18) * 1rem);
     row-gap: calc((8 / 18) * 1rem);
   }
-}
-
-.card {
-  max-inline-size: calc((350 / 18) * 1rem);
 }
 
 section:has([id='grid']) {
@@ -69,4 +65,23 @@ section:has([id='grid']) {
   & span > .flex {
     border: calc((4 / 18) * 1rem) solid var(--body-background-color);
   }
+}
+
+.code-container {
+  position: relative;
+
+
+  & pre {
+    padding-inline-end: calc((40 / 18) * 1rem);
+  }
+}
+
+.btn--copy {
+  font-size: var(--small-font-size);
+  inset-block-start: 0;
+  inset-inline-end: 0;
+  line-height: var(--small-line-height);
+  padding-block: calc((2 / 18) * 1rem);
+  padding-inline: calc((4 / 18) * 1rem);
+  position: absolute;
 }

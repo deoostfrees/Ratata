@@ -159,29 +159,13 @@ html {
   --alert-danger-border-color: var(--color-red-200);
   --alert-danger-color: var(--color-red-600);
 
-    /**
-   * Theme switcher
-   *
-   */
-  --theme-switcher-background-color: light-dark(var(--primary-color), var(--color-neutral-100));
-  --theme-switcher-border-color: transparent;
-  --theme-switcher-color: light-dark(var(--white), var(--color-neutral-900));
-  --theme-switcher-active-background-color: light-dark(var(--white), var(--color-neutral-900));
-  --theme-switcher-active-color: light-dark(var(--primary-color), var(--color-neutral-100));
-
   /**
-   * Card
+   * Color scheme toggle
    *
    */
-  --card-background-color: transparent;
-  --card-border-color: light-dark(var(--color-neutral-500), var(--color-neutral-800));
-  --card-color: var(--color-neutral-900);
-  --card-image-background-color: light-dark(var(--primary-color), var(--color-neutral-800));
-  --card-image-color: light-dark(var(--white), var(--color-neutral-100));
-  --card-body-background-color: light-dark(var(--white), var(--color-neutral-100));
-  --card-body-color: var(--color-neutral-900);
-  --card-link-color: light-dark(var(--primary-color), var(--color-neutral-900));
-  --card-link-decoration-line: underline;
-  --card-link-hover-color: light-dark(var(--primary-color), var(--color-neutral-900));
-  --card-link-hover-decoration-line: none;
+  --color-scheme-toggle-background-color: light-dark(var(--primary-color), var(--color-neutral-100));
+  --color-scheme-toggle-border-color: transparent;
+  --color-scheme-toggle-color: light-dark(var(--white), var(--color-neutral-900));
+  --color-scheme-toggle-active-background-color: light-dark(var(--white), var(--color-neutral-900));
+  --color-scheme-toggle-active-color: light-dark(var(--primary-color), var(--color-neutral-100));
 }

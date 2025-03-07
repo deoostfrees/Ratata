@@ -29,7 +29,6 @@ input[type='checkbox'] {
     content: '';
     inline-size: calc((16 / 18) * 1rem);
     mask-image: url('./../../../icons/check.svg');
-    mask-mode: auto;
     mask-position: center;
     mask-repeat: no-repeat;
     mask-size: contain;

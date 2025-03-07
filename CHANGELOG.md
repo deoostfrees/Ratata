@@ -1,8 +1,19 @@
 # Changelog
 
-## [Unreleased]
+## [0.9.0] - 2025-03-
 
-- Grid system
+### Added
+
+- Grid (WIP)
+
+### Changed
+
+- **Breaking:** Rename theme switcher
+
+### Removed
+
+- **Breaking:** Card component
+- **Breaking:** Textmedia component
 
 ## [0.8.0] - 2024-10-27
 

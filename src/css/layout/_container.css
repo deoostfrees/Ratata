@@ -14,5 +14,5 @@
 }
 
 .container--small {
-  inline-size: min(100% - var(--container-padding-inline) * 2, var(--container-small-max-width));
+  --container-max-width: var(--container-small-max-width);
 }

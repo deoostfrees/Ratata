@@ -42,6 +42,7 @@ h4,
 }
 
 a {
+  background-color: var(--link-background-color);
   color: var(--link-color);
   text-decoration-line: var(--link-decoration-line);
   text-decoration-skip-ink: auto;
@@ -49,6 +50,7 @@ a {
 
   &:hover,
   &:focus-visible {
+    background-color: var(--link-hover-background-color);
     color: var(--link-hover-color);
     text-decoration: var(--link-hover-decoration-line);
   }

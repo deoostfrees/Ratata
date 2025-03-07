@@ -29,8 +29,10 @@ html {
    * Links
    *
    */
+  --link-background-color: transparent;
   --link-color: light-dark(var(--primary-color), var(--color-neutral-100));
   --link-decoration-line: underline;
+  --link-hover-background-color: transparent;
   --link-hover-color: light-dark(var(--primary-color), var(--color-neutral-100));
   --link-hover-decoration-line: none;
 

@@ -2,12 +2,13 @@
 
 More web standards, less bullshit.
 
-Ratata is a HTML, CSS and JavaScript boilerplate using just HTML, CSS and JavaScript. It's main focus is on web standards, accessibility and performance. [Check it out on CodePen](https://codepen.io/deoostfrees/pen/XWGWbEy).
+Ratata is an HTML, CSS, and JavaScript boilerplate using just HTML, CSS, and JavaScript. Its main focus is on web standards, accessibility, and performance. [Check it out on CodePen](https://codepen.io/deoostfrees/pen/XWGWbEy).
 
-## Table of contents
+## Table of Contents
 
 - [Getting Started](#getting-started)
-- [Credits, Attribution and Inspiration](#credits-attribution-and-inspiration)
+- [Variables](#variables)
+- [Credits, Attribution, and Inspiration](#credits-attribution-and-inspiration)
 - [Browser Support](#browser-support)
 
 ## Getting Started
@@ -17,7 +18,7 @@ Ratata is a HTML, CSS and JavaScript boilerplate using just HTML, CSS and JavaSc
 
 ### Variables
 
-The file `_variables.css` in the `src` folder contains variables for all layout, spacing and typography used in Ratata.
+The file `_variables.css` in the `src` folder contains variables for all layout, spacing, and typography used in Ratata.
 
 ```css
 :root {
@@ -35,6 +36,10 @@ The file `_variables.css` in the `src` folder contains variables for all layout,
   --container-max-width: calc((1848 / 18) * 1rem);
   --container-small-max-width: calc((660 / 18) * 1rem);
   --container-padding-inline: calc((24 / 18) * 1rem);
+
+  /* Grid */
+  --grid-gutter-vertical: calc((24 / 18) * 1rem);
+  --grid-gutter-horizontal: calc((24 / 18) * 1rem);
 
   /**
    * Typography
@@ -55,6 +60,10 @@ The file `_variables.css` in the `src` folder contains variables for all layout,
   /* Blockquote */
   --blockquote-font-size: calc((23 / 18) * 1rem);
   --blockquote-line-height: calc((38 / 23));
+
+  /* Code */
+  --code-font-family: ui-monospace, 'Cascadia Code', 'Source Code Pro', menlo, consolas, 'DejaVu Sans Mono', monospace;
+  --code-font-weight: 400;
 
   /* Headings */
   --headings-font-family: var(--base-font-family);
@@ -80,7 +89,7 @@ The file `_variables.css` in the `src` folder contains variables for all layout,
 
 A default color scheme for light and dark mode can be found in `src/themes/`.
 
-## Credits, Attribution and Inspiration
+## Credits, Attribution, and Inspiration
 
 - [Stephanie Eckles](https://thinkdobecreate.com)' [Pure CSS Custom Checkbox Style](https://moderncss.dev/pure-css-custom-checkbox-style/)
 - [Stephanie Eckles](https://thinkdobecreate.com)' [Pure CSS Custom Styled Radio Buttons](https://moderncss.dev/pure-css-custom-styled-radio-buttons/)

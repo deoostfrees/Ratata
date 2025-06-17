@@ -25,9 +25,9 @@ export default function colorSchemeToggle () {
    * @param {string} colorScheme - Color-scheme
    */
   const applyColorScheme = (colorScheme) => {
-    DOCUMENT_EL.setAttribute('data-color-scheme', colorScheme);
-    setActiveButton(colorScheme);
-  };
+    DOCUMENT_EL.setAttribute('data-color-scheme', colorScheme)
+    setActiveButton(colorScheme)
+  }
 
   /**
    * Set color-scheme
@@ -35,7 +35,7 @@ export default function colorSchemeToggle () {
    * @param {string} colorScheme - Color-scheme
    */
   const setColorScheme = (colorScheme) => {
-    applyColorScheme(colorScheme);
+    applyColorScheme(colorScheme)
 
     localStorage.setItem('color-scheme', colorScheme)
   }
@@ -80,9 +80,9 @@ export default function colorSchemeToggle () {
    */
   BROWSER_WINDOW.addEventListener('storage', (event) => {
     if (event.key === 'color-scheme') {
-      currentColorScheme = event.newValue;
+      currentColorScheme = event.newValue
 
-      applyColorScheme(currentColorScheme);
+      applyColorScheme(currentColorScheme)
     }
   })
 }

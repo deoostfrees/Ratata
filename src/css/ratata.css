@@ -28,6 +28,7 @@
 @import url('./content/_typography.css') layer(content);
 @import url('./content/_buttons.css') layer(content);
 @import url('./content/_code.css') layer(content);
+@import url('./content/_hr.css') layer(content);
 @import url('./content/_quotes.css') layer(content);
 @import url('./content/_lists.css') layer(content);
 @import url('./content/_table.css') layer(content);

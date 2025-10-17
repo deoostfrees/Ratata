@@ -1,6 +1,6 @@
 # Changelog
 
-## [0.9.0] - 2025-03-
+## [0.9.0] - 2025-10-
 
 ### Added
 
@@ -9,6 +9,7 @@
 ### Changed
 
 - **Breaking:** Rename theme switcher
+- Use requestIdleCallback() to load low-priority modules
 
 ### Removed
 

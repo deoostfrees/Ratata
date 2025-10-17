@@ -31,8 +31,9 @@
   },
   "standard": {
     "globals": [
+      "Audio",
       "localStorage",
-      "Audio"
+      "requestIdleCallback"
     ]
   }
 }

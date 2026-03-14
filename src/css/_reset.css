@@ -9,6 +9,10 @@
   box-sizing: border-box;
 }
 
+:root {
+  interpolate-size: allow-keywords;
+}
+
 html {
   text-size-adjust: none;
 }

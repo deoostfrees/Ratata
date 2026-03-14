@@ -1,0 +1,87 @@
+main {
+  margin-block: calc((80 / 18) * 1rem);
+
+  & > * + * {
+    margin-block-start: calc((120 / 18) * 1rem);
+  }
+}
+
+section,
+form {
+
+
+
+  & > * + *:not(.accordion) {
+    margin-block-start: 1rlh;
+  }
+}
+
+header {
+
+
+
+  &:has(.anchor) {
+    align-items: baseline;
+    column-gap: calc((16 / 18) * 1rem);
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  & + * {
+    margin-block-start: calc((48 / 18) * 1rem);
+  }
+}
+
+.anchor {
+  font-size: calc((18 / 18) * 1rem);
+  font-weight: var(--base-font-weight);
+}
+
+.toc {
+
+
+
+  & ol {
+    display: flex;
+    flex-flow: column;
+    margin-inline-start: calc((32 / 18) * 1rem);
+    row-gap: calc((8 / 18) * 1rem);
+  }
+}
+
+section:has([id='grid']) {
+  --blue-light: #F0F7FF;
+
+
+  & [class*="flex__"] span {
+    background: var(--blue-light);
+    color: var(--color-neutral-900);
+    display: block;
+    height: 100%;
+    padding-block: calc((16 / 18) * 1rem);
+    padding-inline: calc((16 / 18) * 1rem);
+  }
+
+  & span > .flex {
+    border: calc((4 / 18) * 1rem) solid var(--body-background-color);
+  }
+}
+
+.code-container {
+  position: relative;
+
+
+  & pre {
+    padding-inline-end: calc((40 / 18) * 1rem);
+  }
+}
+
+.btn--copy {
+  font-size: var(--small-font-size);
+  inset-block-start: 0;
+  inset-inline-end: 0;
+  line-height: var(--small-line-height);
+  padding-block: calc((2 / 18) * 1rem);
+  padding-inline: calc((4 / 18) * 1rem);
+  position: absolute;
+}

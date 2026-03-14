@@ -1,4 +1,4 @@
-.theme-switcher {
+.color-scheme-toggle {
   --button-background-color: transparent;
   --button-color: currentcolor;
   --button-border-color: transparent;
@@ -6,10 +6,10 @@
   --button-hover-border-color: transparent;
   --button-hover-color: currentcolor;
 
-  background-color: var(--theme-switcher-background-color);
-  border-color: var(--theme-switcher-border-color);
+  background-color: var(--color-scheme-toggle-background-color);
+  border-color: var(--color-scheme-toggle-border-color);
   border-radius: calc((360 / 18) * 1rem);
-  color: var(--theme-switcher-color);
+  color: var(--color-scheme-toggle-color);
   column-gap: calc((4 / 18) * 1rem);
   display: flex;
   inline-size: fit-content;
@@ -22,7 +22,7 @@
   }
 
   & [aria-pressed='true'] {
-    background-color: var(--theme-switcher-active-background-color);
-    color: var(--theme-switcher-active-color);
+    background-color: var(--color-scheme-toggle-active-background-color);
+    color: var(--color-scheme-toggle-active-color);
   }
 }

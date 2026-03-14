@@ -1,8 +1,20 @@
 # Changelog
 
-## [Unreleased]
+## [0.9.0] - 2025-10-
 
-- Grid system
+### Added
+
+- Grid (WIP)
+
+### Changed
+
+- **Breaking:** Rename theme switcher
+- Use requestIdleCallback() to load low-priority modules
+
+### Removed
+
+- **Breaking:** Card component
+- **Breaking:** Textmedia component
 
 ## [0.8.0] - 2024-10-27
 

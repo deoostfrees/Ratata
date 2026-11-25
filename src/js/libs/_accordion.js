@@ -1,40 +1,22 @@
 export default function accordion () {
   const BROWSER_WINDOW = window
 
-  const closeAllAccordions = () => {
-    const OPEN_ACCORDION_ELS = document.querySelectorAll('details[open]')
-
-    OPEN_ACCORDION_ELS.forEach((openAccordionEl) => {
-      openAccordionEl.removeAttribute('open')
-    })
-  }
-
-  const openAllAccordions = () => {
-    const OPEN_ACCORDION_ELS = document.querySelectorAll('details')
-
-    OPEN_ACCORDION_ELS.forEach((openAccordionEl) => {
-      openAccordionEl.setAttribute('open', '')
-    })
-  }
-
-  /**
-   * Expand all accordions for printing, restore previously opened accordions
-   * after printing
-   *
-   */
-  let openAccordionEls
+  // Only the closed ones are touched, so an open accordion does not replay its transition.
+  let collapsedBeforePrint = []
 
   BROWSER_WINDOW.addEventListener('beforeprint', () => {
-    openAccordionEls = document.querySelectorAll('details[open]')
+    collapsedBeforePrint = Array.from(document.querySelectorAll('details.accordion:not([open])'))
 
-    openAllAccordions()
+    collapsedBeforePrint.forEach((accordionEl) => {
+      accordionEl.setAttribute('open', '')
+    })
   })
 
   BROWSER_WINDOW.addEventListener('afterprint', () => {
-    closeAllAccordions()
-
-    openAccordionEls.forEach((openAccordionEl) => {
-      openAccordionEl.setAttribute('open', '')
+    collapsedBeforePrint.forEach((accordionEl) => {
+      accordionEl.removeAttribute('open')
     })
+
+    collapsedBeforePrint = []
   })
 }

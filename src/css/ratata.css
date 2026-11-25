@@ -1,24 +1,20 @@
 @layer reset, vendor, config, content, layout, components, utilities, print;
 
-@import url('./_print.css') layer(print) print;
+/**
+ * Reset
+ *
+ */
 @import url('./_reset.css') layer(reset);
-@import url('./_utilities.css') layer(utilities);
+
+/**
+ * Config
+ *
+ */
 @import url('./_icons.css') layer(config);
 @import url('./_variables.css') layer(config);
 
-/**
- * Theme
- *
- */
+/* Theme */
 @import url('./themes/_default.css') layer(config);
-
-/**
- * Layout
- *
- */
-@import url('./layout/_document.css') layer(layout);
-@import url('./layout/_container.css') layer(layout);
-@import url('./layout/_grid.css') layer(layout);
 
 /**
  * Content
@@ -36,6 +32,14 @@
 @import url('./content/_images.css') layer(content);
 
 /**
+ * Layout
+ *
+ */
+@import url('./layout/_document.css') layer(layout);
+@import url('./layout/_container.css') layer(layout);
+@import url('./layout/_grid.css') layer(layout);
+
+/**
  * Components
  *
  */
@@ -43,3 +47,15 @@
 @import url('./components/_alert.css') layer(components);
 @import url('./components/_breadcrumb.css') layer(components);
 @import url('./components/_color-scheme-toggle.css') layer(components);
+
+/**
+ * Utilities
+ *
+ */
+@import url('./_utilities.css') layer(utilities);
+
+/**
+ * Print
+ *
+ */
+@import url('./_print.css') layer(print) print;

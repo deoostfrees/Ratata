@@ -1,4 +1,4 @@
-input {
+input:not([type='checkbox'], [type='radio'], [type='submit'], [type='reset'], [type='range'], [type='button'], [type='image']) {
 
   &:user-valid {
     background-color: var(--input-valid-background-color);
@@ -28,7 +28,7 @@ textarea {
   }
 }
 
-input:not([type='checkbox'], [type='radio'], [type='submit'], [type='reset'], [type='range']),
+input:not([type='checkbox'], [type='radio'], [type='submit'], [type='reset'], [type='range'], [type='button'], [type='image']),
 textarea {
 
   &:user-invalid {

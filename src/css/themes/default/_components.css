@@ -1,0 +1,161 @@
+:root {
+  /**
+   * Body
+   *
+   */
+  --body-background-color: var(--color-surface);
+  --body-color: var(--color-text);
+
+  /**
+   * Selection
+   *
+   */
+  --selection-background-color: var(--color-selection-surface);
+  --selection-color: var(--color-selection-text);
+
+  /**
+   * Links
+   *
+   */
+  --link-background-color: transparent;
+  --link-color: var(--color-accent);
+  --link-decoration-line: underline;
+  --link-hover-background-color: transparent;
+  --link-hover-color: var(--color-accent);
+  --link-hover-decoration-line: none;
+
+  /**
+   * hr
+   *
+   */
+  --hr-border-color: var(--color-border);
+
+  /**
+   * Table
+   *
+   */
+  --table-thead-tr-background-color: var(--color-surface);
+  --table-thead-tr-color: var(--color-text);
+  --table-thead-th-border-color: var(--color-border-strong);
+
+  /* tbody */
+  --table-tbody-tr-background-color: var(--color-surface);
+  --table-tbody-tr-color: var(--color-text);
+  --table-tbody-th-border-color: var(--color-border-muted);
+  --table-tbody-td-border-color: var(--color-border-muted);
+
+  /**
+   * Code
+   *
+   */
+  --code-background-color: var(--color-surface-muted);
+  --code-color: var(--color-text);
+
+  /**
+   * Buttons
+   *
+   */
+  --button-background-color: transparent;
+  --button-color: var(--color-text);
+  --button-border-color: transparent;
+  --button-hover-background-color: transparent;
+  --button-hover-border-color: transparent;
+  --button-hover-color: var(--color-text);
+
+  /* Primary */
+  --button-primary-background-color: var(--color-accent);
+  --button-primary-border-color: var(--color-accent);
+  --button-primary-color: var(--color-text-inverse);
+  --button-primary-hover-background-color: var(--color-accent-hover);
+  --button-primary-hover-border-color: var(--color-accent-hover);
+  --button-primary-hover-color: var(--color-text-inverse);
+
+  /* Secondary */
+  --button-secondary-background-color: transparent;
+  --button-secondary-border-color: var(--color-accent);
+  --button-secondary-color: var(--color-accent);
+  --button-secondary-hover-background-color: var(--color-accent);
+  --button-secondary-hover-border-color: var(--color-accent);
+  --button-secondary-hover-color: var(--color-text-inverse);
+
+  /**
+   * Forms
+   *
+   */
+
+  /* Input */
+  --input-background-color: var(--color-surface-form);
+  --input-border-color: var(--color-border);
+  --input-color: var(--color-text-form);
+  --input-valid-background-color: var(--input-background-color);
+  --input-valid-border-color: var(--input-border-color);
+  --input-valid-color: var(--input-color);
+  --input-invalid-background-color: var(--color-status-danger-surface-form);
+  --input-invalid-border-color: var(--color-status-danger-border-form);
+  --input-invalid-color: var(--color-status-danger-text-form);
+
+  /* Checkbox */
+  --check-background-color: var(--color-surface-form);
+  --check-border-color: var(--color-border);
+  --check-color: var(--color-accent-form);
+
+  /* Radio */
+  --radio-background-color: var(--color-surface-form);
+  --radio-border-color: var(--color-border);
+  --radio-color: var(--color-accent-form);
+
+  /* Select */
+  --select-background-color: var(--color-surface-form);
+  --select-border-color: var(--color-border);
+  --select-color: var(--color-text-form);
+
+  /* File input */
+  --button-file-input-background-color: var(--color-accent-form);
+  --button-file-input-border-color: var(--color-accent-form);
+  --button-file-input-color: var(--color-text-accent-form);
+
+  /**
+   * Accordion
+   *
+   */
+  --accordion-button-background-color: transparent;
+  --accordion-button-color: var(--color-text);
+  --accordion-button-border-color: var(--color-border);
+  --accordion-content-background-color: transparent;
+  --accordion-content-color: var(--color-text);
+
+  /**
+   * Alert
+   *
+   */
+
+  /* Info */
+  --alert-info-background-color: var(--color-status-info-surface);
+  --alert-info-border-color: var(--color-status-info-border);
+  --alert-info-color: var(--color-status-info-text);
+
+  /* Success */
+  --alert-success-background-color: var(--color-status-success-surface);
+  --alert-success-border-color: var(--color-status-success-border);
+  --alert-success-color: var(--color-status-success-text);
+
+  /* Warning */
+  --alert-warning-background-color: var(--color-status-warning-surface);
+  --alert-warning-border-color: var(--color-status-warning-border);
+  --alert-warning-color: var(--color-status-warning-text);
+
+  /* Danger */
+  --alert-danger-background-color: var(--color-status-danger-surface);
+  --alert-danger-border-color: var(--color-status-danger-border);
+  --alert-danger-color: var(--color-status-danger-text);
+
+  /**
+   * Color scheme toggle
+   *
+   */
+  --color-scheme-toggle-background-color: var(--color-accent);
+  --color-scheme-toggle-border-color: transparent;
+  --color-scheme-toggle-color: var(--color-text-inverse);
+  --color-scheme-toggle-active-background-color: var(--color-surface);
+  --color-scheme-toggle-active-color: var(--color-accent);
+}

@@ -7,6 +7,14 @@
   --scroll-padding-bottom: 0;
 
   /**
+   * Focus
+   *
+   */
+  --focus-outline-offset: calc((2 / 18) * 1rem);
+  --focus-outline-style: solid;
+  --focus-outline-width: calc((2 / 18) * 1rem);
+
+  /**
    * Layout
    *
    */

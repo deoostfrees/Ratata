@@ -1,14 +1,37 @@
+const STORAGE_KEY = 'color-scheme'
+const DEFAULT_COLOR_SCHEME = 'system'
+const COLOR_SCHEMES = [DEFAULT_COLOR_SCHEME, 'light', 'dark']
+
+const isSupportedColorScheme = (colorScheme) => COLOR_SCHEMES.includes(colorScheme)
+
+// Reading storage throws when the browser blocks it, in a sandboxed iframe for example.
+const readStoredColorScheme = () => {
+  let storedColorScheme = null
+
+  try {
+    storedColorScheme = localStorage.getItem(STORAGE_KEY)
+  } catch (error) {
+    storedColorScheme = null
+  }
+
+  return isSupportedColorScheme(storedColorScheme) ? storedColorScheme : null
+}
+
+const writeStoredColorScheme = (colorScheme) => {
+  try {
+    localStorage.setItem(STORAGE_KEY, colorScheme)
+  } catch (error) {
+    // A blocked or full storage must not break the toggle.
+  }
+}
+
 export default function colorSchemeToggle () {
   const DOCUMENT_EL = document.documentElement
   const BROWSER_WINDOW = window
   const COLOR_SCHEME_TOGGLE_BTN = document.querySelectorAll('.btn--color-scheme-switch')
 
-  let currentColorScheme = 'system'
+  let currentColorScheme = DEFAULT_COLOR_SCHEME
 
-  /**
-   * Set active button
-   *
-   */
   const setActiveButton = (colorScheme) => {
     COLOR_SCHEME_TOGGLE_BTN.forEach((colorSchemeToggleBtn) => {
       if (colorSchemeToggleBtn.getAttribute('data-color-scheme') === colorScheme) {
@@ -19,68 +42,50 @@ export default function colorSchemeToggle () {
     })
   }
 
-  /**
-   * Apply color-scheme
-   *
-   * @param {string} colorScheme - Color-scheme
-   */
   const applyColorScheme = (colorScheme) => {
     DOCUMENT_EL.setAttribute('data-color-scheme', colorScheme)
     setActiveButton(colorScheme)
   }
 
-  /**
-   * Set color-scheme
-   *
-   * @param {string} colorScheme - Color-scheme
-   */
   const setColorScheme = (colorScheme) => {
     applyColorScheme(colorScheme)
 
-    localStorage.setItem('color-scheme', colorScheme)
+    writeStoredColorScheme(colorScheme)
   }
 
   COLOR_SCHEME_TOGGLE_BTN.forEach((colorSchemeToggleBtn) => {
     colorSchemeToggleBtn.addEventListener('click', () => {
-      if (colorSchemeToggleBtn.getAttribute('aria-pressed') !== 'true') {
-        currentColorScheme = colorSchemeToggleBtn.getAttribute('data-color-scheme')
+      const colorScheme = colorSchemeToggleBtn.getAttribute('data-color-scheme')
+
+      if (colorSchemeToggleBtn.getAttribute('aria-pressed') !== 'true' && isSupportedColorScheme(colorScheme)) {
+        currentColorScheme = colorScheme
 
         setColorScheme(currentColorScheme)
       }
     })
   })
 
-  /**
-   * Check prefers color scheme
-   *
-   */
-  const COLOR_QUERY = BROWSER_WINDOW.matchMedia('(prefers-color-scheme: dark)')
+  // Without a stored preference the document keeps its `color-scheme: light dark` and follows the OS.
+  const restoreColorScheme = () => {
+    const storedColorScheme = readStoredColorScheme()
 
-  const prefersColorCheck = () => {
-    if (localStorage.getItem('color-scheme')) {
-      currentColorScheme = localStorage.getItem('color-scheme')
+    if (storedColorScheme === null) {
+      currentColorScheme = DEFAULT_COLOR_SCHEME
 
-      setColorScheme(currentColorScheme)
+      setActiveButton(currentColorScheme)
     } else {
-      currentColorScheme = 'system'
-    }
+      currentColorScheme = storedColorScheme
 
-    setActiveButton(currentColorScheme)
+      applyColorScheme(currentColorScheme)
+    }
   }
 
-  prefersColorCheck()
+  restoreColorScheme()
 
-  // Check for any OS level changes to the preference
-  COLOR_QUERY.addEventListener('change', prefersColorCheck)
-
-  /**
-   * Check for any storage changes
-   * It fires on a page every time another page from the same domain has modified a value
-   *
-   */
+  // Another page of the same origin changed the preference; newValue is null once the key is removed.
   BROWSER_WINDOW.addEventListener('storage', (event) => {
-    if (event.key === 'color-scheme') {
-      currentColorScheme = event.newValue
+    if (event.key === STORAGE_KEY) {
+      currentColorScheme = isSupportedColorScheme(event.newValue) ? event.newValue : DEFAULT_COLOR_SCHEME
 
       applyColorScheme(currentColorScheme)
     }

@@ -1,29 +1,23 @@
-/**
- * Load low priority modules
- *
- * @param {object} elements Object containing the DOM elements
- */
 function loadLowPriorityModules (elements) {
-  // Accordion
   if (elements.accordion !== null) {
     import('./libs/_accordion.js')
       .then(({ default: accordion }) => {
         accordion()
       })
+      .catch((err) => {
+        console.error('Error loading the accordion module: ', err)
+      })
   }
 }
 
-/**
- * Load high priority modules
- *
- * @param {object} elements Object containing the DOM elements
- */
 function loadHighPriorityModules (elements) {
-  // Color scheme toggle
   if (elements.colorSchemeToggle !== null) {
     import('./libs/_color-scheme-toggle.js')
       .then(({ default: colorSchemeToggle }) => {
         colorSchemeToggle()
+      })
+      .catch((err) => {
+        console.error('Error loading the color scheme toggle module: ', err)
       })
   }
 }

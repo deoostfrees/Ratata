@@ -109,6 +109,14 @@ The file `_variables.css` in the `src` folder contains variables for all layout,
   /* h4 */
   --h4-font-size: calc((23 / 18) * 1rem);
   --h4-line-height: calc((38 / 23));
+
+  /* h5 */
+  --h5-font-size: calc((18 / 18) * 1rem);
+  --h5-line-height: calc((31 / 18));
+
+  /* h6 */
+  --h6-font-size: calc((16 / 18) * 1rem);
+  --h6-line-height: calc((27 / 16));
 }
 ```
 

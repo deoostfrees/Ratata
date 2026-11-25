@@ -1,31 +1,30 @@
 /*
- * Registering the properties is what allows central maintenance: in an unregistered one a relative
- * url() resolves against the file that consumes it, in a registered one against this file.
- * The initial-value is required by the syntax descriptor and never used.
+ * Registered on purpose: in an unregistered property a relative url() resolves against the consuming file.
+ * `none` rather than an empty url(), which would resolve against the document itself.
  *
  */
 @property --check-icon {
-  syntax: '<url>';
+  syntax: '<url> | none';
   inherits: true;
-  initial-value: url('');
+  initial-value: none;
 }
 
 @property --chevron-down-icon {
-  syntax: '<url>';
+  syntax: '<url> | none';
   inherits: true;
-  initial-value: url('');
+  initial-value: none;
 }
 
 @property --error-icon {
-  syntax: '<url>';
+  syntax: '<url> | none';
   inherits: true;
-  initial-value: url('');
+  initial-value: none;
 }
 
 @property --minus-icon {
-  syntax: '<url>';
+  syntax: '<url> | none';
   inherits: true;
-  initial-value: url('');
+  initial-value: none;
 }
 
 :root {

@@ -1,5 +1,29 @@
 # Changelog
 
+## [0.10.0] - 2026-11-
+
+### Added
+
+- `h5` and `h6` styles with `--h5-*` and `--h6-*` custom properties
+
+### Removed
+
+- The `prefers-color-scheme` listener in the color scheme toggle, which had no effect
+
+### Fixed
+
+- `color-scheme` applied to every element with `data-color-scheme`
+- The accordion print handler threw when `afterprint` fired alone
+- The accordion print handler acted on every `details` and reopened open ones
+- Blocked storage access broke the color scheme helper and toggle
+- Unknown stored color scheme values were applied unchecked
+- `:user-valid` and `:user-invalid` styled checkboxes and radios
+- `input[type='button']` and `input[type='image']` were styled as text fields
+- `label + *` and `legend + *` matched siblings outside of forms
+- The icon fallback resolved an empty `url()` against the document
+- Dynamic module imports failed silently
+- Empty `lang` attribute in `src/index.html`
+
 ## [0.9.0] - 2026-11-25
 
 ### Added

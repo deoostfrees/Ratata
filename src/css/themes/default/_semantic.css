@@ -1,0 +1,71 @@
+:root {
+  /**
+   * Surfaces
+   *
+   */
+  --color-surface: light-dark(var(--white), var(--color-neutral-900));
+  --color-surface-muted: light-dark(var(--color-neutral-100), var(--color-neutral-800));
+
+  /* Form fields keep a light surface in both color schemes. */
+  --color-surface-form: light-dark(var(--white), var(--color-neutral-100));
+
+  /**
+   * Text
+   *
+   */
+  --color-text: light-dark(var(--color-neutral-900), var(--color-neutral-100));
+  --color-text-inverse: light-dark(var(--white), var(--color-neutral-900));
+  --color-text-form: var(--color-neutral-900);
+  --color-text-accent-form: light-dark(var(--white), var(--color-neutral-100));
+
+  /**
+   * Borders
+   *
+   */
+  --color-border: var(--color-neutral-500);
+  --color-border-muted: light-dark(var(--color-neutral-100), var(--color-neutral-800));
+  --color-border-strong: light-dark(var(--color-neutral-500), var(--color-neutral-100));
+
+  /**
+   * Accent
+   *
+   */
+  --color-accent: light-dark(var(--color-primary-500), var(--color-primary-200));
+  --color-accent-hover: light-dark(var(--color-primary-600), var(--color-primary-100));
+  --color-accent-form: light-dark(var(--color-primary-500), var(--color-neutral-900));
+
+  /**
+   * Focus
+   *
+   */
+  --color-focus-outline: var(--color-text);
+
+  /**
+   * Selection
+   *
+   */
+  --color-selection-surface: var(--yellow);
+  --color-selection-text: var(--color-neutral-900);
+
+  /**
+   * Status
+   *
+   */
+  --color-status-info-surface: light-dark(var(--color-blue-100), var(--color-blue-900));
+  --color-status-info-border: light-dark(var(--color-blue-600), var(--color-blue-300));
+  --color-status-info-text: light-dark(var(--color-blue-800), var(--color-blue-100));
+  --color-status-success-surface: light-dark(var(--color-green-100), var(--color-green-900));
+  --color-status-success-border: light-dark(var(--color-green-600), var(--color-green-300));
+  --color-status-success-text: light-dark(var(--color-green-800), var(--color-green-100));
+  --color-status-warning-surface: light-dark(var(--color-orange-100), var(--color-orange-900));
+  --color-status-warning-border: light-dark(var(--color-orange-600), var(--color-orange-300));
+  --color-status-warning-text: light-dark(var(--color-orange-800), var(--color-orange-100));
+  --color-status-danger-surface: light-dark(var(--color-red-100), var(--color-red-900));
+  --color-status-danger-border: light-dark(var(--color-red-600), var(--color-red-300));
+  --color-status-danger-text: light-dark(var(--color-red-800), var(--color-red-100));
+
+  /* Form fields stay light in both schemes, so their invalid state must not flip like an alert does. */
+  --color-status-danger-surface-form: var(--color-red-100);
+  --color-status-danger-border-form: var(--color-red-600);
+  --color-status-danger-text-form: var(--color-red-800);
+}

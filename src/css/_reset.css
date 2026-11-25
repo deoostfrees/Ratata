@@ -10,11 +10,22 @@
 }
 
 :root {
-  interpolate-size: allow-keywords;
+  @media (prefers-reduced-motion: no-preference) {
+    interpolate-size: allow-keywords;
+  }
 }
 
 html {
+  color-scheme: light dark;
   text-size-adjust: none;
+}
+
+[data-color-scheme='light'] {
+  color-scheme: light;
+}
+
+[data-color-scheme='dark'] {
+  color-scheme: dark;
 }
 
 a,
@@ -55,4 +66,8 @@ h2,
 h3,
 h4 {
   text-wrap: balance;
+}
+
+p {
+  text-wrap: pretty;
 }

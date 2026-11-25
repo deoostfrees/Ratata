@@ -1,2 +1,3 @@
 @import url('./default/_colors.css');
-@import url('./default/_light-dark.css');
+@import url('./default/_semantic.css');
+@import url('./default/_components.css');

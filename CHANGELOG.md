@@ -26,6 +26,7 @@
 
 - Link color on hover in dark mode
 - Alert colors in both color schemes
+- The accordion icon ignored `prefers-reduced-motion`
 
 ### Removed
 

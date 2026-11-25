@@ -5,11 +5,27 @@
 ### Added
 
 - Grid (WIP)
+- Error icon for invalid form fields
+- Focus styles for `:focus-visible`
+- `themes/default/_semantic.css` for semantic color tokens
 
 ### Changed
 
 - **Breaking:** Rename theme switcher
+- **Breaking:** Rename `themes/default/_light-dark.css` to `_components.css`
+- **Breaking:** Rename the selection tokens from `--focus-*` to `--selection-*`
+- Even out the color scales to 20% steps
+- Register the icon custom properties with `@property`
+- Move the `color-scheme` declarations into `_reset.css`
+- Sort the imports in `ratata.css` by layer
+- Split `content/_forms.css` into one file per concern
+- Use `text-decoration-line` instead of the `text-decoration` shorthand
 - Use requestIdleCallback() to load low-priority modules
+
+### Fixed
+
+- Link color on hover in dark mode
+- Alert colors in both color schemes
 
 ### Removed
 

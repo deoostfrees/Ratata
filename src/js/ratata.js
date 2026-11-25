@@ -10,6 +10,9 @@ function loadLowPriorityModules (elements) {
       .then(({ default: accordion }) => {
         accordion()
       })
+      .catch((err) => {
+        console.error('Error loading the accordion module: ', err)
+      })
   }
 }
 
@@ -24,6 +27,9 @@ function loadHighPriorityModules (elements) {
     import('./libs/_color-scheme-toggle.js')
       .then(({ default: colorSchemeToggle }) => {
         colorSchemeToggle()
+      })
+      .catch((err) => {
+        console.error('Error loading the color scheme toggle module: ', err)
       })
   }
 }

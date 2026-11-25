@@ -22,6 +22,7 @@
 - Use `text-decoration-line` instead of the `text-decoration` shorthand
 - Generate the neutral scale from `--color-neutral-900`
 - Mix the color scales with `--black` and `--white` instead of the keywords
+- Reveal visually hidden content while a child has focus
 - Use requestIdleCallback() to load low-priority modules
 
 ### Fixed

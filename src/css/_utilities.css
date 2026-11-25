@@ -2,7 +2,7 @@
  * Hide content visually
  *
  */
-.visually-hidden:not(:focus) {
+.visually-hidden:not(:focus, :focus-within) {
   block-size: calc((1 / 18) * 1rem);
   clip-path: inset(50%);
   inline-size: calc((1 / 18) * 1rem);

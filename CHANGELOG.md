@@ -20,6 +20,8 @@
 - Sort the imports in `ratata.css` by layer
 - Split `content/_forms.css` into one file per concern
 - Use `text-decoration-line` instead of the `text-decoration` shorthand
+- Generate the neutral scale from `--color-neutral-900`
+- Mix the color scales with `--black` and `--white` instead of the keywords
 - Use requestIdleCallback() to load low-priority modules
 
 ### Fixed

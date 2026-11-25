@@ -116,7 +116,7 @@ The file `_variables.css` in the `src` folder contains variables for all layout,
 
 The default color scheme for light and dark mode lives in `src/css/themes/default/` and is split into three tiers:
 
-- `_colors.css` holds the raw palette: primitives, the neutral and hue scales, and the brand color. Change `--primary-color` to recolor the whole theme.
+- `_colors.css` holds the raw palette: primitives, the neutral and hue scales, and the brand color. Change `--primary-color` to recolor the whole theme, or `--color-neutral-900` for the greys.
 - `_semantic.css` says what a color means: surfaces, text, borders, accent and status. Dark mode is declared here with `light-dark()`, once per role instead of once per component.
 - `_components.css` says what a component uses, for example `--button-primary-background-color`. It references the semantic tier, never the palette.
 

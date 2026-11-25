@@ -27,7 +27,10 @@
 
   & svg {
     flex-shrink: 0;
-    transition: transform 0.3s linear;
+
+    @media (prefers-reduced-motion: no-preference) {
+      transition: transform 0.3s ease-out;
+    }
 
     [open] & {
       transform: rotate(-45deg);
@@ -52,7 +55,7 @@ details {
   &::details-content {
     block-size: 0%;
 
-    @media screen and (prefers-reduced-motion: no-preference) {
+    @media (prefers-reduced-motion: no-preference) {
       transition: block-size 0.3s ease-out, content-visibility 0.3s ease-out;
       transition-behavior: allow-discrete;
     }

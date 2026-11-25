@@ -1,5 +1,4 @@
-input,
-textarea {
+input {
 
   &:user-valid {
     background-color: var(--input-valid-background-color);
@@ -11,5 +10,31 @@ textarea {
     background-color: var(--input-invalid-background-color);
     border-color: var(--input-invalid-border-color);
     color: var(--input-invalid-color);
+  }
+}
+
+textarea {
+
+  &:user-valid {
+    background-color: var(--textarea-valid-background-color);
+    border-color: var(--textarea-valid-border-color);
+    color: var(--textarea-valid-color);
+  }
+
+  &:user-invalid {
+    background-color: var(--textarea-invalid-background-color);
+    border-color: var(--textarea-invalid-border-color);
+    color: var(--textarea-invalid-color);
+  }
+}
+
+input:not([type='checkbox'], [type='radio'], [type='submit'], [type='reset'], [type='range']),
+textarea {
+
+  &:user-invalid {
+    background-image: var(--error-icon);
+    background-position: calc(100% - ((8 / 18) * 1rem)) calc((8 / 18) * 1rem);
+    background-repeat: no-repeat;
+    padding-inline-end: calc((40 / 18) * 1rem);
   }
 }

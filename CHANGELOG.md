@@ -8,6 +8,7 @@
 - Error icon for invalid form fields
 - Focus styles for `:focus-visible`
 - `themes/default/_semantic.css` for semantic color tokens
+- `--textarea-*` custom properties for styling textareas independently
 
 ### Changed
 
@@ -23,6 +24,7 @@
 - Generate the neutral scale from `--color-neutral-900`
 - Mix the color scales with `--black` and `--white` instead of the keywords
 - Reveal visually hidden content while a child has focus
+- Give the textarea its own styles instead of sharing the input rules
 - Use requestIdleCallback() to load low-priority modules
 
 ### Fixed

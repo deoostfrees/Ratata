@@ -94,6 +94,17 @@
   --input-invalid-border-color: var(--color-status-danger-border-form);
   --input-invalid-color: var(--color-status-danger-text-form);
 
+  /* Textarea */
+  --textarea-background-color: var(--color-surface-form);
+  --textarea-border-color: var(--color-border);
+  --textarea-color: var(--color-text-form);
+  --textarea-valid-background-color: var(--textarea-background-color);
+  --textarea-valid-border-color: var(--textarea-border-color);
+  --textarea-valid-color: var(--textarea-color);
+  --textarea-invalid-background-color: var(--color-status-danger-surface-form);
+  --textarea-invalid-border-color: var(--color-status-danger-border-form);
+  --textarea-invalid-color: var(--color-status-danger-text-form);
+
   /* Checkbox */
   --check-background-color: var(--color-surface-form);
   --check-border-color: var(--color-border);

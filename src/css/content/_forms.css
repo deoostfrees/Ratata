@@ -1,45 +1,12 @@
-@import url('./forms/_form-input.css');
-@import url('./forms/_form-check.css');
-@import url('./forms/_form-radio.css');
-@import url('./forms/_form-select.css');
-@import url('./forms/_form-textarea.css');
+@layer controls, states;
 
-fieldset {
-  border: none;
-}
+@import url('./forms/_form-fieldset.css') layer(controls);
+@import url('./forms/_form-label.css') layer(controls);
+@import url('./forms/_form-input.css') layer(controls);
+@import url('./forms/_form-check.css') layer(controls);
+@import url('./forms/_form-radio.css') layer(controls);
+@import url('./forms/_form-select.css') layer(controls);
+@import url('./forms/_form-textarea.css') layer(controls);
 
-legend {
-  display: block;
-
-
-  & + * {
-    margin-block-start: calc((4 / 18) * 1rem);
-  }
-}
-
-label {
-
-
-
-  & + * {
-    margin-block-start: calc((4 / 18) * 1rem);
-  }
-}
-
-input,
-textarea {
-
-
-
-  &:user-valid {
-    background-color: var(--input-valid-background-color);
-    border-color: var(--input-valid-border-color);
-    color: var(--input-valid-color);
-  }
-
-  &:user-invalid {
-    background-color: var(--input-invalid-background-color);
-    border-color: var(--input-invalid-border-color);
-    color: var(--input-invalid-color);
-  }
-}
+/* The later sublayer wins, so these beat the control files whatever their specificity. */
+@import url('./forms/_form-validation.css') layer(states);

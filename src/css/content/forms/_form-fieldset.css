@@ -4,8 +4,8 @@ fieldset {
 
 legend {
   display: block;
+}
 
-  & + * {
-    margin-block-start: calc((4 / 18) * 1rem);
-  }
+fieldset > legend + * {
+  margin-block-start: calc((4 / 18) * 1rem);
 }

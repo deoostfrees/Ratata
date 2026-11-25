@@ -1,3 +1,33 @@
+/*
+ * Registering the properties is what allows central maintenance: in an unregistered one a relative
+ * url() resolves against the file that consumes it, in a registered one against this file.
+ * The initial-value is required by the syntax descriptor and never used.
+ *
+ */
+@property --check-icon {
+  syntax: '<url>';
+  inherits: true;
+  initial-value: url('');
+}
+
+@property --chevron-down-icon {
+  syntax: '<url>';
+  inherits: true;
+  initial-value: url('');
+}
+
+@property --error-icon {
+  syntax: '<url>';
+  inherits: true;
+  initial-value: url('');
+}
+
+@property --minus-icon {
+  syntax: '<url>';
+  inherits: true;
+  initial-value: url('');
+}
+
 :root {
   --check-icon: url('./../icons/check.svg');
   --chevron-down-icon: url('./../icons/chevron-down.svg');

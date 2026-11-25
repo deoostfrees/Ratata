@@ -65,26 +65,22 @@ export default function colorSchemeToggle () {
     })
   })
 
-  const COLOR_QUERY = BROWSER_WINDOW.matchMedia('(prefers-color-scheme: dark)')
-
-  const prefersColorCheck = () => {
+  // Without a stored preference the document keeps its `color-scheme: light dark` and follows the OS.
+  const restoreColorScheme = () => {
     const storedColorScheme = readStoredColorScheme()
 
     if (storedColorScheme === null) {
       currentColorScheme = DEFAULT_COLOR_SCHEME
+
+      setActiveButton(currentColorScheme)
     } else {
       currentColorScheme = storedColorScheme
 
-      setColorScheme(currentColorScheme)
+      applyColorScheme(currentColorScheme)
     }
-
-    setActiveButton(currentColorScheme)
   }
 
-  prefersColorCheck()
-
-  // Check for any OS level changes to the preference
-  COLOR_QUERY.addEventListener('change', prefersColorCheck)
+  restoreColorScheme()
 
   // Another page of the same origin changed the preference; newValue is null once the key is removed.
   BROWSER_WINDOW.addEventListener('storage', (event) => {
